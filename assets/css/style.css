@@ -1,4 +1,78 @@
 @font-face {
-    font-family: "SF Pro Display";
-    src: url();
+  font-family: "SF Pro Display";
+  src: url(../fonts/sfProDisplayRegular.OTF) format("truetype");
 }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../fonts/sfProDisplayMedium.OTF) format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../fonts/sfProDisplayBold.OTF) format("truetype");
+}
+
+/* ====================
+Reset Default CSS Start
+==================== */
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: #fff;
+  --text-color: #000;
+  --gray-text: #000;
+  --stroke-color: #000;
+  --red: red;
+  --shadow-lg: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 0 30px 0 rgba(0, 0, 0, 0.12);
+  --primary-font: "SF Pro Display";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none !important;
+  font-family: var(--primary-font);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--primary-font);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+input {
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+label {
+  font-family: var(--primary-font);
+}
+
+/* ====================
+Reset Default CSS End
+==================== */
