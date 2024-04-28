@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/sfProDisplayRegular.OTF),
+      url(../fonts/sfProDisplayMedium.OTF), url(../fonts/sfProDisplayBold.OTF);
+  }
+  
+  /* ====================
+  Reset Default CSS Start
+  ==================== */
+  
+  :root {
+    --primary-color: #d15e14;
+    --secondary-color: #137ac9;
+    --text-color: #000000;
+    --gray-text: rgba(0, 0, 0, 0.6);
+    --stroke-color: #cdcfd3;
+    --red: #ff4a4a;
+    --white: #ffffff;
+    --shadow-lg: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    --shadow-sm: 0 0 30px 0 rgba(0, 0, 0, 0.12);
+    --primary-font: "SF Pro Display";
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--primary-font);
+    margin-top: 0;
+  }
+  
+  p {
+    font-family: var(--primary-font);
+    margin-top: 0;
+  }
+  
+  span {
+    font-family: var(--primary-font);
+  }
+  
+  a {
+    text-decoration: none !important;
+    font-family: var(--primary-font);
+  }
+  
+  ul {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    font-family: var(--primary-font);
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    font-family: var(--primary-font);
+  }
+  
+  input {
+    outline: none;
+    font-family: var(--primary-font);
+  }
+  
+  label {
+    font-family: var(--primary-font);
+  }
+  
+  /* ====================
+  Reset Default CSS End
+  ==================== */
+
+
+  /* Sign In Email Start */
+
+  #sign_in{
+    position: relative;
+    width: 100%;
+    background: #F5F5F5;
+  }
+
+  #sign_in .sign_in_wrapper{
+    min-height: 100vh;
+    padding: 100px 0;
+  }
+
+  #sign_in .sign_in_wrapper .sign_in{
+    max-width: 800px;
+    margin: auto;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 50px 0;
+  }
+  #sign_in .sign_in .header{
+    text-align: center;
+  }
+  #sign_in .sign_in .header h1{
+    font-size: 26px;
+    font-weight:600;
+  }
+
+
+
+  /* Sign In Email End */
