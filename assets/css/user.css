@@ -99,14 +99,52 @@
     border-radius: 12px;
     padding: 50px 0;
   }
+
   #sign_in .sign_in .header{
     text-align: center;
   }
+
   #sign_in .sign_in .header h1{
     font-size: 26px;
     font-weight:600;
   }
-
+  #sign_in .sign_in form{
+    max-width: 450px;
+    margin: auto;
+    
+  }
+  #sign_in .sign_in input{
+    width: 100%;
+    font-size: 16px;
+    color: var(--gray-text);
+    border-radius: 6px;
+    border: 1px solid var(--stroke-color);
+    padding: 10px 0px 10px 20px;margin-top: 6px;
+  }
+  #sign_in .sign_in form .Passcode_btn{
+    width: 100% !important;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    padding: 10px 0px 10px 0px;
+    margin-top: 20px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 6px;
+  }
+  #sign_in .sign_in form .numbar_btn{
+    width: 100% !important;
+    font-size: 16px;
+    font-family: var(--primary-font);
+    padding: 10px 0px 10px 0px;
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+    border: 1px solid #D15E14;
+    background: transparent;
+    border-radius: 6px;
+  }
+ 
+  
 
 
   /* Sign In Email End */
