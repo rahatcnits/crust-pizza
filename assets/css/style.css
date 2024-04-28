@@ -1,16 +1,7 @@
 @font-face {
   font-family: "SF Pro Display";
-  src: url(../fonts/sfProDisplayRegular.OTF) format("truetype");
-}
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url(../fonts/sfProDisplayMedium.OTF) format("truetype");
-}
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url(../fonts/sfProDisplayBold.OTF) format("truetype");
+  src: url(../fonts/sfProDisplayRegular.OTF),
+    url(../fonts/sfProDisplayMedium.OTF), url(../fonts/sfProDisplayBold.OTF);
 }
 
 /* ====================
@@ -62,8 +53,8 @@ a {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   list-style: none;
   font-family: var(--primary-font);
 }
@@ -109,6 +100,17 @@ Reset Default CSS End
   display: flex;
   align-items: center;
   column-gap: 20px;
+}
+
+.nav_items ul li {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.nav_items ul li a {
+  color: var(--text-color);
+  font-weight: 500;
+  border-bottom: 2px solid var(--text-color);
 }
 
 .cart_btn {
