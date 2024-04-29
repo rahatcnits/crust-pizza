@@ -10,7 +10,7 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/user.css">
+    <link rel="stylesheet" href="./assets/css/user.css" />
 
     <!-- Bootstrap CSS Link -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -99,37 +99,40 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Sign In Email Start -->
-    <section id="sign_in_email">
+    <!-- Verification-Code2 Start -->
+    <section id="verification">
       <div class="container">
-        <div class="sign_in_wrapper">
-          <div class="sign_in_contant">
+        <div class="verification_wrapper">
+          <div class="verification_contant">
             <div class="header">
-              <h1>Sign In</h1>
-              <p>Please enter your email address to Sign in</p>
+              <h1>We sent a text to your phone</h1>
+              <p>
+                To continue, please enter the 6-digit verification code sent to
+                <br />
+                your phone ending in 1:20 min.
+              </p>
+
+              <h2>Didn’t receive a code? <a href="#">Resend</a></h2>
+              <span>One Time Passcode</span>
             </div>
 
             <form action="#">
-              <label for="">Email Address</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email address"
-              />
-
-              <div class="button_item">
-                <button class="Passcode_btn">
-                  Text Me My One Time Passcode
-                </button>
-                <button class="numbar_btn">Sign In With Phone Number</button>
-              </div>
+              <input type="number" name="number" />
+              <input type="number" name="number" />
+              <input type="number" name="number" />
+              <input type="number" name="number" />
+              <input type="number" name="number" />
+              <input type="number" name="number" />
             </form>
 
+            <div class="button_item">
+              <button class="Passcode_btn">Continue</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Sign In Email End End -->
+    <!-- Verification-Code2 End -->
 
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>

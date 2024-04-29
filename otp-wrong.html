@@ -10,7 +10,7 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/user.css">
+    <link rel="stylesheet" href="./assets/css/user.css" />
 
     <!-- Bootstrap CSS Link -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -99,37 +99,79 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Sign In Email Start -->
-    <section id="sign_in_email">
+    <!-- OTP (Wrong) Start -->
+    <section id="otp_wrong">
       <div class="container">
-        <div class="sign_in_wrapper">
-          <div class="sign_in_contant">
+        <div class="verification_wrapper">
+          <div class="verification_contant">
             <div class="header">
-              <h1>Sign In</h1>
-              <p>Please enter your email address to Sign in</p>
+              <h1>We sent a text to your phone</h1>
+              <p>
+                To continue, please enter the 6-digit verification code sent to
+                <br />
+                your phone ending in 1:20 min.
+              </p>
+
+              <h2>Didn’t receive a code? <a href="#">Resend</a></h2>
+              <span>One Time Passcode</span>
             </div>
 
             <form action="#">
-              <label for="">Email Address</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email address"
-              />
-
-              <div class="button_item">
-                <button class="Passcode_btn">
-                  Text Me My One Time Passcode
-                </button>
-                <button class="numbar_btn">Sign In With Phone Number</button>
-              </div>
+              <input type="number" name="number" />
+              <input type="number" name="number" />
+              <input type="number" name="number" />
+              <input type="number" name="number" />
+              <input type="number" name="number" />
+              <input type="number" name="number" />
             </form>
 
+            <div class="button_item">
+              <button class="Passcode_btn">Continue</button>
+              <h3>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_244_21072)">
+                    <path
+                      d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z"
+                      stroke="#FF0303"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9 6V9"
+                      stroke="#FF0303"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9 12H9.00833"
+                      stroke="#FF0303"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_244_21072">
+                      <rect width="18" height="18" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Please enter a valid code</span>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Sign In Email End End -->
+    <!-- OTP (Wrong) End -->
 
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>

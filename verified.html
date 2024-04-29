@@ -10,7 +10,7 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/user.css">
+    <link rel="stylesheet" href="./assets/css/user.css" />
 
     <!-- Bootstrap CSS Link -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -99,37 +99,49 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Sign In Email Start -->
-    <section id="sign_in_email">
+    <!-- Verified Start -->
+    <section id="verified">
       <div class="container">
-        <div class="sign_in_wrapper">
-          <div class="sign_in_contant">
+        <div class="verified_wrapper">
+          <div class="verified_contant">
             <div class="header">
-              <h1>Sign In</h1>
-              <p>Please enter your email address to Sign in</p>
+              <h1>One Time Password Verified</h1>
+              <p>
+                You are now successfully logged in. You may now <br />
+                continue to your account.
+              </p>
             </div>
 
-            <form action="#">
-              <label for="">Email Address</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email address"
-              />
+            <div class="verified_item">
+                <svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_244_21128)">
+                    <circle cx="68" cy="68" r="44" fill="white"/>
+                    </g>
+                    <circle cx="68" cy="68" r="37" fill="#137AC9" fill-opacity="0.05"/>
+                    <path d="M68 88C56.9543 88 48 79.0457 48 68C48 56.9543 56.9543 48 68 48C79.0457 48 88 56.9543 88 68C88 79.0457 79.0457 88 68 88ZM61.5272 68.447L65.4941 72.166L73.6374 61.696C74.1979 60.9754 75.2364 60.8456 75.9569 61.406C76.6775 61.9665 76.8073 63.0049 76.2469 63.7255L66.9907 75.6263C66.3934 76.3943 65.2652 76.4828 64.5555 75.8174L59.2662 70.8587C58.6002 70.2344 58.5665 69.1884 59.1908 68.5224C59.8152 67.8564 60.8612 67.8227 61.5272 68.447ZM68 85.0248C77.4025 85.0248 85.0248 77.4025 85.0248 68C85.0248 58.5975 77.4025 50.9752 68 50.9752C58.5975 50.9752 50.9752 58.5975 50.9752 68C50.9752 77.4025 58.5975 85.0248 68 85.0248Z" fill="#137AC9"/>
+                    <defs>
+                    <filter id="filter0_d_244_21128" x="0" y="0" width="136" height="136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset/>
+                    <feGaussianBlur stdDeviation="12"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.0745098 0 0 0 0 0.478431 0 0 0 0 0.788235 0 0 0 0.09 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_244_21128"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_244_21128" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+            </div>
 
-              <div class="button_item">
-                <button class="Passcode_btn">
-                  Text Me My One Time Passcode
-                </button>
-                <button class="numbar_btn">Sign In With Phone Number</button>
-              </div>
-            </form>
-
+            <div class="button_item">
+              <button class="Passcode_btn">Continue</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Sign In Email End End -->
+    <!-- Verified End -->
 
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>

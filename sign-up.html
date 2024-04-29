@@ -99,38 +99,78 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Sign In Email Start -->
-    <section id="sign_in_email">
+    <!-- Sign Up Start -->
+    <section id="sign_up">
       <div class="container">
-        <div class="sign_in_wrapper">
-          <div class="sign_in_contant">
+        <div class="sign_up_wrapper">
+          <div class="sign_up_contant">
             <div class="header">
               <h1>Sign In</h1>
-              <p>Please enter your email address to Sign in</p>
+              <p>Unlock exclusive perks, updates, and offers! Join us today</p>
             </div>
 
             <form action="#">
-              <label for="">Email Address</label>
+              <label for="name">First Name</label>
+              <input
+                type="text"
+                name="text"
+                placeholder="Enter your first name"
+              />
+              <br>
+              <br>
+              <label for="name">Last Name</label>
+              <input
+                type="text"
+                name="text"
+                placeholder="Enter your last name"
+              />
+              <br>
+              <br>
+              <label for="name">Email</label>
               <input
                 type="email"
                 name="email"
-                placeholder="Enter your email address"
+                placeholder="Enter your email"
+              />
+              <br>
+              <br>
+              <label for="name">Phone Number</label>
+              <input
+                type="number"
+                name="number"
+                placeholder="Enter your phone number"
+              />
+              <br>
+              <br>
+              <label for="name">Password</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter password"
               />
 
-              <div class="button_item">
-                <button class="Passcode_btn">
-                  Text Me My One Time Passcode
-                </button>
-                <button class="numbar_btn">Sign In With Phone Number</button>
+              <div class="check">
+                <input class="checkbox" type="checkbox">
+                <p>I agree the Crust Pizza Terms and Conditions - 
+                  <a href="#">view here</a>
+                </p>
               </div>
+
+              <div class="button_item">
+                <button class="sign_btn">
+                  Sign Up
+                </button>
+              </div>
+              <p>Already have a Crust Pizza account? <a href="#">Sign In</a></p>
             </form>
 
           </div>
         </div>
       </div>
     </section>
-    <!-- Sign In Email End End -->
+    <!-- Sign Up End -->
 
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>
 </html>
+

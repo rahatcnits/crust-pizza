@@ -1,150 +1,605 @@
 @font-face {
-    font-family: "SF Pro Display";
-    src: url(../fonts/sfProDisplayRegular.OTF),
-      url(../fonts/sfProDisplayMedium.OTF), url(../fonts/sfProDisplayBold.OTF);
-  }
-  
-  /* ====================
+  font-family: "SF Pro Display";
+  src: url(../fonts/sfProDisplayRegular.OTF),
+    url(../fonts/sfProDisplayMedium.OTF), url(../fonts/sfProDisplayBold.OTF);
+}
+
+/* ====================
   Reset Default CSS Start
   ==================== */
-  
-  :root {
-    --primary-color: #d15e14;
-    --secondary-color: #137ac9;
-    --text-color: #000000;
-    --gray-text: rgba(0, 0, 0, 0.6);
-    --stroke-color: #cdcfd3;
-    --red: #ff4a4a;
-    --white: #ffffff;
-    --shadow-lg: 0 0 40px 0 rgba(0, 0, 0, 0.15);
-    --shadow-sm: 0 0 30px 0 rgba(0, 0, 0, 0.12);
-    --primary-font: "SF Pro Display";
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--primary-font);
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--primary-font);
-    margin-top: 0;
-  }
-  
-  p {
-    font-family: var(--primary-font);
-    margin-top: 0;
-  }
-  
-  span {
-    font-family: var(--primary-font);
-  }
-  
-  a {
-    text-decoration: none !important;
-    font-family: var(--primary-font);
-  }
-  
-  ul {
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none;
-    font-family: var(--primary-font);
-  }
-  
-  button {
-    border: none;
-    outline: none;
-    font-family: var(--primary-font);
-  }
-  
-  input {
-    outline: none;
-    font-family: var(--primary-font);
-  }
-  
-  label {
-    font-family: var(--primary-font);
-  }
-  
-  /* ====================
+
+:root {
+  --primary-color: #d15e14;
+  --secondary-color: #137ac9;
+  --text-color: #000000;
+  --gray-text: rgba(0, 0, 0, 0.6);
+  --stroke-color: #cdcfd3;
+  --red: #ff4a4a;
+  --white: #ffffff;
+  --shadow-lg: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 0 30px 0 rgba(0, 0, 0, 0.12);
+  --primary-font: "SF Pro Display";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+p {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+span {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none !important;
+  font-family: var(--primary-font);
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  font-family: var(--primary-font);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+input {
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+label {
+  font-family: var(--primary-font);
+}
+
+/* ====================
   Reset Default CSS End
   ==================== */
 
+/* Sign In Email Start */
 
-  /* Sign In Email Start */
+#sign_in_email {
+  width: 100%;
+  background: #f5f5f5;
+}
 
-  #sign_in{
-    position: relative;
-    width: 100%;
-    background: #F5F5F5;
-  }
+#sign_in_email .sign_in_wrapper {
+  min-height: 100vh;
+  padding: 100px 0;
+}
 
-  #sign_in .sign_in_wrapper{
-    min-height: 100vh;
-    padding: 100px 0;
-  }
+#sign_in_email .sign_in_wrapper .sign_in_contant {
+  max-width: 800px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 12px;
+}
 
-  #sign_in .sign_in_wrapper .sign_in{
-    max-width: 800px;
-    margin: auto;
-    background: var(--white);
-    border-radius: 12px;
-    padding: 50px 0;
-  }
+#sign_in_email .sign_in_contant .header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-  #sign_in .sign_in .header{
-    text-align: center;
-  }
+#sign_in_email .sign_in_contant .header h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
 
-  #sign_in .sign_in .header h1{
-    font-size: 26px;
-    font-weight:600;
-  }
-  #sign_in .sign_in form{
-    max-width: 450px;
-    margin: auto;
-    
-  }
-  #sign_in .sign_in input{
-    width: 100%;
-    font-size: 16px;
-    color: var(--gray-text);
-    border-radius: 6px;
-    border: 1px solid var(--stroke-color);
-    padding: 10px 0px 10px 20px;margin-top: 6px;
-  }
-  #sign_in .sign_in form .Passcode_btn{
-    width: 100% !important;
-    font-size: 16px;
-    font-family: var(--primary-font);
-    padding: 10px 0px 10px 0px;
-    margin-top: 20px;
-    background: var(--primary-color);
-    color: var(--white);
-    border-radius: 6px;
-  }
-  #sign_in .sign_in form .numbar_btn{
-    width: 100% !important;
-    font-size: 16px;
-    font-family: var(--primary-font);
-    padding: 10px 0px 10px 0px;
-    margin-top: 20px;
-    color: var(--primary-color);
-    font-weight: 600;
-    border: 1px solid #D15E14;
-    background: transparent;
-    border-radius: 6px;
-  }
- 
-  
+#sign_in_email .sign_in_contant form {
+  max-width: 450px;
+  margin: auto;
+}
 
+#sign_in_email .sign_in_contant label {
+  font-weight: 600;
+}
 
-  /* Sign In Email End */
+#sign_in_email .sign_in_contant input {
+  width: 100%;
+  font-size: 16px;
+  color: var(--gray-text);
+  border-radius: 6px;
+  border: 1px solid var(--stroke-color);
+  padding: 10px 0px 10px 20px;
+  margin-top: 6px;
+}
+
+#sign_in_email .sign_in_contant form .Passcode_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 6px;
+}
+
+#sign_in_email .sign_in_contant form .numbar_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
+  border: 1px solid #d15e14;
+  background: transparent;
+  border-radius: 6px;
+}
+
+/* Sign In Email End */
+
+/* Sign In Phone Start */
+
+#sign_in_phone {
+  width: 100%;
+  background: #f5f5f5;
+}
+
+#sign_in_phone .sign_in_wrapper {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+#sign_in_phone .sign_in_wrapper .sign_in_contant {
+  max-width: 800px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 12px;
+}
+
+#sign_in_phone .sign_in_contant .header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#sign_in_phone .sign_in_contant .header h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#sign_in_phone .sign_in_contant form {
+  max-width: 450px;
+  margin: auto;
+}
+
+#sign_in_phone .sign_in_contant label {
+  font-weight: 600;
+}
+
+#sign_in_phone .sign_in_contant input {
+  width: 100%;
+  font-size: 16px;
+  color: var(--gray-text);
+  border-radius: 6px;
+  border: 1px solid var(--stroke-color);
+  padding: 10px 0px 10px 20px;
+  margin-top: 6px;
+}
+
+#sign_in_phone input[type="number"]::-webkit-outer-spin-button,
+#sign_in_phone input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#sign_in_phone .sign_in_contant form .Passcode_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 6px;
+}
+
+#sign_in_phone .sign_in_contant form .numbar_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
+  border: 1px solid #d15e14;
+  background: transparent;
+  border-radius: 6px;
+}
+
+/* Sign In Phone End */
+
+/* Sign Up Start */
+
+#sign_up {
+  width: 100%;
+  background: #f5f5f5;
+}
+
+#sign_up .sign_up_wrapper {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+#sign_up .sign_up_wrapper .sign_up_contant {
+  max-width: 800px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 12px;
+}
+
+#sign_up .sign_up_contant .header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#sign_up .sign_up_contant .header h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#sign_up .sign_up_contant form {
+  max-width: 460px;
+  margin: auto;
+}
+
+#sign_up .sign_up_contant label {
+  font-weight: 600;
+}
+
+#sign_up .sign_up_contant input {
+  width: 100%;
+  font-size: 16px;
+  color: var(--gray-text);
+  border-radius: 6px;
+  border: 1px solid var(--stroke-color);
+  padding: 10px 0px 10px 20px;
+  margin-top: 6px;
+}
+
+#sign_up input[type="number"]::-webkit-outer-spin-button,
+#sign_up input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#sign_up .sign_up_contant form .sign_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  border-radius: 6px;
+  margin-bottom: 25px;
+  transition: 0.5s;
+}
+
+#sign_up .sign_up_contant form .sign_btn:hover {
+  background: var(--primary-color);
+}
+
+#sign_up .sign_up_contant form .check {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+#sign_up .sign_up_contant form p {
+  margin: 0px;
+  color: var(--gray-text);
+}
+
+#sign_up .sign_up_contant form .checkbox {
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0px 10px 0px 0px;
+}
+
+/* Sign Up End */
+
+/* Verification Code Start */
+
+#verification {
+  width: 100%;
+  background: #f5f5f5;
+}
+
+#verification .verification_wrapper {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+#verification .verification_wrapper .verification_contant {
+  max-width: 800px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 12px;
+}
+
+#verification .verification_contant .header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#verification .verification_contant .header h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#verification .verification_contant .header h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+#verification .verification_contant .header span {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+#verification .verification_contant form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#verification .verification_contant input {
+  max-width: 68px;
+  height: 68px;
+  font-size: 28px;
+  padding: 10px;
+  color: var(--text-color);
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid var(--stroke-color);
+  text-align: center;
+}
+
+#verification input[type="number"]::-webkit-outer-spin-button,
+#verification input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#verification .verification_contant .button_item {
+  max-width: 450px;
+  margin: auto;
+}
+
+#verification .verification_contant .Passcode_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+#verification .verification_contant .Passcode_btn:hover {
+  background: var(--primary-color);
+}
+
+@media screen and (max-width: 575px) {
+  #verification .verification_contant input {
+    max-width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #verification .verification_contant input {
+    max-width: 45px;
+    height: 45px;
+  }
+}
+
+/* Verification Code End */
+
+/* OTP (Wrong) Start */
+
+#otp_wrong {
+  width: 100%;
+  background: #f5f5f5;
+}
+
+#otp_wrong .verification_wrapper {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+#otp_wrong .verification_wrapper .verification_contant {
+  max-width: 800px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 12px;
+}
+
+#otp_wrong .verification_contant .header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#otp_wrong .verification_contant .header h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#otp_wrong .verification_contant .header h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+#otp_wrong .verification_contant .header span {
+  color: var(--red);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+#otp_wrong .verification_contant form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#otp_wrong .verification_contant input {
+  max-width: 68px;
+  height: 68px;
+  font-size: 28px;
+  padding: 10px;
+  color: var(--text-color);
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid var(--red);
+  text-align: center;
+}
+
+#otp_wrong input[type="number"]::-webkit-outer-spin-button,
+#otp_wrong input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#otp_wrong .verification_contant .button_item {
+  max-width: 450px;
+  margin: auto;
+}
+
+#otp_wrong .verification_contant .button_item h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  font-size: 16px;
+  color: var(--red);
+}
+
+#otp_wrong .verification_contant .button_item svg {
+  margin-right: 8px !important;
+}
+
+#otp_wrong .verification_contant .Passcode_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+#otp_wrong .verification_contant .Passcode_btn:hover {
+  background: var(--primary-color);
+}
+
+@media screen and (max-width: 575px) {
+  #otp_wrong .verification_contant input {
+    max-width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #otp_wrong .verification_contant input {
+    max-width: 45px;
+    height: 45px;
+  }
+}
+
+/* OTP (Wrong) End */
+
+/* Verified Start */
+#verified {
+  width: 100%;
+  background: #f5f5f5;
+}
+
+#verified .verified_wrapper {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+#verified .verified_wrapper .verified_contant {
+  max-width: 800px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 12px;
+}
+
+#verified .verified_contant .header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#verified .verified_contant .header h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+#verified .verified_contant .header p {
+  margin: 0px;
+}
+
+#verified .verified_contant .verified_item {
+  display: flex;
+  justify-content: center;
+}
+
+#verified .verified_contant .button_item {
+  max-width: 450px;
+  margin: auto;
+}
+
+#verified .verified_contant .Passcode_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+#verified .verified_contant .Passcode_btn:hover {
+  background: var(--primary-color);
+}
+
+/* Verified End */
