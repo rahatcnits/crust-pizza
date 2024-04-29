@@ -157,4 +157,21 @@ Reset Default CSS End
   stroke: var(--text-color);
 }
 
+@media screen and (max-width: 990px) {
+  .nav_items ul li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .user_btn svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .user_btn span {
+    display: none;
+  }
+}
+
 /* Navbar End */

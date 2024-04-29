@@ -41,3 +41,17 @@ const dragStop = () => {
 tabsBox.addEventListener("mousedown", () => (isDragging = true));
 tabsBox.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
+
+/// product size
+// add fund card
+function checkChange(clickedCheckbox) {
+  const checkboxes = document.querySelectorAll('input[name="plan"]');
+
+  if (clickedCheckbox.checked) {
+    checkboxes.forEach((checkbox) => {
+      if (checkbox !== clickedCheckbox) {
+        checkbox.checked = false;
+      }
+    });
+  }
+}
