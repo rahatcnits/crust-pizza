@@ -149,6 +149,12 @@ label {
   border: 1px solid #d15e14;
   background: transparent;
   border-radius: 6px;
+  transition: 0.5s;
+}
+
+#sign_in_email .sign_in_contant form .numbar_btn:hover {
+  background: var(--primary-color);
+  color: var(--white);
 }
 
 /* Sign In Email End */
@@ -230,6 +236,12 @@ label {
   border: 1px solid #d15e14;
   background: transparent;
   border-radius: 6px;
+  transition: 0.5s;
+}
+
+#sign_in_phone .sign_in_contant form .numbar_btn:hover {
+  background: var(--primary-color);
+  color: var(--white);
 }
 
 /* Sign In Phone End */
@@ -281,6 +293,21 @@ label {
   border: 1px solid var(--stroke-color);
   padding: 10px 0px 10px 20px;
   margin-top: 6px;
+}
+#sign_up .sign_up_contant .password {
+  border: 1px solid var(--stroke-color);
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+#sign_up .sign_up_contant .password i {
+  margin-right: 12px;
+  cursor: pointer;
+  color: var(--gray-text);
+}
+#sign_up .sign_up_contant .password input {
+  border: none !important;
+  margin: 0px;
 }
 
 #sign_up input[type="number"]::-webkit-outer-spin-button,
@@ -603,3 +630,434 @@ label {
 }
 
 /* Verified End */
+
+/* Home1 Start */
+#home1 .google_map {
+  position: relative;
+}
+
+#home1 .google_map iframe {
+  width: 100%;
+  height: 100vh !important;
+  border: none !important;
+  margin: 0px !important;
+}
+
+#home1 .google_map .search_bar {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  background: white;
+  padding: 30px;
+}
+#home1 .google_map .search_bar .search input {
+  width: 100%;
+  border: none;
+  font-size: 16px !important;
+  color: var(--gray-text);
+}
+
+#home1 .google_map .search_bar .search {
+  border: 1px solid var(--stroke-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#home1 .google_map .search_bar .search i {
+  margin-left: 20px;
+  color: var(--gray-text);
+}
+
+#home1 .google_map .search_bar .search button {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 8px 40px;
+  color: var(--white);
+  font-weight: 400;
+  background: var(--primary-color);
+}
+
+#home1 .google_map .locations .heading h1 {
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#home1 .google_map .locations {
+  padding: 20px 0px 5px 0px;
+}
+
+#home1 .google_map .locations .location_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#home1 .google_map .locations .place_img {
+  width: 80px;
+}
+
+#home1 .google_map .locations .place_img img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#home1 .google_map .locations .text {
+  width: calc(100% - 160px);
+}
+
+#home1 .google_map .locations .text p {
+  font-size: 14px;
+  background-position: center;
+  margin: 0px;
+  color: var(--gray-text);
+}
+
+#home1 .google_map .locations .button {
+  width: 80px;
+}
+
+#home1 .google_map .locations .button .delivery_btn {
+  width: 100%;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 14px;
+  padding: 4px 0;
+  transition: 0.5s;
+}
+
+#home1 .google_map .locations .button .delivery_btn:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+#home1 .google_map .locations .button .pickup_btn {
+  width: 100%;
+  border-radius: 30px;
+  background: var(--primary-color);
+  color: var(--white);
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: 0.5s;
+}
+
+#home1 .google_map span {
+  font-size: 12px;
+  color: var(--gray-text);
+}
+
+#home1 .google_map .search_bar .all_location {
+  text-align: center;
+  margin-top: 20px;
+}
+#home1 .google_map .search_bar a {
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+@media screen and (max-width: 575px) {
+  #home1 .google_map .search_bar {
+    width: calc(100% - 40px);
+    margin: auto;
+    padding: 30px;
+  }
+
+  #home1 .google_map .search_bar .search button {
+    font-size: 14px;
+    align-items: center;
+    padding: 6px 20px;
+  }
+
+  #home1 .google_map .search_bar .search input {
+    width: 100%;
+    border: none;
+    font-size: 12px !important;
+  }
+
+  #home1 .google_map .locations .place_img {
+    width: 55px;
+  }
+
+  #home1 .google_map .locations .text p {
+    font-size: 11px;
+  }
+
+  #home1 .google_map .locations .text {
+    width: calc(100% - 110px);
+  }
+
+  #home1 .google_map .locations .button {
+    width: 55px;
+  }
+
+  #home1 .google_map .locations .button .pickup_btn {
+    margin-top: 8px;
+    font-size: 12px;
+    padding: 4px 0;
+  }
+  #home1 .google_map .locations .button .delivery_btn {
+    font-size: 12px;
+    padding: 4px 0;
+  }
+
+  #home1 .google_map .locations .location_item {
+    gap: 4px;
+  }
+}
+
+/* Home1 End */
+
+
+
+/* Home2 Start */
+#home2 .google_map {
+  position: relative;
+}
+
+#home2 .google_map iframe {
+  width: 100%;
+  height: 100vh !important;
+  border: none !important;
+  margin: 0px !important;
+}
+
+#home2 .google_map .search_bar {
+  width: 400px;
+  position: absolute;
+  top: 112px;
+  left: 10px;
+  border-radius: 6px;
+  background: white;
+}
+#home2 .google_map .search_bar_item {
+  width: 100%;
+  padding: 30px 30px 10px 30px;
+}
+#home2 .google_map .search_bar .search input {
+  width: 100%;
+  border: none;
+  font-size: 16px !important;
+  color: var(--gray-text);
+}
+
+#home2 .google_map .search_bar .search {
+  border: 1px solid var(--stroke-color);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#home2 .google_map .search_bar .search i {
+  margin-left: 20px;
+  color: var(--gray-text);
+}
+
+#home2 .google_map .search_bar .search button {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 8px 40px;
+  color: var(--white);
+  font-weight: 400;
+  background: var(--primary-color);
+}
+
+#home2 .google_map .locations .heading h1 {
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#home2 .google_map .locations {
+  padding: 20px 0px 5px 0px;
+}
+
+#home2 .google_map .locations .location_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#home2 .google_map .locations .place_img {
+  width: 80px;
+}
+
+#home2 .google_map .locations .place_img img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#home2 .google_map .locations .text {
+  width: calc(100% - 160px);
+}
+
+#home2 .google_map .locations .text p {
+  font-size: 14px;
+  background-position: center;
+  margin: 0px;
+  color: var(--gray-text);
+}
+
+#home2 .google_map .locations .button {
+  width: 80px;
+}
+
+#home2 .google_map .locations .button .delivery_btn {
+  width: 100%;
+  border-radius: 30px;
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 14px;
+  padding: 4px 0;
+  transition: 0.5s;
+}
+
+#home2 .google_map .locations .button .delivery_btn:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+#home2 .google_map .locations .button .pickup_btn {
+  width: 100%;
+  border-radius: 30px;
+  background: var(--primary-color);
+  color: var(--white);
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 4px 0;
+  transition: 0.5s;
+}
+
+#home2 .google_map span {
+  font-size: 12px;
+  color: var(--gray-text);
+}
+
+.accordion_wrapper .accordion-content{
+ background: transparent;
+  border-top: 1px solid var(--stroke-color);
+  overflow: hidden;
+}
+.accordion-content.open{
+  padding-bottom: 10px;
+}
+.accordion-content header{
+  display: flex;
+  min-height: 60px;
+  padding: 0 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+}
+.accordion-content.open header{
+  height: 70px;
+}
+
+.accordion-content header i {
+  transition: 0.5s;
+}
+
+.accordion-content.open header i {
+  transform: rotate(180deg);
+}
+
+.accordion-content.open header i,
+.accordion-content.open header span{
+  color: var(--primary-color) !important;
+}
+.accordion-content header .title{
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #333;
+}
+.accordion-content header i{
+  font-size: 15px;
+  color: #333;
+}
+.accordion-content .description{
+  height: 0;
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  padding: 0 30px;
+  transition: all 0.2s linear;
+}
+.accordion-content .description .locations{
+  padding: 0px 0px 15px 0px !important;
+}
+.accordion-content .description .locations span{
+  display: inline-block;
+  margin-top: 10px !important;
+}
+
+@media screen and (max-width: 575px) {
+  #home2 .google_map .search_bar {
+    width: calc(100% - 40px);
+    margin: auto;
+  }
+
+  #home2 .google_map .search_bar .search button {
+    font-size: 14px;
+    align-items: center;
+    padding: 6px 20px;
+  }
+
+  #home2 .google_map .search_bar .search input {
+    width: 100%;
+    border: none;
+    font-size: 12px !important;
+  }
+
+  #home2 .google_map .locations .place_img {
+    width: 55px;
+  }
+
+  #home2 .google_map .locations .text p {
+    font-size: 11px;
+  }
+
+  #home2 .google_map .locations .text {
+    width: calc(100% - 110px);
+  }
+
+  #home2 .google_map .locations .button {
+    width: 55px;
+  }
+
+  #home2 .google_map .locations .button .pickup_btn {
+    margin-top: 8px;
+    font-size: 12px;
+    padding: 4px 0;
+  }
+  #home2 .google_map .locations .button .delivery_btn {
+    font-size: 12px;
+    padding: 4px 0;
+  }
+
+  #home2 .google_map .locations .location_item {
+    gap: 4px;
+  }
+}
+
+/* Home2 End */

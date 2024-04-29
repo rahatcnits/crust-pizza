@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crust Pizza</title>
+
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/user.css" />
+
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome Link -->
+    <script src="./assets/js/fontawesome.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav_wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/img/logo.svg" alt="" />
+          </a>
+
+          <div class="nav_items">
+            <ul>
+              <li>
+                Pickup <a href="#">ASAP (20-25 minutes)</a> from
+                <a href="#">3479 Nelson Road</a>
+              </li>
+            </ul>
+            <button class="cart_btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 6H21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>0</span>
+            </button>
+
+            <button class="user_btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                  stroke="black"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <span>Sign In/Join</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home1 Start -->
+    <section id="home1">
+      <div class="google_map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233302.01088771643!2d89.11372840922928!3d23.983629534613428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe84f8fd9ccc71%3A0xbad939f3f5ee0c50!2sPabna%20Sadar%20Upazila!5e0!3m2!1sen!2sbd!4v1714369827597!5m2!1sen!2sbd"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <div class="search_bar">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="text" placeholder="Enter your zip code" />
+            <button class="search-btn">Search</button>
+          </div>
+
+          <div class="locations">
+            <div class="heading"><h1>Crust pizza co. lake charles</h1></div>
+            <div class="location_item">
+              <div class="place_img d-flex">
+                <img src="./assets/img/home1-location-img.svg" alt="" />
+              </div>
+
+              <div class="text">
+                <p>
+                  Grand Morton Town Center <br />
+                  2812 Grand Parkway, Suite <br />
+                  100, TX 77449 <br />
+                  (346) 527-0114
+                </p>
+              </div>
+
+              <div class="button">
+                <button class="delivery_btn">Delivery</button>
+                <button class="pickup_btn">Pickup</button>
+              </div>
+            </div>
+            <span>1.7 miles away</span>
+          </div>
+          <div class="all_location">
+            <a href="#">View All Locations</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home1 End -->
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
