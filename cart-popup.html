@@ -635,9 +635,35 @@
             </label>
           </div>
         </div>
+
+        <div class="product_cart">
+          <div class="product_qty">
+            <span class="product_qty_head">Qty:</span>
+            <div class="product_qty_counter">
+              <span class="product_qty_decrement" onclick="decrement()"
+                ><i class="fa-solid fa-minus"></i
+              ></span>
+              <span class="product_qty_value" id="counter">1</span>
+              <span class="product_qty_increment" onclick="increment()"
+                ><i class="fa-solid fa-plus"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="product_cart_btn"">
+            <button class="product_add_btn">
+              <span>Add to Bag</span>
+              <span>$10.00</span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
     <!-- Cart Popup End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 
     <!-- Products Start -->
     <section id="products">

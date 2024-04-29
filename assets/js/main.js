@@ -91,3 +91,22 @@ function checkChange4(clickedCheckbox) {
     });
   }
 }
+
+// counter
+let counterValue = 1;
+
+function increment() {
+  counterValue++;
+  updateCounter();
+}
+
+function decrement() {
+  if (counterValue > 1) {
+    counterValue--;
+    updateCounter();
+  }
+}
+
+function updateCounter() {
+  document.getElementById("counter").innerText = counterValue;
+}
