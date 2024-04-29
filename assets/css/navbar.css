@@ -147,6 +147,10 @@ Reset Default CSS End
   color: var(--text-color);
 }
 
+.user_btn:hover {
+  color: var(--text-color);
+}
+
 .user_btn svg {
   width: 20px;
   height: 20px;

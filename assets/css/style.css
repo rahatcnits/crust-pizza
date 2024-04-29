@@ -385,6 +385,14 @@
 
 /* Product Size */
 
+.product_modal_title {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--text-color);
+  margin: 40px 0 20px;
+}
+
 .product_size_cards {
   display: grid;
   grid-gap: 15px;
@@ -480,9 +488,9 @@
   cursor: default;
 }
 
-.radio:disabled ~ .product_size_details .plan-type {
-  color: var(--secondary-color);
-}
+/* .radio:disabled ~ .product_size_details .product_size_name {
+  background: var(--secondary-color) !important;
+} */
 
 .product_size_card:hover .radio:disabled ~ .product_size_details {
   box-shadow: none;
@@ -532,10 +540,6 @@
   font-size: 20px;
   font-weight: 400;
   color: var(--gray-text);
-}
-
-.radio:checked + .product_size_name {
-  background: red;
 }
 
 @media screen and (max-width: 575px) {

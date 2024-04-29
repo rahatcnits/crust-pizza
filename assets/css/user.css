@@ -128,6 +128,8 @@ label {
 }
 
 #sign_in_email .sign_in_contant form .Passcode_btn {
+  display: inline-block;
+  text-align: center;
   width: 100% !important;
   font-size: 16px;
   font-family: var(--primary-font);
@@ -139,6 +141,8 @@ label {
 }
 
 #sign_in_email .sign_in_contant form .numbar_btn {
+  display: inline-block;
+  text-align: center;
   width: 100% !important;
   font-size: 16px;
   font-family: var(--primary-font);
