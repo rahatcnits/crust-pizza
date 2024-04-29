@@ -5,8 +5,8 @@
 }
 
 /* ====================
-Reset Default CSS Start
-==================== */
+  Reset Default CSS Start
+  ==================== */
 
 :root {
   --primary-color: #d15e14;
@@ -21,106 +21,62 @@ Reset Default CSS Start
   --primary-font: "SF Pro Display";
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--primary-font);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--primary-font);
-  margin-top: 0;
-}
-
-p {
-  font-family: var(--primary-font);
-  margin-top: 0;
-}
-
-span {
-  font-family: var(--primary-font);
-}
-
-a {
-  text-decoration: none !important;
-  font-family: var(--primary-font);
-}
-
-ul {
-  margin: 0 !important;
-  padding: 0 !important;
-  list-style: none;
-  font-family: var(--primary-font);
-}
-
-button {
-  border: none;
-  outline: none;
-  font-family: var(--primary-font);
-}
-
-input {
-  outline: none;
-  font-family: var(--primary-font);
-}
-
-label {
-  font-family: var(--primary-font);
-}
-
 /* ====================
-Reset Default CSS End
-==================== */
+  Reset Default CSS End
+  ==================== */
 
-/* Navbar Start */
+/* Hero Start */
 
-#navbar {
-  background: var(--white);
-  padding: 20px 0;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+#hero {
+  width: 100%;
+  background: url(../img/hero_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.nav_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.hero_content {
+  padding: 60px 0;
 }
 
-.logo img {
-  width: 100px;
-}
-
-.nav_items {
-  display: flex;
-  align-items: center;
-  column-gap: 20px;
-}
-
-.nav_items ul li {
-  color: var(--text-color);
-  font-weight: 600;
-}
-
-.nav_items ul li a {
-  color: var(--text-color);
-  font-weight: 500;
-  border-bottom: 2px solid var(--text-color);
-}
-
-.cart_btn {
-  display: flex;
-  align-items: center;
-  background: var(--primary-color);
-  font-size: 1em;
-  font-weight: 500 !important;
+.hero_content h1 {
   color: var(--white);
-  padding: 4px 12px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.hero_content p {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400 !important;
+  margin-bottom: 0;
+}
+
+.hero_content p b {
+  font-weight: 600 !important;
+}
+
+/* Hero End */
+
+/* Products Tab Start */
+
+#product_tab {
+  background: rgba(204, 204, 204, 0.25);
+}
+
+.product_wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.search_box {
+  width: 20%;
+  border: 1px solid var(--stroke-color);
+  height: 45px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -128,33 +84,101 @@ Reset Default CSS End
   -o-border-radius: 30px;
 }
 
-.cart_btn svg {
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
+.search_box svg {
+  width: 24px;
+  height: 24px;
 }
 
-.cart_btn svg path {
-  stroke: var(--white);
+.search_box svg path {
+  stroke: rgba(0, 0, 0, 0.4);
 }
 
-.user_btn {
+.search_box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-left: 8px;
+}
+
+.product_tab_items {
+  position: relative;
+  overflow-x: hidden;
+  width: 80%;
+}
+
+.product_tab_items .icon {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 60px;
   display: flex;
   align-items: center;
-  background: transparent;
-  font-size: 1em;
-  font-weight: 500 !important;
-  color: var(--text-color);
 }
 
-.user_btn svg {
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
+.icon:first-child {
+  left: 0;
+  display: none;
+  background: linear-gradient(90deg, #f3f3f3 70%, transparent);
 }
 
-.user_btn svg path {
-  stroke: var(--text-color);
+.icon:last-child {
+  right: 0;
+  justify-content: flex-end;
+  background: linear-gradient(-90deg, #f3f3f3 70%, transparent);
 }
 
-/* Navbar End */
+.icon i {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+}
+
+.product_tab_items .tabs-box {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.tabs-box.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+
+.tabs-box .tab a {
+  cursor: pointer;
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.1em;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 16px 0px;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+
+.tabs-box .tab:hover {
+  color: var(--primary-color);
+}
+
+.tabs-box.dragging .tab {
+  user-select: none;
+  pointer-events: none;
+}
+
+.tabs-box .tab.active {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+/* Products Tab End */
