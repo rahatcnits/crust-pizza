@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crust Pizza - Ordering Web App</title>
+    <title>Crust Pizza - Cart_Popup</title>
 
     <!-- Favicon Link -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -67,7 +67,7 @@
               <span>0</span>
             </button>
 
-            <a href="./sign-in-email.html" class="user_btn">
+            <button class="user_btn">
               <svg
                 width="24"
                 height="24"
@@ -92,7 +92,7 @@
               </svg>
 
               <span>Sign In/Join</span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -126,7 +126,7 @@
             </div>
             <ul class="tabs-box">
               <li class="tab active"><a href="#">Pizza</a></li>
-              <li class="tab"><a href="./cart-popup.html"> Salads </a></li>
+              <li class="tab"><a href="#"> Salads </a></li>
               <li class="tab"><a href="#">Sauces</a></li>
               <li class="tab"><a href="#">Pastas</a></li>
               <li class="tab"><a href="#">Zucchini Bowls</a></li>
@@ -173,6 +173,105 @@
       </div>
     </section>
     <!-- Products Tab End -->
+
+    <!-- Cart Popup Start -->
+    <section class="cart_modal">
+      <div class="modal_wrapper">
+        <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
+        <div class="product_details">
+          <div class="product_modal_img">
+            <img src="./assets/img/product_img_2.png" alt="" />
+          </div>
+          <div class="product_modal_desc">
+            <h1>10” The Carl's King</h1>
+            <p>
+              Mozzarella, Parmesan, Pecorino Romano, Cheddar and Smoked
+              Mozzarella
+            </p>
+            <h2 class="product_modal_price">$10.00</h2>
+          </div>
+        </div>
+
+        <div class="product_size">
+          <h1 class="product_modal_title">Select Your Size</h1>
+
+          <div class="product_size_cards">
+            <label class="product_size_card">
+              <input
+                type="checkbox"
+                name="plan"
+                class="radio"
+                onchange="checkChange(this)"
+              />
+              <span class="product_size_details">
+                <div class="product_size_name">
+                  <h2>S</h2>
+                </div>
+                <div class="product_size_info">
+                  <h2>10 inch</h2>
+                  <div class="product_size_price">$12.00</div>
+                </div>
+              </span>
+            </label>
+
+            <label class="product_size_card">
+              <input
+                type="checkbox"
+                name="plan"
+                class="radio"
+                onchange="checkChange(this)"
+              />
+              <span class="product_size_details">
+                <div class="product_size_name">
+                  <h2>M</h2>
+                </div>
+                <div class="product_size_info">
+                  <h2>10 inch</h2>
+                  <div class="product_size_price">$12.00</div>
+                </div>
+              </span>
+            </label>
+
+            <label class="product_size_card">
+              <input
+                type="checkbox"
+                name="plan"
+                class="radio"
+                onchange="checkChange(this)"
+              />
+              <span class="product_size_details">
+                <div class="product_size_name">
+                  <h2>L</h2>
+                </div>
+                <div class="product_size_info">
+                  <h2>10 inch</h2>
+                  <div class="product_size_price">$12.00</div>
+                </div>
+              </span>
+            </label>
+
+            <label class="product_size_card">
+              <input
+                type="checkbox"
+                name="plan"
+                class="radio"
+                onchange="checkChange(this)"
+              />
+              <span class="product_size_details">
+                <div class="product_size_name">
+                  <h2>XL</h2>
+                </div>
+                <div class="product_size_info">
+                  <h2>10 inch</h2>
+                  <div class="product_size_price">$12.00</div>
+                </div>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cart Popup End -->
 
     <!-- Products Start -->
     <section id="products">
