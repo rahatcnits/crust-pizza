@@ -44,8 +44,44 @@ document.addEventListener("mouseup", dragStop);
 
 /// product size
 // add fund card
-function checkChange(clickedCheckbox) {
+function checkChange1(clickedCheckbox) {
   const checkboxes = document.querySelectorAll('input[name="plan"]');
+
+  if (clickedCheckbox.checked) {
+    checkboxes.forEach((checkbox) => {
+      if (checkbox !== clickedCheckbox) {
+        checkbox.checked = false;
+      }
+    });
+  }
+}
+
+function checkChange2(clickedCheckbox) {
+  const checkboxes = document.querySelectorAll('input[name="productGet"]');
+
+  if (clickedCheckbox.checked) {
+    checkboxes.forEach((checkbox) => {
+      if (checkbox !== clickedCheckbox) {
+        checkbox.checked = false;
+      }
+    });
+  }
+}
+
+function checkChange3(clickedCheckbox) {
+  const checkboxes = document.querySelectorAll('input[name="productCrust"]');
+
+  if (clickedCheckbox.checked) {
+    checkboxes.forEach((checkbox) => {
+      if (checkbox !== clickedCheckbox) {
+        checkbox.checked = false;
+      }
+    });
+  }
+}
+
+function checkChange4(clickedCheckbox) {
+  const checkboxes = document.querySelectorAll('input[name="crust"]');
 
   if (clickedCheckbox.checked) {
     checkboxes.forEach((checkbox) => {
