@@ -178,7 +178,7 @@
     <section class="cart_modal">
       <div class="modal_wrapper">
         <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
-        
+
         <div class="modal_title">
           <h1>My Bag</h1>
         </div>
@@ -188,57 +188,151 @@
 
           <div class="modal_order_list">
             <div class="order_list_item">
-              <div class="order_list_item_img">
-                <img src="./assets/img/order-list-img.png" alt="">
-              </div>
-
               <div class="order_list_item_details">
-                <div class="order_list_item_info">
-                  <h2>The Meatballer</h2>
-                  <p>Easy Marinara Sauce</p>
-                  <p>Extra Cheese Bread</p>
-                  <p>No Fresh Basil</p>
-
-                  <div class="order_list_btn">
-                    <button type="button" class="order_edit_btn">Edit</button>
-                    <button type="button" class="order_remove_btn">Remove</button>
+                <div class="order_details_wrapper">
+                  <div class="order_list_item_img">
+                    <img src="./assets/img/order-list-img.png" alt="" />
+                  </div>
+                  <div class="order_list_item_info">
+                    <h2>The Meatballer</h2>
+                    <p>Easy Marinara Sauce</p>
+                    <p>Extra Cheese Bread</p>
+                    <p>No Fresh Basil</p>
                   </div>
                 </div>
-                <div class="order_list_item_price">
-                  <h1>$8.00</h1>
+
+                <div class="order_list_btn">
+                  <button type="button" class="order_edit_btn">Edit</button>
+                  <button type="button" class="order_remove_btn">Remove</button>
                 </div>
+              </div>
+
+              <div class="order_list_item_price">
+                <h1>$8.00</h1>
               </div>
             </div>
 
             <div class="modal_order_counter">
-              <div class="modal_order_decrement"><i class="fa-solid fa-minus"></i
-                ></div>
+              <div class="modal_order_decrement">
+                <i class="fa-solid fa-minus"></i>
+              </div>
               <div class="modal_order_counter_val">1</div>
-                <div class="modal_order_increment"><i class="fa-solid fa-plus"></i
-                  ></div>
+              <div class="modal_order_increment">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal_essentials_pack">
+          <h1 class="modal_order_list_title">To-Go Essentials</h1>
+
+          <div class="essentials_pack_list">
+            <div class="essentials_pack_item">
+              <div class="essentials_pack_wrapper">
+                <div class="essentials_pack_img">
+                  <img src="./assets/img/essentials_pack_img_1.png" alt="" />
+                </div>
+
+                <div class="essentials_pack_info">
+                  <h2>Silverware Packet</h2>
+                  <p>
+                    Each comes with a knife, fork, spoon, napkin, salt & pepper
+                    packet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="essentials_pack_qty">
+                <span class="essentials_pack_head">Qty:</span>
+                <div class="essentials_pack_counter">
+                  <span class="essentials_pack_decrement" onclick="decrement()"
+                    ><i class="fa-solid fa-minus"></i
+                  ></span>
+                  <span class="essentials_pack_value" id="counter">1</span>
+                  <span class="essentials_pack_increment" onclick="increment()"
+                    ><i class="fa-solid fa-plus"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="essentials_pack_item">
+              <div class="essentials_pack_wrapper">
+                <div class="essentials_pack_img">
+                  <img src="./assets/img/essentials_pack_img_2.png" alt="" />
+                </div>
+
+                <div class="essentials_pack_info">
+                  <h2>Parmesan Packet</h2>
+                  <p>
+                    Each comes with a knife, fork, spoon, napkin, salt & pepper
+                    packet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="essentials_pack_qty">
+                <span class="essentials_pack_head">Qty:</span>
+                <div class="essentials_pack_counter">
+                  <span class="essentials_pack_decrement" onclick="decrement()"
+                    ><i class="fa-solid fa-minus"></i
+                  ></span>
+                  <span class="essentials_pack_value" id="counter">1</span>
+                  <span class="essentials_pack_increment" onclick="increment()"
+                    ><i class="fa-solid fa-plus"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="essentials_pack_item">
+              <div class="essentials_pack_wrapper">
+                <div class="essentials_pack_img">
+                  <img src="./assets/img/essentials_pack_img_3.png" alt="" />
+                </div>
+
+                <div class="essentials_pack_info">
+                  <h2>Red Pepper Flakes Packet</h2>
+                  <p>
+                    Each comes with a knife, fork, spoon, napkin, salt & pepper
+                    packet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="essentials_pack_qty">
+                <span class="essentials_pack_head">Qty:</span>
+                <div class="essentials_pack_counter">
+                  <span class="essentials_pack_decrement" onclick="decrement()"
+                    ><i class="fa-solid fa-minus"></i
+                  ></span>
+                  <span class="essentials_pack_value" id="counter">1</span>
+                  <span class="essentials_pack_increment" onclick="increment()"
+                    ><i class="fa-solid fa-plus"></i
+                  ></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="product_cart">
-          <div class="product_qty">
-            <span class="product_qty_head">Qty:</span>
-            <div class="product_qty_counter">
-              <span class="product_qty_decrement" onclick="decrement()"
-                ><i class="fa-solid fa-minus"></i
-              ></span>
-              <span class="product_qty_value" id="counter">1</span>
-              <span class="product_qty_increment" onclick="increment()"
-                ><i class="fa-solid fa-plus"></i
-              ></span>
+          <div class="bag_modal_total_price">
+            <div class="bag_price_item">
+              <span class="bag_price_title">Subtotal</span>
+              <span class="bag_price">$8.00</span>
             </div>
-          </div>
 
-          <div class="product_cart_btn"">
-            <button class="product_add_btn">
-              <span>Add to Bag</span>
-              <span>$10.00</span>
-            </button>
+            <div class="bag_price_item">
+              <span class="bag_price_title">Tax</span>
+              <span class="bag_price">$1.02</span>
+            </div>
+
+            <div class="bag_checkout_btn">
+              <button type="button">Add More Items</button>
+              <button type="button">Checkout Now</button>
+            </div>
           </div>
         </div>
       </div>
@@ -246,8 +340,6 @@
     <!-- Cart Popup End -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
 
     <!-- Products Start -->
     <section id="products">

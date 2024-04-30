@@ -860,14 +860,87 @@ Bag Order Modal Start
 
 .order_list_item {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
   padding: 20px;
+  margin-bottom: 10px;
 }
 
-.order_list_item_details {
-  width: 100%;
+.order_details_wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  width: 400px;
+}
+
+.order_list_item_price h1 {
+  font-family: var(--primary-font);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.order_list_btn {
+  text-align: center;
+}
+
+.order_list_item_img {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+}
+
+.order_list_item_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.order_list_item_info h2 {
+  font-family: var(--primary-font);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.order_list_item_info p {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-text);
+  margin-bottom: 4px;
+}
+
+.order_list_btn {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.order_list_btn button {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  background: transparent;
+}
+
+.order_edit_btn {
+  position: relative;
+  color: var(--text-color);
+  border-bottom: 3px solid var(--text-color);
+}
+
+.order_remove_btn {
+  color: var(--red);
+  border-bottom: 3px solid var(--red);
+}
+
+.order_edit_btn::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  top: 0;
+  left: calc(100% + 15px);
+  bottom: 0;
+  background-color: var(--stroke-color);
 }
 
 .modal_order_counter {
@@ -907,6 +980,137 @@ Bag Order Modal Start
 .modal_order_increment:hover,
 .modal_order_decrement:hover {
   color: var(--primary-color);
+}
+
+/* Essential Pack */
+
+.essentials_pack_item {
+  border: 2px solid rgba(209, 94, 20, 0.3);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.essentials_pack_qty {
+  display: flex;
+  align-items: center;
+}
+
+.essentials_pack_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.essentials_pack_img {
+  width: 50px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.essentials_pack_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.essentials_pack_info h2 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.essentials_pack_info {
+  max-width: 300px;
+}
+
+.essentials_pack_info p {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gray-text);
+  margin-bottom: 0;
+}
+
+.essentials_pack_head {
+  font-family: var(--primary-font);
+  color: var(--gray-text);
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.essentials_pack_decrement {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  background: var(--gray-text);
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.essentials_pack_increment {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  background: var(--primary-color);
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.essentials_pack_increment i,
+.essentials_pack_decrement i {
+  font-size: 13px;
+  color: var(--white);
+}
+
+.essentials_pack_value {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  font-family: var(--primary-font);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.bag_modal_total_price {
+  width: 100%;
+}
+
+.bag_price_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bag_price_item span {
+  display: inline-block;
+}
+
+.bag_price_title {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  color: var(--gray-text);
+  font-weight: 500;
 }
 
 /* ==================
