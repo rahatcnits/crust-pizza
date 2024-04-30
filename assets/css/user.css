@@ -1181,14 +1181,40 @@ label {
   padding: 10px 0px 10px 15px;
   border-radius: 4px;
   font-size: 16px;
-  color: #000000;
+  color: var(--text-color);
+  border: 1px solid var(--stroke-color);
+  margin-bottom: 18px;
+}
+
+#account form .form_item {
+  position: relative;
+}
+
+#account form .form_item img {
+  position: absolute;
+  top: 10px !important;
+  right: 15px;
+}
+
+.datepicker {
+  display: block !important;
+}
+
+.datepicker_input {
+  display: block;
+  font-family: var(--primary-font) !important;
+  width: 100% !important;
+  padding: 10px 0px 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--text-color);
   border: 1px solid var(--stroke-color);
   margin-bottom: 18px;
 }
 
 #account form input::placeholder {
   font-size: 16px;
-  color: #000000;
+  color: var(--gray-text);
   font-size: 16px;
   font-family: var(--primary-font);
 }
@@ -1214,7 +1240,6 @@ label {
   #account .identity {
     padding-left: 0px !important;
   }
-  
 }
 @media screen and (max-width: 575px) {
   #account .button .save_btn {
@@ -1224,13 +1249,9 @@ label {
   #account .button a {
     font-size: 13px;
   }
-  
 }
 
 /* Account End */
-
-
-
 
 /* Cards Start */
 
@@ -1318,7 +1339,7 @@ label {
 
 #cards .identity .title h1 {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 500px;
 }
 
 #cards .identity .title p {
@@ -1333,13 +1354,13 @@ label {
   margin: 0;
 }
 
-#cards .card_item .heading{
+#cards .card_item .heading {
   display: flex;
   align-items: center;
   border: none;
 }
 
-#cards .card_item .heading h1{
+#cards .card_item .heading h1 {
   color: rgba(0, 0, 0, 0.7);
   font-size: 20px;
   margin: 0px;
@@ -1347,54 +1368,316 @@ label {
 }
 
 #cards .card_item .card_details {
+  max-width: 320px;
   border: 1px solid var(--stroke-color);
   padding: 20px;
   border-radius: 8px;
+  margin: 20px 0;
 }
 
-#cards .card_item .card_details h2{
+#cards .card_item .card_details h2 {
   color: var(--text-color);
   font-size: 18px;
   margin: 0px;
   font-weight: 600;
 }
 
-#cards .card_item .card_details .card_expire{
+#cards .card_item .card_details .card_expire {
   display: flex;
   align-items: center;
+  margin: 15px 0;
 }
 
-#cards .card_item .card_details .card_expire h3{
+#cards .card_item .card_details .card_expire h3 {
   font-size: 16px;
   color: var(--text-color);
   margin: 0px;
   font-weight: 600;
 }
 
-#cards .card_item .card_details .card_expire h4{
+#cards .card_item .card_details .card_expire h4 {
   font-size: 14px;
   color: var(--text-color);
   margin: 0px;
   padding-left: 15px;
 }
 
-#cards .card_item .card_details .card_expire span{
+#cards .card_item .card_details .card_expire span {
   font-size: 17px;
   color: var(--stroke-color);
   margin: 0px 15px;
 }
 
+#cards .card_item .card_details .action_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+#cards .card_item .action_btn .default_btn {
+  font-size: 12px;
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: 30px;
+}
+
+#cards .card_item .action_btn .edit_btn {
+  background: transparent;
+}
+
+#cards .card_item .action_btn .edit_btn span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  line-height: 12px;
+  margin-left: 6px;
+}
+
+#cards .card_item .action_btn .remove_btn {
+  background: transparent;
+  margin-left: 10px;
+}
+
+#cards .card_item .action_btn .remove_btn span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--red);
+  border-bottom: 1px solid var(--red);
+  line-height: 12px;
+  margin-left: 6px;
+}
+
+#cards .card_item .card_details .action_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cards .card_item .add_new_btn {
+  font-size: 18px;
+  background: transparent;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+}
+
+#cards .card_item .add_new_btn span {
+  font-size: 14px;
+  background: transparent;
+  border-bottom: 1px solid var(--secondary-color);
+  line-height: 14px;
+}
+
+#cards .identity .title2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#cards .identity .title2 h4 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  margin: 0px;
+  padding-left: 13px;
+  font-weight: 500;
+}
 
 @media screen and (max-width: 992px) {
   #cards .identity {
     padding-left: 0px;
   }
-  
-}
-@media screen and (max-width: 575px) {
- 
-  
 }
 
 /* Cards End */
+
+/* New Credit Card Start */
+
+#new_card {
+  width: 100%;
+  height: 100vh;
+}
+
+#new_card .new_card_item {
+  padding: 100px 0;
+}
+
+#new_card .new_card_item .profile {
+  background: rgba(204, 204, 204, 0.15);
+  border-radius: 8px;
+}
+
+#new_card .new_card_item .profile_img {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#new_card .new_card_item .profile_img .camera {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#new_card .new_card_item .profile_heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+#new_card .new_card_item .profile_heading h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+#new_card .new_card_item .profile_item ul li {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 12px 0px 12px 40px;
+}
+
+#new_card .new_card_item .profile_item a.active {
+  color: var(--primary-color);
+}
+
+#new_card .new_card_item .profile_item a {
+  font-size: 20px;
+  color: var(--gray-text);
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+#new_card .new_card_item .profile_item a:hover {
+  color: var(--primary-color);
+}
+
+#new_card .new_card_item .profile_item .version {
+  margin: 140px 0px 30px 0px;
+}
+
+#new_card .new_card_item .profile_item .version span {
+  display: inline-block;
+  font-size: 14px;
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+#new_card .identity {
+  padding-left: 20px;
+}
+
+#new_card .identity .title h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+#new_card .identity .title p {
+  font-size: 16px;
+  color: var(--gray-text);
+  margin-bottom: 40px;
+}
+
+#new_card input[type="number"]::-webkit-outer-spin-button,
+#new_card input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#new_card form label {
+  font-size: 16px;
+  color: var(--gray-text);
+  margin-bottom: 8px;
+}
+
+#new_card form label span {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+#new_card form .form_item {
+  position: relative;
+}
+
+#new_card form .form_item img {
+  position: absolute;
+  top: 10px !important;
+  right: 15px;
+}
+
+.datepicker {
+  display: block !important;
+}
+
+.datepicker_input {
+  display: block;
+  font-family: var(--primary-font) !important;
+  width: 100% !important;
+  padding: 10px 0px 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--text-color);
+  border: 1px solid var(--stroke-color);
+  margin-bottom: 18px;
+}
+
+#new_card form input {
+  width: 100%;
+  padding: 10px 0px 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #000000;
+  border: 1px solid var(--stroke-color);
+  margin-bottom: 18px;
+}
+
+#new_card form input::placeholder {
+  font-size: 16px;
+  color: #000000;
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+
+#new_card .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#new_card .button .save_btn {
+  color: var(--white);
+  background: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+#new_card .button a {
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 992px) {
+  #new_card .identity {
+    padding-left: 0px !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  #new_card .button .save_btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  #new_card .button a {
+    font-size: 13px;
+  }
+}
+
+/* New Credit Card End */
