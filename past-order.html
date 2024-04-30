@@ -11,8 +11,6 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/user.css" />
-    <link rel="stylesheet" href="./assets/css/DatePickerX.css" />
-    <link rel="stylesheet" href="./assets/css/datepicker.material.css" />
 
     <!-- Bootstrap CSS Link -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -101,116 +99,130 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Account Start -->
-    <section id="account">
+    <!-- Past Order Start -->
+    <section id="past_order">
       <div class="container">
-        <div class="account_item">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="profile">
-                <div class="profile_heading">
-                  <div class="profile_img">
-                    <a href="#"
-                      ><img src="./assets/img/profile-user.svg" alt=""
-                    /></a>
-                    <a class="camera" href="#"
-                      ><img src="./assets/img/camera.svg" alt=""
-                    /></a>
+        <div class="order_titel">
+          <h1>Previous Orders</h1>
+        </div>
+
+        <div class="accordion_wrapper">
+          <div class="accordion-content">
+            <header>
+              <div>
+                <i class="fa-solid fa-chevron-down"></i>
+                <span class="title"
+                  >Friday, Jan. 06 2024 • $22.13 • 2 items</span
+                >
+              </div>
+              <button class="recorder_btn">Reorder</button>
+            </header>
+
+            <div class="description">
+              <div class="locations">
+                <div class="location_item">
+                  <div class="place_img d-flex">
+                    <img src="./assets/img/home2-location-img.svg" alt="" />
                   </div>
-                  <div class="title">
-                    <h1>Hi, Nicholas</h1>
+
+                  <div class="text">
+                    <p>
+                      Grand Morton Town Center <br />
+                      2812 Grand Parkway, Suite <br />
+                      100, TX 77449 <br />
+                      (346) 527-0114
+                    </p>
+                  </div>
+
+                  <div class="button">
+                    <button class="delivery_btn">Delivery</button>
+                    <button class="pickup_btn">Pickup</button>
                   </div>
                 </div>
-
-                <div class="profile_item">
-                  <ul>
-                    <li><a class="active" href="#">Account</a></li>
-                    <li><a href="#">Credit Cards / Gift Cards</a></li>
-                    <li><a href="#">Nutrition & Allergen Guide</a></li>
-                    <li><a href="#">Legal Info</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Settings</a></li>
-                  </ul>
-
-                  <div class="version">
-                    <span>Version 5.38.5.8086</span>
-                  </div>
-                </div>
+                <span>Open from 10:30am to 10:30pm</span>
               </div>
             </div>
+          </div>
 
-            <div class="col-lg-8">
-              <div class="identity">
-                <div class="title">
-                  <h1>Account</h1>
-                  <p>Change account basics for your identity.</p>
-                </div>
+          <div class="accordion-content">
+            <header>
+             <div>
+                <i class="fa-solid fa-chevron-down"></i>
+                <span class="title"
+                  >Saturday, Feb. 24 2024 • $22.13 • 3 items</span
+                >
+             </div>
+             <button class="recorder_btn">Reorder</button>
+            </header>
 
-                <form action="#">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <label for="name">Card Nick Name</label
-                      ><br />
-                      <input type="text" class="name" placeholder="Nicholas" />
-                    </div>
-                    <div class="col-lg-6">
-                      <label for="name">Name on Card<span>*</span></label
-                      ><br />
-                      <input type="text" class="name" placeholder="Fontenot" />
-                    </div>
+            <div class="description">
+              <div class="locations">
+                <div class="location_item">
+                  <div class="place_img d-flex">
+                    <img src="./assets/img/home2-location-img.svg" alt="" />
                   </div>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <label for="name">Card Number<span>*</span></label
-                      ><br />
-                      <input
-                        type="number"
-                        class="number"
-                        placeholder="Enter card number"
-                      />
-                    </div>
-                    <div class="col-lg-6">
-                      <label for="name">Expiration Date<span>*</span></label><br />
-                      <div class="form_item">
-                        <input
-                          class="datepicker_input"
-                          type="text"
-                          id="datepicker1"
-                          placeholder="Enter expiration date"
-                        />
-                        <img src="./assets/img/calendar.svg" alt="" />
-                      </div>
-                    </div>
+
+                  <div class="text">
+                    <p>
+                      Grand Morton Town Center <br />
+                      2812 Grand Parkway, Suite <br />
+                      100, TX 77449 <br />
+                      (346) 527-0114
+                    </p>
                   </div>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <label for="name">CCV<span>*</span></label
-                      ><br />
-                      <input
-                        type="email"
-                        class="email"
-                        placeholder="Enter CVV code"
-                      />
-                    </div>
+
+                  <div class="button">
+                    <button class="delivery_btn">Delivery</button>
+                    <button class="pickup_btn">Pickup</button>
                   </div>
-                </form>
-                <div class="button">
-                  <button class="save_btn">Add a Credit Card</button>
-                  <a href="#">Request My Account for Deletion</a>
                 </div>
+                <span>Open from 10:30am to 10:30pm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-content">
+            <header>
+              <div>
+                <i class="fa-solid fa-chevron-down"></i>
+              <span class="title">Monday, Mar. 12 2024 • $22.13 • 5 items</span>
+              </div>
+              <button class="recorder_btn">Reorder</button>
+            </header>
+
+            <div class="description">
+              <div class="locations">
+                <div class="location_item">
+                  <div class="place_img d-flex">
+                    <img src="./assets/img/home2-location-img.svg" alt="" />
+                  </div>
+
+                  <div class="text">
+                    <p>
+                      Grand Morton Town Center <br />
+                      2812 Grand Parkway, Suite <br />
+                      100, TX 77449 <br />
+                      (346) 527-0114
+                    </p>
+                  </div>
+
+                  <div class="button">
+                    <button class="delivery_btn">Delivery</button>
+                    <button class="pickup_btn">Pickup</button>
+                  </div>
+                </div>
+                <span>Open from 10:30am to 10:30pm</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Account End -->
+    <!-- Past Order End -->
 
     <!-- Scripts -->
     <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/datePicker.js"></script>
-    <script src="./assets/js/datePickerMain.js"></script>
-    <script src="./assets/js/DatePickerX.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/accordion.js"></script>
   </body>
 </html>
