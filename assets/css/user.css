@@ -826,8 +826,6 @@ label {
 
 /* Home1 End */
 
-
-
 /* Home2 Start */
 #home2 .google_map {
   position: relative;
@@ -957,15 +955,15 @@ label {
   color: var(--gray-text);
 }
 
-.accordion_wrapper .accordion-content{
- background: transparent;
+.accordion_wrapper .accordion-content {
+  background: transparent;
   border-top: 1px solid var(--stroke-color);
   overflow: hidden;
 }
-.accordion-content.open{
+.accordion-content.open {
   padding-bottom: 10px;
 }
-.accordion-content header{
+.accordion-content header {
   display: flex;
   min-height: 60px;
   padding: 0 30px;
@@ -974,7 +972,7 @@ label {
   justify-content: space-between;
   transition: all 0.2s linear;
 }
-.accordion-content.open header{
+.accordion-content.open header {
   height: 70px;
 }
 
@@ -987,19 +985,19 @@ label {
 }
 
 .accordion-content.open header i,
-.accordion-content.open header span{
+.accordion-content.open header span {
   color: var(--primary-color) !important;
 }
-.accordion-content header .title{
+.accordion-content header .title {
   font-size: 16px !important;
   font-weight: 500;
   color: #333;
 }
-.accordion-content header i{
+.accordion-content header i {
   font-size: 15px;
   color: #333;
 }
-.accordion-content .description{
+.accordion-content .description {
   height: 0;
   font-size: 12px;
   color: #333;
@@ -1007,10 +1005,10 @@ label {
   padding: 0 30px;
   transition: all 0.2s linear;
 }
-.accordion-content .description .locations{
+.accordion-content .description .locations {
   padding: 0px 0px 15px 0px !important;
 }
-.accordion-content .description .locations span{
+.accordion-content .description .locations span {
   display: inline-block;
   margin-top: 10px !important;
 }
@@ -1065,3 +1063,338 @@ label {
 }
 
 /* Home2 End */
+
+/* Account Start */
+
+#account {
+  width: 100%;
+  height: 100vh;
+}
+
+#account .account_item {
+  padding: 100px 0;
+}
+
+#account .account_item .profile {
+  background: rgba(204, 204, 204, 0.15);
+  border-radius: 8px;
+}
+
+#account .account_item .profile_img {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#account .account_item .profile_img .camera {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#account .account_item .profile_heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+#account .account_item .profile_heading h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+#account .account_item .profile_item ul li {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 12px 0px 12px 40px;
+}
+
+#account .account_item .profile_item a.active {
+  color: var(--primary-color);
+}
+
+#account .account_item .profile_item a {
+  font-size: 20px;
+  color: var(--gray-text);
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+#account .account_item .profile_item a:hover {
+  color: var(--primary-color);
+}
+
+#account .account_item .profile_item .version {
+  margin: 140px 0px 30px 0px;
+}
+
+#account .account_item .profile_item .version span {
+  display: inline-block;
+  font-size: 14px;
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+#account .identity {
+  padding-left: 20px;
+}
+
+#account .identity .title h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+#account .identity .title p {
+  font-size: 16px;
+  color: var(--gray-text);
+  margin-bottom: 40px;
+}
+
+#account input[type="number"]::-webkit-outer-spin-button,
+#account input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#account form label {
+  font-size: 16px;
+  color: var(--gray-text);
+  margin-bottom: 8px;
+}
+
+#account form label span {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+#account form input {
+  width: 100%;
+  padding: 10px 0px 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #000000;
+  border: 1px solid var(--stroke-color);
+  margin-bottom: 18px;
+}
+
+#account form input::placeholder {
+  font-size: 16px;
+  color: #000000;
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+
+#account .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#account .button .save_btn {
+  color: var(--white);
+  background: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+#account .button a {
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 992px) {
+  #account .identity {
+    padding-left: 0px !important;
+  }
+  
+}
+@media screen and (max-width: 575px) {
+  #account .button .save_btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  #account .button a {
+    font-size: 13px;
+  }
+  
+}
+
+/* Account End */
+
+
+
+
+/* Cards Start */
+
+#cards {
+  width: 100%;
+  height: 100vh;
+}
+
+#cards .account_item {
+  padding: 100px 0;
+}
+
+#cards .account_item .profile {
+  background: rgba(204, 204, 204, 0.15);
+  border-radius: 8px;
+}
+
+#cards .account_item .profile_img {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cards .account_item .profile_img .camera {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+#cards .account_item .profile_heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+#cards .account_item .profile_heading h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+#cards .account_item .profile_item ul li {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 12px 0px 12px 40px;
+}
+
+#cards .account_item .profile_item a.active {
+  color: var(--primary-color);
+}
+
+#cards .account_item .profile_item a {
+  font-size: 20px;
+  color: var(--gray-text);
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+#cards .account_item .profile_item a:hover {
+  color: var(--primary-color);
+}
+
+#cards .account_item .profile_item .version {
+  margin: 140px 0px 30px 0px;
+}
+
+#cards .account_item .profile_item .version span {
+  display: inline-block;
+  font-size: 14px;
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.7);
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+#cards .identity {
+  padding-left: 20px;
+}
+
+#cards .identity .title h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+#cards .identity .title p {
+  font-size: 16px;
+  color: var(--gray-text);
+  margin-bottom: 40px;
+}
+
+#cards input[type="number"]::-webkit-outer-spin-button,
+#cards input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#cards .card_item .heading{
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+#cards .card_item .heading h1{
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  margin: 0px;
+  padding-left: 13px;
+}
+
+#cards .card_item .card_details {
+  border: 1px solid var(--stroke-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#cards .card_item .card_details h2{
+  color: var(--text-color);
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+#cards .card_item .card_details .card_expire{
+  display: flex;
+  align-items: center;
+}
+
+#cards .card_item .card_details .card_expire h3{
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0px;
+  font-weight: 600;
+}
+
+#cards .card_item .card_details .card_expire h4{
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 0px;
+  padding-left: 15px;
+}
+
+#cards .card_item .card_details .card_expire span{
+  font-size: 17px;
+  color: var(--stroke-color);
+  margin: 0px 15px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+  #cards .identity {
+    padding-left: 0px;
+  }
+  
+}
+@media screen and (max-width: 575px) {
+ 
+  
+}
+
+/* Cards End */
