@@ -1880,9 +1880,6 @@ label {
 
 /* New Gift Card End */
 
-
-
-
 /* Order History Empty Start */
 #order .order_titel {
   border-bottom: 1px solid var(--stroke-color);
@@ -1950,8 +1947,6 @@ label {
 
 /* Order History Empty End */
 
-
-
 /* Past Order Start */
 
 #past_order .order_titel h1 {
@@ -1967,25 +1962,22 @@ label {
   overflow: hidden;
   margin-bottom: 20px;
   border-radius: 8px;
-}
-
-#past_order .accordion-content.open {
-  padding-bottom: 10px;
+  padding: 0px;
 }
 
 #past_order .accordion-content header {
   display: flex;
-  align-items: center;
+  align-items: center !important;
   justify-content: space-between;
   min-height: 90px;
-  padding: 0 30px;
+  margin: 0 30px;
   cursor: pointer;
-  line-height: -90px;
   transition: all 0.2s linear;
 }
 
 #past_order .accordion-content.open header {
-  height: 70px;
+  border-bottom: 1px solid var(--stroke-color);
+  margin: 0 30px;
 }
 
 #past_order .accordion-content header i {
@@ -1997,7 +1989,13 @@ label {
   transform: rotate(180deg);
 }
 
+#past_order .accordion-content.open header {
+  height: 70px;
+  margin-bottom: 25px;
+}
+
 #past_order .accordion-content.open {
+  padding-bottom: 10px;
   color: var(--primary-color) !important;
   border: 1px solid var(--primary-color);
 }
@@ -2027,6 +2025,40 @@ label {
   transition: all 0.2s linear;
 }
 
+#past_order .description .past_item .title h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#past_order .description .past_item h2 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#past_order .description .past_item ul {
+  list-style: disc inside;
+  font-size: 16px;
+  color: var(--gray-text);
+}
+
+#past_order .description .past_item p {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+#past_order .description .past_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#past_order .description .past_item .price h1 {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
 #past_order .accordion-content .description .locations {
   padding: 0px 0px 15px 0px !important;
 }
@@ -2036,11 +2068,80 @@ label {
   margin-top: 10px !important;
 }
 
-#past_order header .recorder_btn{
+#past_order header .recorder_btn {
   background: transparent;
   font-size: 20px;
   padding: 8px 25px;
   border: 1px solid var(--text-color);
   border-radius: 30px;
 }
+
 /* Past Order End */
+
+
+
+
+/* Bag Empty Popup Start */
+
+.cart_modal {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_wrapper {
+  position: relative;
+  width: 850px;
+  background: var(--white);
+  padding: 30px 30px 0;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.modal_wrapper .order_item{
+  text-align: center !important;
+}
+
+.close_modal {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.close_modal:hover {
+  background: rgba(204, 204, 204, 0.2);
+}
+
+.close_modal i {
+  font-size: 1.2em;
+}
+
+
+
+/* Bag Empty Popup End */
