@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bag Empty Popup | Crust Pizza</title>
+    <title>Remove Cart | Crust Pizza</title>
 
     <!-- Favicon Link -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -175,38 +175,55 @@
     </section>
     <!-- Products Tab End -->
 
-    <!-- Bag Empty Popup Start -->
-    <section class="bag_empty_modal">
-      <div class="empty_wrapper">
+    <!-- Remove Cart Start -->
+    <section class="cart_modal">
+      <div class="modal_wrapper">
         <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
 
         <div class="modal_title">
           <h1>My Bag</h1>
         </div>
+        <button class="button1">
+          <i class="fa-solid fa-check" style="color: #ffffff"></i>Big Dons (14
+          Inch Large) has been removed.
+        </button>
+        <button class="button2">
+          Sorry, we can't accept this order. Please add an item from our menu to
+          your bag.
+        </button>
 
-        <div class="order_item">
-          <h1>Your Bag Is Empty</h1>
-          <p>
-            Start an order to add items to your bag. Don't forget to sign in or
-            sign up for <br />
-            exclusive perks!.
-          </p>
+        <div class="add_condiments">
+          <div class="summary">
+            <h1>Order Summary</h1>
+            <button class="btn1">Big Dons (14 Inch Large) was removed!</button>
+            <br />
+            <button class="btn2">
+              <span>+</span>Add This Item Back to Your Bag
+            </button>
+          </div>
         </div>
 
-        <div class="order_img">
-          <img src="./assets/icons/bag-empty.svg" alt="" />
-        </div>
+        <div class="product_cart">
+          <div class="bag_modal_total_price">
+            <div class="bag_price_item">
+              <span class="bag_price_title">Subtotal</span>
+              <span class="bag_price">$8.00</span>
+            </div>
 
-        <div class="order_btn">
-          <div>
-            <button class="sign_up"><span>Sign Up</span></button>
-            <span class="vertical_bar">|</span>
-            <button class="sign_in"><span>Sign In</span></button>
+            <div class="bag_price_item">
+              <span class="bag_price_title">Tax</span>
+              <span class="bag_price">$1.02</span>
+            </div>
+
+            <div class="bag_checkout_btn">
+              <button type="button" class="add_item_btn">Add More Items</button>
+              <button type="button" class="checkout_btn">Checkout Now</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Bag Empty Popup End -->
+    <!-- Remove Cart End -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 

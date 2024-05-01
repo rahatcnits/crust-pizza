@@ -1,0 +1,363 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../fonts/sfProDisplayRegular.OTF),
+    url(../fonts/sfProDisplayMedium.OTF), url(../fonts/sfProDisplayBold.OTF);
+}
+
+/* ====================
+    Reset Default CSS Start
+    ==================== */
+
+:root {
+  --primary-color: #d15e14;
+  --secondary-color: #137ac9;
+  --text-color: #000000;
+  --gray-text: rgba(0, 0, 0, 0.6);
+  --stroke-color: #cdcfd3;
+  --red: #ff4a4a;
+  --white: #ffffff;
+  --shadow-lg: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 0 30px 0 rgba(0, 0, 0, 0.12);
+  --primary-font: "SF Pro Display";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+p {
+  font-family: var(--primary-font);
+  margin-top: 0;
+}
+
+span {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none !important;
+  font-family: var(--primary-font);
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  font-family: var(--primary-font);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+input {
+  outline: none;
+  font-family: var(--primary-font);
+}
+
+label {
+  font-family: var(--primary-font);
+}
+
+/* ====================
+    Reset Default CSS End
+    ==================== */
+
+/* Bag Empty Popup Start */
+
+.bag_empty_modal {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bag_empty_modal .empty_wrapper {
+  position: relative;
+  width: 850px;
+  background: var(--white);
+  padding: 30px 30px 0;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.bag_empty_modal .empty_wrapper .order_item {
+  text-align: center !important;
+  margin: 60px 0px 40px 0px;
+}
+
+.bag_empty_modal .empty_wrapper .order_item h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bag_empty_modal .empty_wrapper .order_item p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.bag_empty_modal .empty_wrapper .order_img {
+  text-align: center !important;
+}
+
+.bag_empty_modal .empty_wrapper .order_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 60px 0px;
+}
+
+.bag_empty_modal .empty_wrapper .order_btn button {
+  background: transparent;
+}
+
+.bag_empty_modal .empty_wrapper .order_btn button span {
+  border-bottom: 1px solid var(--text-color);
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bag_empty_modal .empty_wrapper .order_btn .vertical_bar {
+  font-size: 25px;
+  color: var(--stroke-color);
+}
+
+.bag_empty_modal .close_modal {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.bag_empty_modal .close_modal:hover {
+  background: rgba(204, 204, 204, 0.2);
+}
+
+.bag_empty_modal .close_modal i {
+  font-size: 1.2em;
+}
+
+.bag_empty_modal .order_item h1 {
+  text-align: center;
+}
+
+/* Bag Empty Popup End */
+
+/* Add Condiments & Promo Start */
+
+.cart_modal .add_item {
+  margin: 20px 0;
+}
+
+.cart_modal .add_item button {
+  font-size: 26px;
+  background: transparent;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+
+.cart_modal .add_item button span {
+  font-size: 30px;
+  margin-right: 10px;
+  font-weight: lighter;
+}
+
+.cart_modal .promo_code h1 {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
+
+.cart_modal .promo_code p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 70%);
+  font-family: var(--primary-font);
+}
+
+.cart_modal .promo_code .input_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #cdcfd3;
+  border-radius: 4px;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 6px;
+}
+
+.cart_modal .promo_code .input_item input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-size: 18px;
+}
+
+.cart_modal .promo_code .input_item .apply {
+  background: rgba(209, 94, 20, 10%);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 6px 20px;
+  border-radius: 4px;
+}
+
+/* Add Condiments & Promo End */
+
+/* Remove Cart Start */
+
+.cart_modal {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_wrapper {
+  position: relative;
+  width: 850px;
+  background: var(--white);
+  padding: 30px 30px 0;
+  border-radius: 16px;
+}
+
+.cart_modal .modal_title {
+  padding-bottom: 20px;
+  border-bottom: none !important;
+}
+
+.close_modal {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.close_modal:hover {
+  background: rgba(204, 204, 204, 0.2);
+}
+
+.close_modal i {
+  font-size: 1.2em;
+}
+
+.cart_modal .button1 {
+  background: var(--red);
+}
+
+.cart_modal .button1 {
+  text-align: start;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  background: var(--red);
+  color: var(--white);
+  font-size: 16px;
+  padding: 12px 30px;
+}
+
+.cart_modal .button1 i {
+  margin-right: 10px;
+}
+
+.cart_modal .button2 {
+  text-align: start;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  background: var(--secondary-color);
+  color: var(--white);
+  font-size: 16px;
+  padding: 12px 30px;
+}
+
+.cart_modal .add_condiments {
+  margin: 40px 0px 60px 0px;
+}
+
+.cart_modal .summary h1 {
+  font-size: 22px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+
+.cart_modal .summary button {
+  width: 100%;
+  text-align: left;
+  background: #f5f5f5;
+  padding: 14px 30px;
+}
+
+.cart_modal .summary .btn1 {
+  color: var(--red);
+  border-bottom: 1px solid var(--stroke-color);
+}
+
+.cart_modal .summary .btn2 {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.cart_modal .summary .btn2 span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+/* Remove Cart End */
+
+
+
+/* Pickup Details Start */
+.pickup_head{
+  text-align: center;
+  background: var(--secondary-color) !important;
+}
+/* Pickup Details End */

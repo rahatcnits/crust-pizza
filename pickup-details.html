@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bag Empty Popup | Crust Pizza</title>
+    <title>Crust Pizza - My Bag Order</title>
 
     <!-- Favicon Link -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -175,38 +175,40 @@
     </section>
     <!-- Products Tab End -->
 
-    <!-- Bag Empty Popup Start -->
-    <section class="bag_empty_modal">
-      <div class="empty_wrapper">
+    <!-- Pickup Details Start -->
+    <section class="cart_modal">
+      <div class="modal_wrapper">
         <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
 
-        <div class="modal_title">
-          <h1>My Bag</h1>
+        <div class="pickup_head">
+            <span>Your estimated pick up time</span>
+          <h2>Today at 5:09 PM </h2>
+          <p>#1000010629985, placed on Jan. 19, 2024 at 5:03 PM</p>
         </div>
 
-        <div class="order_item">
-          <h1>Your Bag Is Empty</h1>
-          <p>
-            Start an order to add items to your bag. Don't forget to sign in or
-            sign up for <br />
-            exclusive perks!.
-          </p>
-        </div>
+        
 
-        <div class="order_img">
-          <img src="./assets/icons/bag-empty.svg" alt="" />
-        </div>
+        <div class="product_cart">
+          <div class="bag_modal_total_price">
+            <div class="bag_price_item">
+              <span class="bag_price_title">Subtotal</span>
+              <span class="bag_price">$8.00</span>
+            </div>
 
-        <div class="order_btn">
-          <div>
-            <button class="sign_up"><span>Sign Up</span></button>
-            <span class="vertical_bar">|</span>
-            <button class="sign_in"><span>Sign In</span></button>
+            <div class="bag_price_item">
+              <span class="bag_price_title">Tax</span>
+              <span class="bag_price">$1.02</span>
+            </div>
+
+            <div class="bag_checkout_btn">
+              <button type="button" class="add_item_btn">Add More Items</button>
+              <button type="button" class="checkout_btn">Checkout Now</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Bag Empty Popup End -->
+    <!-- Pickup Details End -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
