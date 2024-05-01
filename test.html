@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="radio"
+      name="card"
+      value="cardAdd"
+      onclick="hideShow(1)"
+    />cardAdd <br />
+    <input
+      type="radio"
+      name="card"
+      value="cardGift"
+      onclick="hideShow(2)"
+    />cardGift
+
+    <div class="cardAdd">cardAdd</div>
+    <div class="cardGift">cardGift</div>
+
+    <script>
+      const cardAdd = document.querySelector(".cardAdd");
+      const cardGift = document.querySelector(".cardGift");
+      function hideShow(val) {
+        if (val === 1) {
+          cardAdd.style.display = "block";
+          cardGift.style.display = "none";
+        }
+
+        if (val === 2) {
+          cardAdd.style.display = "none";
+          cardGift.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

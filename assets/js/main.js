@@ -42,6 +42,24 @@ tabsBox.addEventListener("mousedown", () => (isDragging = true));
 tabsBox.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 
+// tab content show
+
+const menuContents = document.querySelectorAll(".tab_content");
+
+allTabs.forEach((menuTab, index) => {
+  menuTab.addEventListener("click", (e) => {
+    allTabs.forEach((menuTab) => {
+      menuTab.classList.remove("active");
+    });
+    menuTab.classList.add("active");
+
+    menuContents.forEach((menuContent) => {
+      menuContent.classList.remove("active");
+    });
+    menuContents[index].classList.add("active");
+  });
+});
+
 /// product size
 // add fund card
 function checkChange1(clickedCheckbox) {
@@ -91,6 +109,42 @@ function checkChange4(clickedCheckbox) {
     });
   }
 }
+
+// const productCrustCards = document.querySelectorAll(".product_crust_details");
+
+// productCrustCards.forEach((productCrustCard) => {
+//   productCrustCard.addEventListener("click", () => {
+//     productCrustCards.forEach((productCrustCard) =>
+//       productCrustCard.classList.remove("active")
+//     );
+
+//     productCrustCard.classList.toggle("active");
+//   });
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all cards
+  // var cards = document.querySelectorAll(".card");
+  const cards = document.querySelectorAll(".product_crust_details");
+
+  // Add click event listener to each card
+  cards.forEach(function (card) {
+    card.addEventListener("click", function () {
+      // Check if the clicked card already has the active class
+      var isActive = this.classList.contains("active");
+
+      // Remove active class from all cards
+      cards.forEach(function (card) {
+        card.classList.remove("active");
+      });
+
+      // If the clicked card didn't have the active class, add it
+      if (!isActive) {
+        this.classList.add("active");
+      }
+    });
+  });
+});
 
 // counter
 let counterValue = 1;

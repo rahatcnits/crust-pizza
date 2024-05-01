@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout/New Card | Crust Pizza</title>
+
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome Link -->
+    <script src="./assets/js/fontawesome.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav_wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/img/logo.svg" alt="" />
+          </a>
+
+          <div class="nav_items">
+            <button class="cart_btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 6H21"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>1</span>
+            </button>
+
+            <button class="user_btn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.12 12.78C12.0403 12.77 11.9597 12.77 11.88 12.78C11.032 12.7514 10.2282 12.3944 9.63856 11.7842C9.04891 11.174 8.71953 10.3585 8.72001 9.50999C8.72001 7.69999 10.18 6.22999 12 6.22999C12.8594 6.22849 13.6851 6.5648 14.2988 7.16639C14.9126 7.76798 15.2654 8.58668 15.2811 9.44597C15.2969 10.3053 14.9743 11.1363 14.383 11.76C13.7917 12.3837 12.9789 12.75 12.12 12.78ZM18.74 19.38C16.9023 21.0691 14.496 22.0044 12 22C9.40001 22 7.04001 21.01 5.26001 19.38C5.36001 18.44 5.96001 17.52 7.03001 16.8C9.77001 14.98 14.25 14.98 16.97 16.8C18.04 17.52 18.64 18.44 18.74 19.38Z"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22Z"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Checkout Start -->
+    <section id="checkout">
+      <div class="container">
+        <div class="checkout_wrapper">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="checkout_head">
+                <h1>checkout</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Checkout Information -->
+            <div class="col-md-8">
+              <div class="checkout_info">
+                <div class="user_info">
+                  <div class="user_info_head">
+                    <h2>Your Information</h2>
+                  </div>
+
+                  <div class="user_info_item">
+                    <div class="user_info_details">
+                      <p>Raaz Miraz</p>
+                      <p>itsmirazul@gmail.com</p>
+                      <p>(406) 555-0120</p>
+                    </div>
+
+                    <div>
+                      <button type="button" class="user_info_edit_btn">
+                        Edit Your Info
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="handoff_details">
+                  <div class="handoff_head">
+                    <h2>Handoff Details</h2>
+
+                    <div class="handoff_btn">
+                      <button class="handoff_delivery_btn" type="button">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.9998 14H12.9998C14.0998 14 14.9998 13.1 14.9998 12V2H5.99976C4.49976 2 3.18977 2.82999 2.50977 4.04999"
+                            stroke="#D15E14"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M2 17C2 18.66 3.34 20 5 20H6C6 18.9 6.9 18 8 18C9.1 18 10 18.9 10 20H14C14 18.9 14.9 18 16 18C17.1 18 18 18.9 18 20H19C20.66 20 22 18.66 22 17V14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H20.29L18.58 6.01001C18.22 5.39001 17.56 5 16.84 5H15V12C15 13.1 14.1 14 13 14H12"
+                            stroke="#D15E14"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8 22C9.10457 22 10 21.1046 10 20C10 18.8954 9.10457 18 8 18C6.89543 18 6 18.8954 6 20C6 21.1046 6.89543 22 8 22Z"
+                            stroke="#D15E14"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M16 22C17.1046 22 18 21.1046 18 20C18 18.8954 17.1046 18 16 18C14.8954 18 14 18.8954 14 20C14 21.1046 14.8954 22 16 22Z"
+                            stroke="#D15E14"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M22 12V14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H20.29L22 12Z"
+                            stroke="#D15E14"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M2 8H8"
+                            stroke="#D15E14"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M2 11H6"
+                            stroke="#D15E14"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M2 14H4"
+                            stroke="#D15E14"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>Delivery</span>
+                      </button>
+
+                      <button class="handoff_pickup_btn" type="button">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9 8H21"
+                            stroke="white"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+
+                        <span>Pickup</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="handoff_item">
+                    <div class="handoff_item_wrapper">
+                      <div class="handoff_img">
+                        <img src="./assets/img/handoff_img.png" alt="" />
+                      </div>
+                      <div class="handoff_address">
+                        <h2>Pickup Address</h2>
+                        <p>Raaz Miraz</p>
+                        <p>itsmirazul@gmail.com</p>
+                        <p>(406) 555-0120</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <button type="button" class="user_info_edit_btn">
+                        Edit Address
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Checkout Product -->
+            <div class="col-md-4">
+              <div class="checkout_product_wrapper">
+                <div class="checkout_product">
+                  <h2>checkout_product</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Checkout End -->
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
