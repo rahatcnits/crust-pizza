@@ -108,394 +108,591 @@
 
           <div class="row">
             <!-- Checkout Information -->
-            <div class="col-md-8">
-              <div class="checkout_info">
-                <div class="user_info">
-                  <div class="user_info_head">
-                    <h2>Your Information</h2>
-                  </div>
-
-                  <div class="user_info_item">
-                    <div class="user_info_details">
-                      <p>Raaz Miraz</p>
-                      <p>itsmirazul@gmail.com</p>
-                      <p>(406) 555-0120</p>
+            <div class="col-lg-7">
+              <div class="checkout_info_wrapper">
+                <div class="checkout_info">
+                  <div class="user_info">
+                    <div class="user_info_head">
+                      <h2>Your Information</h2>
                     </div>
 
-                    <div>
-                      <button type="button" class="user_info_edit_btn">
-                        Edit Your Info
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="handoff_details">
-                  <div class="handoff_head">
-                    <h2>Handoff Details</h2>
-
-                    <div class="handoff_btn">
-                      <button class="handoff_delivery_btn" type="button">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11.9998 14H12.9998C14.0998 14 14.9998 13.1 14.9998 12V2H5.99976C4.49976 2 3.18977 2.82999 2.50977 4.04999"
-                            stroke="#D15E14"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M2 17C2 18.66 3.34 20 5 20H6C6 18.9 6.9 18 8 18C9.1 18 10 18.9 10 20H14C14 18.9 14.9 18 16 18C17.1 18 18 18.9 18 20H19C20.66 20 22 18.66 22 17V14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H20.29L18.58 6.01001C18.22 5.39001 17.56 5 16.84 5H15V12C15 13.1 14.1 14 13 14H12"
-                            stroke="#D15E14"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M8 22C9.10457 22 10 21.1046 10 20C10 18.8954 9.10457 18 8 18C6.89543 18 6 18.8954 6 20C6 21.1046 6.89543 22 8 22Z"
-                            stroke="#D15E14"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16 22C17.1046 22 18 21.1046 18 20C18 18.8954 17.1046 18 16 18C14.8954 18 14 18.8954 14 20C14 21.1046 14.8954 22 16 22Z"
-                            stroke="#D15E14"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M22 12V14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H20.29L22 12Z"
-                            stroke="#D15E14"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M2 8H8"
-                            stroke="#D15E14"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M2 11H6"
-                            stroke="#D15E14"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M2 14H4"
-                            stroke="#D15E14"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <span>Delivery</span>
-                      </button>
-
-                      <button class="handoff_pickup_btn" type="button">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M9 8H21"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-
-                        <span>Pickup</span>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="handoff_item">
-                    <div class="handoff_item_wrapper">
-                      <div class="handoff_img">
-                        <img src="./assets/img/handoff_img.png" alt="" />
+                    <div class="user_info_item">
+                      <div class="user_info_details">
+                        <p>Raaz Miraz</p>
+                        <p>itsmirazul@gmail.com</p>
+                        <p>(406) 555-0120</p>
                       </div>
-                      <div class="handoff_address">
-                        <h2>Pickup Address</h2>
-                        <p>Grand Morton Town Center</p>
-                        <p>2812 Grand Parkway, Suite 100, TX 77449</p>
-                        <p>(346) 527-0114</p>
-                      </div>
-                    </div>
 
-                    <div>
-                      <button type="button" class="user_info_edit_btn">
-                        Edit Address
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="date_Picker">
-                        <label for="">Pickup Date</label>
-                        <input
-                          class="datepicker_input"
-                          type="text"
-                          id="datepicker2"
-                          placeholder="mm/dd/yyyy"
-                        />
-
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M8 2V5"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M16 2V5"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M3.5 9.09009H20.5"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M15.6947 13.7H15.7037"
-                            stroke="black"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M15.6947 16.7H15.7037"
-                            stroke="black"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M11.9955 13.7H12.0045"
-                            stroke="black"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M11.9955 16.7H12.0045"
-                            stroke="black"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M8.29431 13.7H8.30329"
-                            stroke="black"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M8.29431 16.7H8.30329"
-                            stroke="black"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="time_picker">
-                        <label for="">Pickup Time</label>
-                        <input
-                          type="text"
-                          id="timeInput"
-                          readonly
-                          placeholder="Select Time"
-                        />
-                        <div class="time-dropdown">
-                          <div class="dropdown_wrapper">
-                            <ul></ul>
-                          </div>
-                          <button id="confirmBtn">Confirm</button>
-                        </div>
-
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M12 6V12H16.5M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
-                            stroke="black"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
+                      <div>
+                        <button type="button" class="user_info_edit_btn">
+                          Edit Your Info
+                        </button>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="user_info">
-                  <div class="user_info_head">
-                    <h2>Add Tip</h2>
-                  </div>
+                  <div class="handoff_details">
+                    <div class="handoff_head">
+                      <h2>Handoff Details</h2>
 
-                  <div class="add_tip">
-                    <div class="add_tip_price">
-                      Tip Amount:
-                      <span>$0.00</span>
-                    </div>
+                      <div class="handoff_btn">
+                        <button class="handoff_delivery_btn" type="button">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.9998 14H12.9998C14.0998 14 14.9998 13.1 14.9998 12V2H5.99976C4.49976 2 3.18977 2.82999 2.50977 4.04999"
+                              stroke="#D15E14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M2 17C2 18.66 3.34 20 5 20H6C6 18.9 6.9 18 8 18C9.1 18 10 18.9 10 20H14C14 18.9 14.9 18 16 18C17.1 18 18 18.9 18 20H19C20.66 20 22 18.66 22 17V14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H20.29L18.58 6.01001C18.22 5.39001 17.56 5 16.84 5H15V12C15 13.1 14.1 14 13 14H12"
+                              stroke="#D15E14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M8 22C9.10457 22 10 21.1046 10 20C10 18.8954 9.10457 18 8 18C6.89543 18 6 18.8954 6 20C6 21.1046 6.89543 22 8 22Z"
+                              stroke="#D15E14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M16 22C17.1046 22 18 21.1046 18 20C18 18.8954 17.1046 18 16 18C14.8954 18 14 18.8954 14 20C14 21.1046 14.8954 22 16 22Z"
+                              stroke="#D15E14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M22 12V14H19C18.45 14 18 13.55 18 13V10C18 9.45 18.45 9 19 9H20.29L22 12Z"
+                              stroke="#D15E14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M2 8H8"
+                              stroke="#D15E14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M2 11H6"
+                              stroke="#D15E14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M2 14H4"
+                              stroke="#D15E14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <span>Delivery</span>
+                        </button>
 
-                    <div class="add_trip_price_lists">
-                      <div class="select_add_trip_lists">
-                        <div class="select_trip_item active">None</div>
-                        <div class="select_trip_item">10%</div>
-                        <div class="select_trip_item">15%</div>
-                        <div class="select_trip_item">20%</div>
-                      </div>
+                        <button class="handoff_pickup_btn" type="button">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2 2H3.74001C4.82001 2 5.67 2.93 5.58 4L4.75 13.96C4.61 15.59 5.89999 16.99 7.53999 16.99H18.19C19.63 16.99 20.89 15.81 21 14.38L21.54 6.88C21.66 5.22 20.4 3.87 18.73 3.87H5.82001"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M16.25 22C16.9404 22 17.5 21.4404 17.5 20.75C17.5 20.0596 16.9404 19.5 16.25 19.5C15.5596 19.5 15 20.0596 15 20.75C15 21.4404 15.5596 22 16.25 22Z"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M8.25 22C8.94036 22 9.5 21.4404 9.5 20.75C9.5 20.0596 8.94036 19.5 8.25 19.5C7.55964 19.5 7 20.0596 7 20.75C7 21.4404 7.55964 22 8.25 22Z"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M9 8H21"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
 
-                      <div class="manual_add_trip">
-                        <div
-                          class="manual_trip_title select_trip_item manual_trip_item"
-                        >
-                          Custom
-                        </div>
-                        <div class="manual_trip_value manual_trip_item">
-                          <input type="text" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="user_info">
-                  <div class="user_info_head">
-                    <h2>Available Rewards</h2>
-                  </div>
-
-                  <div class="reward_head">
-                    <p>
-                      You have <span>1</span> available rewards for this order
-                    </p>
-                  </div>
-
-                  <div class="handoff_item">
-                    <div class="handoff_item_wrapper">
-                      <div class="handoff_img">
-                        <img src="./assets/img/rewards_img.png" alt="" />
-                      </div>
-                      <div class="handoff_address">
-                        <h2>Delicious Pizza</h2>
-                        <p>Redeem by 29 Jul, 2023</p>
-
-                        <button type="button" class="reward_details_btn">
-                          See Details
+                          <span>Pickup</span>
                         </button>
                       </div>
                     </div>
 
-                    <div>
-                      <button type="button" class="user_info_edit_btn">
-                        Apply Rewards
-                      </button>
+                    <div class="handoff_item">
+                      <div class="handoff_item_wrapper">
+                        <div class="handoff_img">
+                          <img src="./assets/img/handoff_img.png" alt="" />
+                        </div>
+                        <div class="handoff_address">
+                          <h2>Pickup Address</h2>
+                          <p>Grand Morton Town Center</p>
+                          <p>2812 Grand Parkway, Suite 100, TX 77449</p>
+                          <p>(346) 527-0114</p>
+                        </div>
+                      </div>
+
+                      <div>
+                        <button type="button" class="user_info_edit_btn">
+                          Edit Address
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="date_Picker">
+                          <label for="">Pickup Date</label>
+                          <input
+                            class="datepicker_input"
+                            type="text"
+                            id="datepicker2"
+                            placeholder="mm/dd/yyyy"
+                          />
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M8 2V5"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M16 2V5"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M3.5 9.09009H20.5"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.6947 13.7H15.7037"
+                              stroke="black"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15.6947 16.7H15.7037"
+                              stroke="black"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.9955 13.7H12.0045"
+                              stroke="black"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M11.9955 16.7H12.0045"
+                              stroke="black"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M8.29431 13.7H8.30329"
+                              stroke="black"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M8.29431 16.7H8.30329"
+                              stroke="black"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="time_picker">
+                          <label for="">Pickup Time</label>
+                          <input
+                            type="text"
+                            id="timeInput"
+                            readonly
+                            placeholder="Select Time"
+                          />
+                          <div class="time-dropdown">
+                            <div class="dropdown_wrapper">
+                              <ul></ul>
+                            </div>
+                            <button id="confirmBtn">Confirm</button>
+                          </div>
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M12 6V12H16.5M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+                              stroke="black"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="user_info">
-                  <div class="user_info_head">
-                    <h2>Your Information</h2>
+                  <div class="user_info">
+                    <div class="user_info_head">
+                      <h2>Add Tip</h2>
+                    </div>
+
+                    <div class="add_tip">
+                      <div class="add_tip_price">
+                        Tip Amount:
+                        <span>$0.00</span>
+                      </div>
+
+                      <div class="add_trip_price_lists">
+                        <div class="select_add_trip_lists">
+                          <div class="select_trip_item active">None</div>
+                          <div class="select_trip_item">10%</div>
+                          <div class="select_trip_item">15%</div>
+                          <div class="select_trip_item">20%</div>
+                        </div>
+
+                        <div class="manual_add_trip">
+                          <div
+                            class="manual_trip_title select_trip_item manual_trip_item"
+                          >
+                            Custom
+                          </div>
+                          <div class="manual_trip_value manual_trip_item">
+                            <input type="text" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
-                  <div class="user_info_item">
-                    <div class="user_info_details">
-                      <p>Raaz Miraz</p>
-                      <p>itsmirazul@gmail.com</p>
-                      <p>(406) 555-0120</p>
+                  <div class="user_info">
+                    <div class="user_info_head">
+                      <h2>Available Rewards</h2>
                     </div>
 
-                    <div>
-                      <button type="button" class="user_info_edit_btn">
-                        Edit Your Info
-                      </button>
+                    <div class="reward_head">
+                      <p>
+                        You have <span>1</span> available rewards for this order
+                      </p>
                     </div>
+
+                    <div class="handoff_item">
+                      <div class="handoff_item_wrapper">
+                        <div class="handoff_img">
+                          <img src="./assets/img/rewards_img.png" alt="" />
+                        </div>
+                        <div class="handoff_address">
+                          <h2>Delicious Pizza</h2>
+                          <p>Redeem by 29 Jul, 2023</p>
+
+                          <button type="button" class="reward_details_btn">
+                            See Details
+                          </button>
+                        </div>
+                      </div>
+
+                      <div>
+                        <button type="button" class="user_info_edit_btn">
+                          Apply Rewards
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="user_info">
+                    <div class="user_info_head">
+                      <h2>Payment Info</h2>
+                    </div>
+
+                    <div class="payment_saved_card">
+                      <div class="payment_saved_card_title">
+                        <p>Saved cards</p>
+                      </div>
+                      <div class="payment_saved_card_btns">
+                        <button type="button" class="pay_visa_btn">
+                          Pay with Visa ****2015
+                        </button>
+                        <button type="button" class="pay_gift_btn">
+                          Pay With Gift Card ****1920
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="card_add">
+                      <div class="card_add_title">
+                        <p>Add New</p>
+                      </div>
+
+                      <div class="card_add_radio_btns">
+                        <div class="card_add_radio_btn">
+                          <input
+                            type="radio"
+                            name="card"
+                            value="cardAdd"
+                            id="cardAdd"
+                            checked
+                            onclick="hideShow(1)"
+                          />
+                          <label for="cardAdd">Add New Card</label>
+                        </div>
+
+                        <div class="card_add_radio_btn">
+                          <input
+                            type="radio"
+                            name="card"
+                            value="cardGift"
+                            id="cardGift"
+                            onclick="hideShow(2)"
+                          />
+                          <label for="cardGift">Gift Card</label>
+                        </div>
+                      </div>
+
+                      <div class="add_card_content active">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="add_card_input">
+                              <input type="text" placeholder="Card Number" />
+                              <img
+                                src="./assets/icons/add_card_icon.svg"
+                                alt=""
+                                class="add_visa_card_img"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="add_card_input">
+                              <input type="text" placeholder="MM / YY" />
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="add_card_input">
+                              <input type="text" placeholder="CVC" />
+                              <img
+                                src="./assets/icons/cvc_card_icon.svg"
+                                alt=""
+                                class="cvc_img"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="gift_card_content">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="gift_card_input">
+                              <input
+                                type="text"
+                                placeholder="Gift Card Number"
+                              />
+                              <img
+                                src="./assets/icons/gift_card_icon.svg"
+                                alt=""
+                                class="gift_card_img"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="gift_card_input">
+                              <input type="password" placeholder="PIN" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="checkout_pay_btn">
+                    <button type="button" class="pay_normal_btn">
+                      Pay $11.02
+                    </button>
+                    <button type="button" class="pay_apple_btn">
+                      Pay with
+                      <img src="./assets/icons/apple_icon.svg" alt="" /> Pay
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Checkout Product -->
-            <div class="col-md-4">
+            <div class="col-lg-5">
               <div class="checkout_product_wrapper">
                 <div class="checkout_product">
-                  <h2>checkout_product</h2>
+                  <div class="checkout_product_item">
+                    <div class="checkout_product_img">
+                      <img src="./assets/img/product_img_2.png" alt="" />
+                    </div>
+
+                    <div class="checkout_product_details">
+                      <div class="checkout_product_details_wrapper">
+                        <div class="checkout_product_details_text">
+                          <h2>10” BYO Pizza</h2>
+                          <p>Traditional Thin Crust</p>
+                          <p>Alfredo</p>
+                        </div>
+
+                        <div class="checkout_product_price">
+                          <h2>$10.00</h2>
+                        </div>
+                      </div>
+
+                      <div class="checkout_product_btns">
+                        <button type="button" class="checkout_product_edit_btn">
+                          Edit
+                        </button>
+                        <button
+                          type="button"
+                          class="checkout_product_remove_btn"
+                        >
+                          Remove
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="suggest_product">
+                    <div class="suggest_product_title">
+                      <h2>May we suggest?</h2>
+                    </div>
+                    <div class="suggest_product_items">
+                      <div class="suggest_product_item">
+                        <div class="suggest_product_item_img">
+                          <img src="./assets/img/product_img_1.png" alt="" />
+                        </div>
+
+                        <div class="suggest_product_item_details">
+                          <h2 class="suggest_product_details_title">
+                            10" Carl’s King
+                          </h2>
+                          <h2 class="suggest_product_price">$10.00</h2>
+                        </div>
+                      </div>
+
+                      <div class="suggest_product_item">
+                        <div class="suggest_product_item_img">
+                          <img src="./assets/img/product_img_1.png" alt="" />
+                        </div>
+
+                        <div class="suggest_product_item_details">
+                          <h2 class="suggest_product_details_title">
+                            10" Carl’s King
+                          </h2>
+                          <h2 class="suggest_product_price">$10.00</h2>
+                        </div>
+                      </div>
+
+                      <div class="suggest_product_item">
+                        <div class="suggest_product_item_img">
+                          <img src="./assets/img/product_img_1.png" alt="" />
+                        </div>
+
+                        <div class="suggest_product_item_details">
+                          <h2 class="suggest_product_details_title">
+                            10" Carl’s King
+                          </h2>
+                          <h2 class="suggest_product_price">$10.00</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="checkout_product_total_price">
+                    <div class="checkout_product_subtotal_price_item">
+                      <span>Subtotal</span>
+                      <span>$10.00</span>
+                    </div>
+
+                    <div class="checkout_product_subtotal_price_item">
+                      <span>Tax</span>
+                      <span>$1.02</span>
+                    </div>
+
+                    <div class="checkout_product_subtotal_price_item">
+                      <span>Tip</span>
+                      <span>$0.00</span>
+                    </div>
+
+                    <div class="checkout_product_total_price_item">
+                      <span>Total</span>
+                      <span>$11.02</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
