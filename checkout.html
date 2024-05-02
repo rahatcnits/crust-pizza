@@ -11,6 +11,9 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/DatePickerX.css" />
+    <link rel="stylesheet" href="./assets/css/datepicker.material.css" />
+    <link rel="stylesheet" href="./assets/css/timePicker.css" />
 
     <!-- Bootstrap CSS Link -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -254,15 +257,233 @@
                       </div>
                       <div class="handoff_address">
                         <h2>Pickup Address</h2>
-                        <p>Raaz Miraz</p>
-                        <p>itsmirazul@gmail.com</p>
-                        <p>(406) 555-0120</p>
+                        <p>Grand Morton Town Center</p>
+                        <p>2812 Grand Parkway, Suite 100, TX 77449</p>
+                        <p>(346) 527-0114</p>
                       </div>
                     </div>
 
                     <div>
                       <button type="button" class="user_info_edit_btn">
                         Edit Address
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="date_Picker">
+                        <label for="">Pickup Date</label>
+                        <input
+                          class="datepicker_input"
+                          type="text"
+                          id="datepicker2"
+                          placeholder="mm/dd/yyyy"
+                        />
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8 2V5"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M16 2V5"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 9.09009H20.5"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15.6947 13.7H15.7037"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15.6947 16.7H15.7037"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.9955 13.7H12.0045"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.9955 16.7H12.0045"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8.29431 13.7H8.30329"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M8.29431 16.7H8.30329"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="time_picker">
+                        <label for="">Pickup Time</label>
+                        <input
+                          type="text"
+                          id="timeInput"
+                          readonly
+                          placeholder="Select Time"
+                        />
+                        <div class="time-dropdown">
+                          <div class="dropdown_wrapper">
+                            <ul></ul>
+                          </div>
+                          <button id="confirmBtn">Confirm</button>
+                        </div>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 6V12H16.5M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+                            stroke="black"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user_info">
+                  <div class="user_info_head">
+                    <h2>Add Tip</h2>
+                  </div>
+
+                  <div class="add_tip">
+                    <div class="add_tip_price">
+                      Tip Amount:
+                      <span>$0.00</span>
+                    </div>
+
+                    <div class="add_trip_price_lists">
+                      <div class="select_add_trip_lists">
+                        <div class="select_trip_item active">None</div>
+                        <div class="select_trip_item">10%</div>
+                        <div class="select_trip_item">15%</div>
+                        <div class="select_trip_item">20%</div>
+                      </div>
+
+                      <div class="manual_add_trip">
+                        <div
+                          class="manual_trip_title select_trip_item manual_trip_item"
+                        >
+                          Custom
+                        </div>
+                        <div class="manual_trip_value manual_trip_item">
+                          <input type="text" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user_info">
+                  <div class="user_info_head">
+                    <h2>Available Rewards</h2>
+                  </div>
+
+                  <div class="reward_head">
+                    <p>
+                      You have <span>1</span> available rewards for this order
+                    </p>
+                  </div>
+
+                  <div class="handoff_item">
+                    <div class="handoff_item_wrapper">
+                      <div class="handoff_img">
+                        <img src="./assets/img/rewards_img.png" alt="" />
+                      </div>
+                      <div class="handoff_address">
+                        <h2>Delicious Pizza</h2>
+                        <p>Redeem by 29 Jul, 2023</p>
+
+                        <button type="button" class="reward_details_btn">
+                          See Details
+                        </button>
+                      </div>
+                    </div>
+
+                    <div>
+                      <button type="button" class="user_info_edit_btn">
+                        Apply Rewards
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user_info">
+                  <div class="user_info_head">
+                    <h2>Your Information</h2>
+                  </div>
+
+                  <div class="user_info_item">
+                    <div class="user_info_details">
+                      <p>Raaz Miraz</p>
+                      <p>itsmirazul@gmail.com</p>
+                      <p>(406) 555-0120</p>
+                    </div>
+
+                    <div>
+                      <button type="button" class="user_info_edit_btn">
+                        Edit Your Info
                       </button>
                     </div>
                   </div>
@@ -284,6 +505,13 @@
     </section>
     <!-- Checkout End -->
 
+    <!-- Scripts -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/datePicker.js"></script>
+    <script src="./assets/js/datePickerMain.js"></script>
+    <script src="./assets/js/DatePickerX.js"></script>
+    <script src="./assets/js/timePicker.js"></script>
+    <script src="./assets/js/addTrip.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1447,7 +1447,7 @@ Checkout Start
   font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 400;
-  color: var(--gray-text);
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 2px;
 }
 
@@ -1529,12 +1529,225 @@ Checkout Start
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px 0;
 }
 
 .handoff_item_wrapper {
   display: flex;
   align-items: center;
   gap: 25px;
+}
+
+.handoff_img {
+  width: 110px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  overflow: hidden;
+}
+
+.handoff_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.handoff_address h2 {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.handoff_address p {
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.datepicker {
+  display: block !important;
+}
+
+.date_Picker {
+  position: relative;
+}
+
+.date_Picker input {
+  display: block;
+  width: 100%;
+  height: 45px;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  padding: 8px 8px 8px 40px;
+  border: 1px solid var(--stroke-color);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.date_Picker input::placeholder {
+  color: var(--text-color);
+}
+
+.time_picker label,
+.date_Picker label {
+  display: block;
+  font-family: var(--primary-font);
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.date_Picker svg,
+.time_picker svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 48px;
+  left: 12px;
+}
+
+.add_tip_price {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.add_trip_price_lists {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.select_add_trip_lists {
+  width: 65%;
+  display: flex;
+  align-items: center;
+}
+
+.manual_add_trip {
+  display: flex;
+  align-items: center;
+  width: 35%;
+}
+
+.select_trip_item {
+  height: 45px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--gray-text);
+  width: 25%;
+  border: 1px solid var(--stroke-color);
+  border-right: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select_trip_item.active {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.select_trip_item:first-child {
+  border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+}
+
+.select_trip_item:last-child {
+  border-radius: 0 4px 4px 0;
+  border-right: 1px solid var(--stroke-color);
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -ms-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
+}
+
+.manual_trip_item {
+  height: 45px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--gray-text);
+  width: 50%;
+  border: 1px solid var(--stroke-color);
+  border-right: none;
+}
+
+.manual_trip_item:first-child {
+  border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+}
+
+.manual_trip_item:last-child {
+  border-radius: 0 4px 4px 0;
+  border-right: 1px solid var(--stroke-color);
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -ms-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
+}
+
+.manual_trip_value input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+.reward_head p {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  margin: 20px 0;
+}
+
+.reward_head p span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.reward_details_btn {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 400;
+  background-color: transparent;
+  line-height: 16px;
+  border-bottom: 2px solid var(--text-color);
+  margin-top: 10px;
 }
 
 /* Checkout Product */
