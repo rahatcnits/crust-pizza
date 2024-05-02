@@ -351,138 +351,118 @@ label {
   margin-right: 10px;
   font-size: 20px;
 }
-
 /* Remove Cart End */
 
 
 
-
 /* Pickup Details Start */
-
-.pickup_modal {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.pickup_wrapper {
-  position: relative;
-  width: 850px;
-  background: var(--white);
-  border-radius: 16px;
-}
-
-.pickup_modal .pickup_head {
+.pickup_head {
   text-align: center;
   background: var(--secondary-color) !important;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-  padding: 70px 0px 110px 0px;
-  font-family: var(--primary-font);
+
+/* Pickup Details End */
+
+border-top-left-radius: 14px;
+border-top-right-radius: 14px;
+padding: 70px 0px 110px 0px;
+font-family: var(--primary-font);
 }
 
 .pickup_modal .pickup_head h3 {
-  font-size: 14px;
-  font-style: italic;
-  color: #ffffff;
+font-size: 14px;
+font-style: italic;
+color: #ffffff;
 }
 
 .pickup_modal .pickup_head h2 {
-  font-size: 30px;
-  font-weight: bold;
-  color: var(--white);
+font-size: 30px;
+font-weight: bold;
+color: var(--white);
 }
 
 .pickup_modal .pickup_head p {
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: lighter;
+font-size: 14px;
+color: #ffffff;
+font-weight: lighter;
 }
 
 .pickup_modal .close_modal {
-  position: absolute;
-  top: 30px;
-  right: 20px;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 50%;
+position: absolute;
+top: 30px;
+right: 20px;
+width: 35px;
+height: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+border-radius: 50%;
 }
 
 .pickup_wrapper .pickup_address {
-  width: 450px !important;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  background: var(--white);
-  border: 1px solid var(--stroke-color);
-  padding: 20px;
-  border-radius: 4px;
-  font-family: var(--primary-font);
+width: 450px !important;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+align-items: center;
+background: var(--white);
+border: 1px solid var(--stroke-color);
+padding: 20px;
+border-radius: 4px;
+font-family: var(--primary-font);
 }
 
 .pickup_wrapper .pickup_address .address_img {
-  width: 90px;
-  margin-right: 20px;
+width: 90px;
+margin-right: 20px;
 }
 
 .pickup_wrapper .pickup_address img {
-  width: 100%;
-  aspect-ratio: 1/1 !important;
+width: 100%;
+aspect-ratio: 1/1 !important;
 }
 
 .pickup_wrapper .pickup_address h1 {
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 0px;
+font-size: 15px;
+font-weight: bold;
+margin-bottom: 0px;
 }
 
 .pickup_wrapper .pickup_address p {
-  font-size: 15px;
-  margin-bottom: 0px;
+font-size: 15px;
+margin-bottom: 0px;
 }
 
 .pickup_wrapper .pickup_summary {
-  margin-top: 120px;
+margin-top: 120px;
 }
 
 .pickup_modal .close_modal:hover {
-  background: rgba(204, 204, 204, 0.2);
+background: rgba(204, 204, 204, 0.2);
 }
 
 .pickup_modal .close_modal i {
-  font-size: 1.2em;
-  color: var(--white);
+font-size: 1.2em;
+color: var(--white);
 }
 
 @media screen and (max-width: 576px) {
-  .pickup_wrapper .pickup_address {
-    width: 310px !important;
-    padding: 10px;
-  }
-  .pickup_wrapper .pickup_address .address_img {
-    width: 90px;
-    margin-right: 10px;
-  }
-  .pickup_wrapper .pickup_address h1 {
-    font-size: 12px;
-  }
-
-  .pickup_wrapper .pickup_address p {
-    font-size: 12px;
-  }
+.pickup_wrapper .pickup_address {
+  width: 310px !important;
+  padding: 10px;
+}
+.pickup_wrapper .pickup_address .address_img {
+  width: 90px;
+  margin-right: 10px;
+}
+.pickup_wrapper .pickup_address h1 {
+  font-size: 12px;
 }
 
-/* Pickup Details End */
+.pickup_wrapper .pickup_address p {
+  font-size: 12px;
+}
+}
+
+
