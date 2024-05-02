@@ -602,3 +602,205 @@ label {
 }
 
 /* Pickup Details End */
+
+
+
+
+/* Rewards Start */
+
+#member_rewards .rewards {
+  margin: 50px 0;
+
+}
+
+.rewards .signature_reward{
+  width: 100%;
+  background-color: var(--secondary-color);
+  background-image: url(../img/member-rewards-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+}
+
+.rewards .signature_reward .reward_img{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+}
+.rewards .signature_reward .reward_img img{
+  width: 100%;
+  height: 100%;
+  margin-top: -40px;
+
+}
+
+.rewards .signature_reward .title{
+  text-align: center;
+  margin-top: -30px;
+  padding-bottom: 30px;
+
+}
+
+.rewards .signature_reward .title p{
+  margin: 0px;
+  font-size: 16px;
+  color: #f7f7f7;
+
+}
+
+.rewards .signature_reward .title h1{
+  margin: 0px;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--white);
+  padding: 6px 0;
+
+}
+
+.rewards .achieve_status {
+  background: rgba(0, 0, 0, 10%);
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 0;
+
+}
+
+.rewards .achieve_status h1{
+  font-size: 16px;
+  color: var(--secondary-color);
+  margin: 0px;
+
+}
+
+.rewards .achieve_status p{
+  font-size: 12px;
+  color: var(--gray-text);
+  margin: 0px;
+
+}
+
+.rewards .achieve_status .progress_status{
+  width: 380px;
+  background: var(--stroke-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  margin: 15px 0;
+
+}
+
+.rewards .achieve_status .progress_status span{
+  background: linear-gradient(#137AC9,#02345B);
+  color: var(--white);
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 4px;
+  margin: 0px;
+
+}
+.rewards .achieve_status .progress_status .sub_progress{
+  color: var(--text-color);
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 4px;
+  margin: 0px;
+
+}
+
+.rewards .achieve_status button{
+  font-size: 14px;
+  color: var(--secondary-color);
+  background: none;
+
+}
+
+#member_rewards .all_rewards{
+  margin-top: 0px;
+  margin-bottom: 90px;
+}
+
+#member_rewards .all_rewards .heading h1{
+  padding-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#member_rewards .all_rewards .heading p{
+  margin: 0px;
+  color: var(--primary-color);
+}
+
+#member_rewards .all_rewards .reward_item{
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  padding: 20px;
+  opacity: 0.5;
+}
+
+#member_rewards .all_rewards .reward_item .reward_icon{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#member_rewards .all_rewards .reward_item .reward_icon2{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#member_rewards .reward_item .reward_icon img{
+  width: 40px;
+}
+
+#member_rewards .reward_item .reward_icon2 img{
+  width: 22px;
+}
+
+#member_rewards .reward_item .product_img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#member_rewards .reward_item .reward_item img{
+  width: 100%;
+}
+
+#member_rewards .reward_item .reward_title{
+  text-align: center;
+}
+
+#member_rewards .reward_item .reward_title h1{
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#member_rewards .reward_item .reward_title p{
+  font-size: 18px;
+  color: var(--gray-text);
+  margin: 0px;
+}
+
+@media screen and (max-width:992px){
+  #member_rewards .all_rewards .reward_item{
+    margin-bottom: 20px;
+  }
+}
+
+/* Rewards End */
