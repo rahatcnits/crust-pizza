@@ -1267,9 +1267,10 @@ label {
   text-align: center;
 }
 
-.payment_modal .payment_item svg {
-  width: 60px !important;
-  height: 60px !important;
+.payment_modal .payment_item .spinner-border {
+  width: 50px !important;
+  height: 50px !important;
+  color: var(--primary-color);
 }
 
 .payment_modal .payment_item p {
