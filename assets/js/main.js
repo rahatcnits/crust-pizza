@@ -60,6 +60,14 @@ allTabs.forEach((menuTab, index) => {
   });
 });
 
+// all modal hide
+const cartModal = document.querySelector(".cart_modal");
+const closeModal = document.querySelector(".close_modal");
+
+closeModal.addEventListener("click", () => {
+  cartModal.classList.remove("active");
+});
+
 /// product size
 // add fund card
 function checkChange1(clickedCheckbox) {
