@@ -110,12 +110,11 @@
               <div class="profile">
                 <div class="profile_heading">
                   <div class="profile_img">
-                    <a href="#"
-                      ><img src="./assets/icons/profile-user.svg" alt=""
-                    /></a>
-                    <a class="camera" href="#"
+                    <img src="./assets/icons/profile-user.svg" alt="" />
+                    <label for="account_img" class="account_img_btn"
                       ><img src="./assets/icons/camera.svg" alt=""
-                    /></a>
+                    /></label>
+                    <input type="file" name="" id="account_img" />
                   </div>
                   <div class="title">
                     <h1>Hi, Nicholas</h1>
@@ -149,8 +148,7 @@
                 <form action="#">
                   <div class="row">
                     <div class="col-lg-6">
-                      <label for="name">Card Nick Name</label
-                      ><br />
+                      <label for="name">Card Nick Name</label><br />
                       <input type="text" class="name" placeholder="Nicholas" />
                     </div>
                     <div class="col-lg-6">
@@ -170,7 +168,8 @@
                       />
                     </div>
                     <div class="col-lg-6">
-                      <label for="name">Expiration Date<span>*</span></label><br />
+                      <label for="name">Expiration Date<span>*</span></label
+                      ><br />
                       <div class="form_item">
                         <input
                           class="datepicker_input"

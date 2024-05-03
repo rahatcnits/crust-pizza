@@ -849,7 +849,6 @@ label {
 }
 #home2 .google_map .search_bar_item {
   width: 100%;
-  
 }
 #home2 .google_map .search_bar .search input {
   width: 100%;
@@ -896,7 +895,7 @@ label {
 }
 
 .location_place::-webkit-scrollbar-thumb {
-  background: #C1C1C1;
+  background: #c1c1c1;
   border-radius: 30px;
 }
 
@@ -1043,10 +1042,11 @@ label {
   align-items: center;
 }
 
-#account .account_item .profile_img .camera {
+#account .account_item .profile_img .account_img_btn {
   position: absolute;
   bottom: 0px;
   right: 0px;
+  cursor: pointer;
 }
 
 #account .account_item .profile_heading {
@@ -1232,10 +1232,15 @@ label {
   align-items: center;
 }
 
-#cards .account_item .profile_img .camera {
+#cards .account_item .profile_img .account_img_btn {
   position: absolute;
   bottom: 0px;
   right: 0px;
+  cursor: pointer;
+}
+
+#account_img {
+  display: none;
 }
 
 #cards .account_item .profile_heading {
@@ -1472,7 +1477,7 @@ label {
   align-items: center;
 }
 
-#new_card .new_card_item .profile_img .camera {
+#new_card .new_card_item .profile_img .account_img_btn {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -1676,7 +1681,7 @@ label {
   align-items: center;
 }
 
-#gift_card .gift_card_item .profile_img .camera {
+#gift_card .gift_card_item .profile_img .account_img_btn {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -2030,9 +2035,6 @@ label {
 
 /* Past Order End */
 
-
-
-
 /* Bag Empty Popup Start */
 
 .cart_modal {
@@ -2060,7 +2062,7 @@ label {
   -o-border-radius: 16px;
 }
 
-.modal_wrapper .order_item{
+.modal_wrapper .order_item {
   text-align: center !important;
 }
 
@@ -2097,6 +2099,5 @@ label {
 .order_item h1 {
   text-align: center;
 }
-
 
 /* Bag Empty Popup End */
