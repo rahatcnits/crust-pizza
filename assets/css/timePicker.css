@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url(../fonts/sfProDisplayRegular.OTF);
+  src: url("../fonts/SF-Pro-Display-Regular.eot");
+  src: url("../fonts/SF-Pro-Display-Regular.otf");
 }
 
 :root {
