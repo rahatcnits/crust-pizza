@@ -175,7 +175,7 @@
     <!-- Products Tab End -->
 
     <!-- Cart Popup Start -->
-    <section class="cart_modal">
+    <section class="cart_modal active">
       <div class="modal_wrapper">
         <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
 
@@ -213,11 +213,11 @@
             </div>
 
             <div class="modal_order_counter">
-              <div class="modal_order_decrement">
+              <div class="modal_order_decrement" onclick="productDecrement()">
                 <i class="fa-solid fa-minus"></i>
               </div>
               <div class="modal_order_counter_val">1</div>
-              <div class="modal_order_increment">
+              <div class="modal_order_increment" onclick="productIncrement()">
                 <i class="fa-solid fa-plus"></i>
               </div>
             </div>
@@ -250,13 +250,15 @@
                     <div class="essentials_pack_counter">
                       <span
                         class="essentials_pack_decrement"
-                        onclick="decrement()"
+                        onclick="saucesDecrement1()"
                         ><i class="fa-solid fa-minus"></i
                       ></span>
-                      <span class="essentials_pack_value" id="counter">0</span>
+                      <span class="essentials_pack_value" id="saucesCounter1"
+                        >0</span
+                      >
                       <span
                         class="essentials_pack_increment"
-                        onclick="increment()"
+                        onclick="saucesIncrement1()"
                         ><i class="fa-solid fa-plus"></i
                       ></span>
                     </div>
@@ -280,13 +282,17 @@
                     <div class="essentials_pack_counter">
                       <span
                         class="essentials_pack_decrement"
-                        onclick="decrement()"
+                        onclick="saucesDecrement2()"
                         ><i class="fa-solid fa-minus"></i
                       ></span>
-                      <span class="essentials_pack_value" id="counter">0</span>
+                      <span
+                        class="essentials_pack_value"
+                        id="saucesCounterValue2"
+                        >0</span
+                      >
                       <span
                         class="essentials_pack_increment"
-                        onclick="increment()"
+                        onclick="saucesIncrement2()"
                         ><i class="fa-solid fa-plus"></i
                       ></span>
                     </div>
@@ -310,13 +316,17 @@
                     <div class="essentials_pack_counter">
                       <span
                         class="essentials_pack_decrement"
-                        onclick="decrement()"
+                        onclick="saucesDecrement3()"
                         ><i class="fa-solid fa-minus"></i
                       ></span>
-                      <span class="essentials_pack_value" id="counter">0</span>
+                      <span
+                        class="essentials_pack_value"
+                        id="saucesCounterValue3"
+                        >0</span
+                      >
                       <span
                         class="essentials_pack_increment"
-                        onclick="increment()"
+                        onclick="saucesIncrement3()"
                         ><i class="fa-solid fa-plus"></i
                       ></span>
                     </div>
@@ -340,13 +350,17 @@
                     <div class="essentials_pack_counter">
                       <span
                         class="essentials_pack_decrement"
-                        onclick="decrement()"
+                        onclick="saucesDecrement4()"
                         ><i class="fa-solid fa-minus"></i
                       ></span>
-                      <span class="essentials_pack_value" id="counter">0</span>
+                      <span
+                        class="essentials_pack_value"
+                        id="saucesCounterValue4"
+                        >0</span
+                      >
                       <span
                         class="essentials_pack_increment"
-                        onclick="increment()"
+                        onclick="saucesIncrement4()"
                         ><i class="fa-solid fa-plus"></i
                       ></span>
                     </div>
@@ -379,11 +393,17 @@
               <div class="essentials_pack_qty">
                 <span class="essentials_pack_head">Qty:</span>
                 <div class="essentials_pack_counter">
-                  <span class="essentials_pack_decrement" onclick="decrement()"
+                  <span
+                    class="essentials_pack_decrement"
+                    onclick="essentialDecrement1()"
                     ><i class="fa-solid fa-minus"></i
                   ></span>
-                  <span class="essentials_pack_value" id="counter">0</span>
-                  <span class="essentials_pack_increment" onclick="increment()"
+                  <span class="essentials_pack_value" id="essentialCounter1"
+                    >0</span
+                  >
+                  <span
+                    class="essentials_pack_increment"
+                    onclick="essentialIncrement1()"
                     ><i class="fa-solid fa-plus"></i
                   ></span>
                 </div>
@@ -408,11 +428,17 @@
               <div class="essentials_pack_qty">
                 <span class="essentials_pack_head">Qty:</span>
                 <div class="essentials_pack_counter">
-                  <span class="essentials_pack_decrement" onclick="decrement()"
+                  <span
+                    class="essentials_pack_decrement"
+                    onclick="essentialDecrement2()"
                     ><i class="fa-solid fa-minus"></i
                   ></span>
-                  <span class="essentials_pack_value" id="counter">0</span>
-                  <span class="essentials_pack_increment" onclick="increment()"
+                  <span class="essentials_pack_value" id="essentialCounter2"
+                    >0</span
+                  >
+                  <span
+                    class="essentials_pack_increment"
+                    onclick="essentialIncrement2()"
                     ><i class="fa-solid fa-plus"></i
                   ></span>
                 </div>
@@ -437,11 +463,17 @@
               <div class="essentials_pack_qty">
                 <span class="essentials_pack_head">Qty:</span>
                 <div class="essentials_pack_counter">
-                  <span class="essentials_pack_decrement" onclick="decrement()"
+                  <span
+                    class="essentials_pack_decrement"
+                    onclick="essentialDecrement3()"
                     ><i class="fa-solid fa-minus"></i
                   ></span>
-                  <span class="essentials_pack_value" id="counter">0</span>
-                  <span class="essentials_pack_increment" onclick="increment()"
+                  <span class="essentials_pack_value" id="essentialCounter3"
+                    >0</span
+                  >
+                  <span
+                    class="essentials_pack_increment"
+                    onclick="essentialIncrement3()"
                     ><i class="fa-solid fa-plus"></i
                   ></span>
                 </div>
@@ -464,7 +496,9 @@
 
             <div class="bag_checkout_btn">
               <button type="button" class="add_item_btn">Add More Items</button>
-              <button type="button" class="checkout_btn">Checkout Now</button>
+              <button type="button" class="checkout_btn">
+                $9.02 | Checkout Now
+              </button>
             </div>
           </div>
         </div>
@@ -571,6 +605,7 @@
     <!-- Scripts -->
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/counter.js"></script>
     <script src="./assets/js/accordion.js"></script>
   </body>
 </html>

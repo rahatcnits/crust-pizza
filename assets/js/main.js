@@ -68,6 +68,14 @@ closeModal.addEventListener("click", () => {
   cartModal.classList.remove("active");
 });
 
+// pickup modal hide
+const pickupModal = document.querySelector(".pickup_modal");
+const pickupModalClose = document.querySelector(".close_modal");
+
+pickupModalClose.addEventListener("click", () => {
+  pickupModal.classList.remove("active");
+});
+
 /// product size
 // add fund card
 function checkChange1(clickedCheckbox) {
@@ -118,18 +126,7 @@ function checkChange4(clickedCheckbox) {
   }
 }
 
-// const productCrustCards = document.querySelectorAll(".product_crust_details");
-
-// productCrustCards.forEach((productCrustCard) => {
-//   productCrustCard.addEventListener("click", () => {
-//     productCrustCards.forEach((productCrustCard) =>
-//       productCrustCard.classList.remove("active")
-//     );
-
-//     productCrustCard.classList.toggle("active");
-//   });
-// });
-
+// crust select
 document.addEventListener("DOMContentLoaded", function () {
   // Get all cards
   // var cards = document.querySelectorAll(".card");
@@ -153,25 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-// counter
-let counterValue = 1;
-
-function increment() {
-  counterValue++;
-  updateCounter();
-}
-
-function decrement() {
-  if (counterValue > 1) {
-    counterValue--;
-    updateCounter();
-  }
-}
-
-function updateCounter() {
-  document.getElementById("counter").innerText = counterValue;
-}
 
 /// Cart Notification
 const cartNotification = document.querySelector(".cart_notification");

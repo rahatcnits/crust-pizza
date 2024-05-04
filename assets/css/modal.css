@@ -382,24 +382,59 @@ label {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 333;
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
-.pickup_wrapper {
+.pickup_modal.active {
+  opacity: 1;
+  user-select: auto;
+  pointer-events: all;
+}
+
+.pickup_modal_content {
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
   width: 850px;
-  height: 620px;
+  height: 90vh;
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.pickup_modal.active .pickup_modal_content {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.pickup_wrapper {
   background: var(--white);
   border-radius: 16px;
 }
 
-.pickup_wrapper::-webkit-scrollbar {
+.pickup_modal_content::-webkit-scrollbar {
   width: 8px;
   background: transparent;
 }
 
-.pickup_wrapper::-webkit-scrollbar-thumb {
+.pickup_modal_content::-webkit-scrollbar-thumb {
   background: #d2d2d2;
   border-radius: 30px;
   -webkit-border-radius: 30px;

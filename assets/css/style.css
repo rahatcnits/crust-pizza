@@ -483,8 +483,6 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  /*padding: 100px 0;
-  */
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1398,6 +1396,10 @@ Bag Order Modal Start
   align-items: center;
 }
 
+.essentials_pack_counter {
+  user-select: none;
+}
+
 .essentials_pack_wrapper {
   display: flex;
   align-items: center;
@@ -1591,6 +1593,62 @@ Bag Order Modal Start
   color: #333;
   font-weight: 400;
   transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 768px) {
+  .order_details_wrapper {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .order_details_wrapper {
+    display: block;
+  }
+
+  .order_list_item {
+    display: block;
+  }
+
+  .order_list_item_info {
+    margin-top: 15px;
+  }
+
+  .order_list_btn {
+    justify-content: start;
+    margin: 20px 0;
+  }
+
+  .essentials_pack_item {
+    display: block;
+  }
+
+  .essentials_pack_wrapper {
+    align-items: start;
+  }
+
+  .essentials_pack_qty {
+    margin-top: 20px;
+  }
+
+  .bag_checkout_btn {
+    display: block;
+  }
+
+  .bag_checkout_btn button {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+  }
+
+  .checkout_btn {
+    margin-top: 20px;
+  }
 }
 
 /* ==================
