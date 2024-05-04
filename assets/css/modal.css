@@ -91,6 +91,20 @@ label {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 333;
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.bag_empty_modal.active {
+  opacity: 1;
+  user-select: auto;
+  pointer-events: all;
 }
 
 .bag_empty_modal .empty_wrapper {
@@ -103,6 +117,24 @@ label {
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
+  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.bag_empty_modal.active .empty_wrapper {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 
 .bag_empty_modal .empty_wrapper .order_item {
@@ -692,8 +724,8 @@ label {
 .rewards .achieve_status {
   background: rgba(0, 0, 0, 10%);
   margin-bottom: 80px;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   text-align: center;
   padding: 30px 0;
 }
@@ -711,13 +743,13 @@ label {
 }
 
 .rewards .achieve_status .progress_status {
-  width: 380px;
+  max-width: 380px;
   background: var(--stroke-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 4px;
-  margin: 15px 0;
+  margin: 15px auto;
 }
 
 .rewards .achieve_status .progress_status span {
@@ -820,6 +852,13 @@ label {
 @media screen and (max-width: 992px) {
   #member_rewards .all_rewards .reward_item {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .rewards .achieve_status .progress_status {
+    max-width: 380px;
+    width: 90%;
   }
 }
 
