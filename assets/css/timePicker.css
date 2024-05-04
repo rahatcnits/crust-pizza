@@ -8,8 +8,8 @@
   --white: #ffffff;
   --shadow-lg: 0 0 40px 0 rgba(0, 0, 0, 0.15);
   --shadow-sm: 0 0 30px 0 rgba(0, 0, 0, 0.12);
-  --primary-font: "SF Pro Display";
-  --secondary-font: "Poppins";
+  --primary-font: SF Pro Display;
+  --secondary-font: Poppins;
 }
 
 .time_picker {
