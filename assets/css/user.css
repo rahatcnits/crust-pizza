@@ -1179,6 +1179,7 @@ label {
 }
 
 #account form input {
+  font-family: var(--primary-font) !important;
   width: 100%;
   padding: 10px 0px 10px 15px;
   border-radius: 4px;
@@ -1233,7 +1234,12 @@ label {
   background: var(--primary-color);
   padding: 10px 20px;
   border-radius: 30px;
+  transition: 0.3s;
 }
+#account .button .save_btn:hover {
+ background: #a84a0f;
+}
+
 #account .button a {
   color: var(--secondary-color);
 }
@@ -1263,6 +1269,7 @@ label {
 }
 
 #cards .account_item {
+  font-family: var(--primary-font) !important;
   padding: 100px 0;
 }
 
@@ -1282,17 +1289,6 @@ label {
   align-items: center;
 }
 
-#cards .account_item .profile_img .account_img_btn {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  cursor: pointer;
-}
-
-#account_img {
-  display: none;
-}
-
 #cards .account_item .profile_heading {
   display: flex;
   align-items: center;
@@ -1302,6 +1298,7 @@ label {
 
 #cards .account_item .profile_heading h1 {
   font-size: 24px;
+  font-family: var(--primary-font);
   font-weight: bold;
   margin: 0px;
 }

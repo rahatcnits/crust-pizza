@@ -165,10 +165,18 @@ label {
   justify-content: center;
   align-items: center;
   margin: 20px 0px 60px 0px;
+ 
+}
+.bag_empty_modal .empty_wrapper .order_btn button:hover {
+  color: var(--primary-color);
+}
+.bag_empty_modal .empty_wrapper .order_btn button span:hover {
+  border-color: var(--primary-color);
 }
 
 .bag_empty_modal .empty_wrapper .order_btn button {
   background: transparent;
+  transition: 0.3s;
 }
 
 .bag_empty_modal .empty_wrapper .order_btn button span {
@@ -220,6 +228,16 @@ label {
 /* Bag Empty Popup End */
 
 /* Add Condiments & Promo Start */
+.condiments .modal_title{
+  
+  padding: 0px !important;
+}
+.condiments .modal_title h1{
+  margin: 0;
+  border-bottom: 1px solid #CDCFD3;
+  line-height: 80px;
+  
+}
 .modal_wrapper::-webkit-scrollbar {
   width: 8px;
   background: transparent;
@@ -234,7 +252,7 @@ label {
   -o-border-radius: 30px;
 }
 .cart_modal .add_item {
-  margin: 20px 0;
+  margin: -25px 0px 20px 0px;
 }
 
 .cart_modal .add_item button {
