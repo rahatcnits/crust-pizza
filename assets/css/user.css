@@ -1907,13 +1907,18 @@ label {
 
 #gift_card .button .gift_btn {
   color: var(--white);
-  background: var(--primary-color);
+  background: rgba(0, 0, 0, 0.3);
   padding: 10px 20px;
   border-radius: 30px;
   transition: 0.4s;
 }
 
-#gift_card .button .gift_btn:hover {
+#gift_card .button .gift_btn.show {
+  color: var(--white);
+  background: var(--primary-color);
+}
+
+#gift_card .button .gift_btn.show:hover {
   background: #ad4708;
 }
 
@@ -2062,6 +2067,17 @@ label {
 
 #past_order .accordion-content.open header .recorder_btn {
   color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#past_order .accordion-content.open header .recorder_btn:hover {
+  color: var(--white) !important;
+  background: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 

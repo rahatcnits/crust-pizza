@@ -396,7 +396,7 @@ label {
 }
 
 .cart_modal .add_condiments {
-  margin: 40px 0px 40px 0px;
+  margin: 0;
 }
 
 .cart_modal .summary h1 {
@@ -487,6 +487,32 @@ label {
 .pickup_wrapper {
   background: var(--white);
   border-radius: 16px;
+  padding-bottom: 1px;
+}
+
+.pickup_check_btn {
+  margin: 0;
+}
+
+.pickup_check_btn button {
+  width: 100%;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.pickup_check_btn button:hover {
+  background: #ad4708;
 }
 
 .pickup_modal_content::-webkit-scrollbar {
@@ -634,7 +660,7 @@ label {
 }
 
 .pickup_wrapper .paid_with {
-  margin: 0 30px;
+  margin: 30px;
 }
 
 .pickup_wrapper .paid_with h1 {

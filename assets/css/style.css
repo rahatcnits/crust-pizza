@@ -534,17 +534,24 @@
   overflow-y: auto;
 }
 
+.condiments_modal_main_content {
+  height: calc(90vh - 400px);
+  overflow-y: auto;
+}
+
 .cart_modal_main_content {
   height: calc(90vh - 146px);
   overflow-y: auto;
 }
 
+.condiments_modal_main_content::-webkit-scrollbar,
 .cart_modal_main_content::-webkit-scrollbar,
 .modal_main_content::-webkit-scrollbar {
   width: 8px;
   background: transparent;
 }
 
+.condiments_modal_main_content::-webkit-scrollbar-thumb,
 .cart_modal_main_content::-webkit-scrollbar-thumb,
 .modal_main_content::-webkit-scrollbar-thumb {
   background: #d2d2d2;
@@ -584,7 +591,7 @@
   width: 35px;
   height: 35px;
   display: flex;
-  background: var(--white);
+
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -599,6 +606,10 @@
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
   z-index: 9999 !important;
+}
+
+.cart_close_modal {
+  background: var(--white);
 }
 
 .close_modal:hover {
@@ -1662,6 +1673,17 @@ Bag Order Modal Start
   margin-top: 20px;
 }
 
+.condiments_add {
+  margin-top: 0;
+}
+
+.condiments_add .accordion-content {
+  background: transparent;
+  border-bottom: 1px solid transparent !important;
+  overflow: hidden;
+  margin-bottom: 10px !important;
+}
+
 .accordion_wrapper .accordion-content {
   background: transparent;
   border-bottom: 1px solid var(--stroke-color);
@@ -2516,7 +2538,7 @@ Checkout Start
   color: var(--text-color);
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1200px) {
   #checkout {
     overflow: auto;
     height: auto;
