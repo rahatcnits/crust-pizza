@@ -11,8 +11,7 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/user.css" />
-    <link rel="stylesheet" href="./assets/css/DatePickerX.css" />
-    <link rel="stylesheet" href="./assets/css/datepicker.material.css" />
+    <link rel="stylesheet" href="./assets/css/timePicker.css" />
 
     <!-- Bootstrap CSS Link -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -101,7 +100,7 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Account Start -->
+    <!-- New Credit card Start -->
     <section id="new_card">
       <div class="container">
         <div class="new_card_item">
@@ -119,8 +118,8 @@
 
                 <div class="profile_item">
                   <ul>
-                    <li><a class="active" href="#">Account</a></li>
-                    <li><a href="#">Credit Cards / Gift Cards</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a class="active" href="#">Credit Cards / Gift Cards</a></li>
                     <li><a href="#">Nutrition & Allergen Guide</a></li>
                     <li><a href="#">Legal Info</a></li>
                     <li><a href="#">Support</a></li>
@@ -137,34 +136,40 @@
             <div class="col-lg-8">
               <div class="identity">
                 <div class="title">
-                  <h1>Account</h1>
-                  <p>Change account basics for your identity.</p>
+                  <h1>New Credit Card</h1>
+                  <p>
+                    Add a new card to your account for easy future purchases.
+                  </p>
                 </div>
 
                 <form action="#">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <label for="name">Card Nick Name</label><br />
-                      <input type="text" class="name" placeholder="Nicholas" />
-                    </div>
-                    <div class="col-lg-6">
-                      <label for="name">Name on Card<span>*</span></label
-                      ><br />
-                      <input type="text" class="name" placeholder="Fontenot" />
-                    </div>
+                  <div class="col-lg-6">
+                    <label for="name">Name on Card<span>*</span></label
+                    ><br />
+                    <input type="text" class="name" placeholder="Fontenot" />
                   </div>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <label for="name">Card Number<span>*</span></label
+
+                  <div class="col-lg-6">
+                    <label for="name">Card Number<span>*</span></label
+                    ><br />
+                    <input
+                      type="number"
+                      class="number"
+                      placeholder="Enter card number"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="name">CCV<span>*</span></label
                       ><br />
                       <input
-                        type="number"
-                        class="number"
-                        placeholder="Enter card number"
+                        type="email"
+                        class="email"
+                        placeholder="Enter CVV code"
                       />
-                    </div>
-                    <div class="col-lg-6">
-                      <label for="name">Expiration Date<span>*</span></label
+                  </div>
+
+                  <div class="col-lg-6">
+                    <label for="name">Expiration Date<span>*</span></label
                       ><br />
                       <div class="form_item">
                         <input
@@ -173,26 +178,14 @@
                           id="datepicker1"
                           placeholder="Enter expiration date"
                         />
-                        <img src="./assets/icons/calendar.svg" alt="" />
+                        <img src="./assets/icons/calendar-account.svg" alt="" />
                       </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <label for="name">CCV<span>*</span></label
-                      ><br />
-                      <input
-                        type="email"
-                        class="email"
-                        placeholder="Enter CVV code"
-                      />
-                    </div>
                   </div>
                 </form>
 
                 <div class="check">
                   <input class="checkbox" type="checkbox" />
-                  <p>Make Default</p>
+                  <p>Make this my default payment option</p>
                 </div>
 
                 <p class="information">
@@ -210,7 +203,7 @@
         </div>
       </div>
     </section>
-    <!-- Account End -->
+    <!-- New Credit card End -->
 
     <!-- Scripts -->
     <script src="./assets/js/jquery.min.js"></script>

@@ -1636,11 +1636,11 @@ label {
   right: 15px;
 }
 
-.datepicker {
+#new_card .datepicker {
   display: block !important;
 }
 
-.datepicker_input {
+#new_card .datepicker_input {
   display: block;
   font-family: var(--primary-font) !important;
   width: 100% !important;
@@ -1702,6 +1702,10 @@ label {
   background: var(--primary-color);
   padding: 10px 20px;
   border-radius: 30px;
+  transition: 0.4s;
+}
+#new_card .button .credit_btn:hover {
+  background: #ad4708;
 }
 
 @media screen and (max-width: 992px) {
@@ -1743,12 +1747,6 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#gift_card .gift_card_item .profile_img .account_img_btn {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
 }
 
 #gift_card .gift_card_item .profile_heading {
@@ -1885,6 +1883,11 @@ label {
   background: var(--primary-color);
   padding: 10px 20px;
   border-radius: 30px;
+  transition: 0.4s;
+}
+
+#gift_card .button .gift_btn:hover {
+  background: #ad4708;
 }
 
 @media screen and (max-width: 992px) {
@@ -1949,10 +1952,20 @@ label {
   background: none;
   font-size: 16px;
   font-weight: 700;
+  transition: 0.3s;
+}
+
+#order .order_btn button:hover {
+  color: var(--primary-color);
 }
 
 #order .order_btn button span {
   border-bottom: 1px solid var(--text-color);
+
+}
+
+#order .order_btn button span:hover {
+  border-color: var(--primary-color);
 }
 
 @media screen and (max-width: 575px) {
