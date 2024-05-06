@@ -635,28 +635,33 @@ label {
 /* Verified End */
 
 /* Home1 Start */
+
 #home1 .google_map {
   position: relative;
+  height: calc(100vh - 101px);
 }
 
 #home1 .google_map iframe {
   width: 100%;
-  height: 100vh !important;
+  height: 100vh;
   border: none !important;
   margin: 0px !important;
 }
 
 #home1 .google_map .search_bar {
   width: 450px;
-  height: auto;
+  height: calc(100vh - 20px);
   position: absolute;
   top: 10px;
   left: 10px;
+  bottom: 10px;
   border-radius: 6px;
   background: white;
+  overflow: hidden;
 }
 #home1 .google_map .search_bar_item {
   width: 100%;
+  height: auto !important;
 }
 #home1 .google_map .search_bar .search input {
   width: 100%;
@@ -673,6 +678,10 @@ label {
   gap: 10px;
   margin: 30px 30px 30px 30px;
 }
+#home1 .google_map .search_bar .search input{
+ font-family: var(--primary-font);
+ font-size: 13px !important;
+}
 
 #home1 .google_map .search_bar .search i {
   margin-left: 20px;
@@ -687,6 +696,10 @@ label {
   color: var(--white);
   font-weight: 400;
   background: var(--primary-color);
+  transition: 0.4s;
+}
+#home1 .google_map .search_bar .search button:hover {
+  background: #ad4708;
 }
 
 #home1 .google_map .locations .heading h1 {
@@ -708,7 +721,7 @@ label {
 }
 
 #home1 .google_map .location_place {
-  height: 540px;
+  height: calc(100vh - 125px);
   overflow-y: scroll;
 }
 
@@ -725,7 +738,7 @@ label {
 }
 
 #home1 .google_map .locations .place_img {
-  width: 105px;
+  width: 100px;
   border: 2px solid #000000;
   border-radius: 8px;
 }
@@ -737,7 +750,7 @@ label {
 }
 
 #home1 .google_map .locations .text {
-  width: calc(100% - 160px);
+  width: calc(100% - 190px);
 }
 
 #home1 .google_map .locations .text p {
@@ -748,7 +761,7 @@ label {
 }
 
 #home1 .google_map .locations .button {
-  width: 80px;
+  width: 90px;
 }
 
 #home1 .google_map .locations .button .delivery_btn {
@@ -758,7 +771,7 @@ label {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   font-size: 14px;
-  padding: 4px 0;
+  padding: 4px 2px;
   transition: 0.5s;
 }
 
@@ -774,6 +787,10 @@ label {
 }
 
 @media screen and (max-width: 576px) {
+  #home1 .google_map iframe {
+    display: none;
+  }
+
   #home1 .google_map .search_bar {
     width: calc(100% - 20px) !important;
     height: auto;
@@ -796,7 +813,7 @@ label {
   #home1 .google_map .search_bar .search input {
     width: 100%;
     border: none;
-    font-size: 12px !important;
+    font-size: 10px !important;
   }
 
   #home1 .google_map .locations .text p {
@@ -804,11 +821,15 @@ label {
   }
 
   #home1 .google_map .locations .text {
-    width: calc(100% - 110px);
+    width: calc(100% - 140px);
   }
 
   #home1 .google_map .locations .button {
-    width: 55px;
+    width: 70px;
+  }
+
+  #home1 .google_map .locations .place_img {
+    width: 100px;
   }
 
   #home1 .google_map .locations .button .delivery_btn {
