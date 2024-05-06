@@ -134,9 +134,23 @@ label {
   font-family: var(--primary-font);
   padding: 10px 0px 10px 0px;
   margin-top: 20px;
-  background: var(--primary-color);
+  background: rgba(0, 0, 0, 0.3);
   color: var(--white);
   border-radius: 6px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+#sign_in_email .sign_in_contant form .Passcode_btn.show {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+#sign_in_email .sign_in_contant form .Passcode_btn.show:hover {
+  background: #ad4708;
 }
 
 #sign_in_email .sign_in_contant form .numbar_btn {
