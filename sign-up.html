@@ -10,7 +10,7 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/user.css">
+    <link rel="stylesheet" href="./assets/css/user.css" />
 
     <!-- Bootstrap CSS Link -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -105,7 +105,7 @@
         <div class="sign_up_wrapper">
           <div class="sign_up_contant">
             <div class="header">
-              <h1>Sign In</h1>
+              <h1>Sign Up</h1>
               <p>Unlock exclusive perks, updates, and offers! Join us today</p>
             </div>
 
@@ -116,58 +116,44 @@
                 name="text"
                 placeholder="Enter your first name"
               />
-              <br>
-              <br>
+              <br />
+              <br />
               <label for="name">Last Name</label>
               <input
                 type="text"
                 name="text"
                 placeholder="Enter your last name"
               />
-              <br>
-              <br>
+              <br />
+              <br />
               <label for="name">Email</label>
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-              />
-              <br>
-              <br>
+              <input type="email" name="email" placeholder="Enter your email" />
+              <br />
+              <br />
               <label for="name">Phone Number</label>
               <input
                 type="number"
                 name="number"
-                placeholder="Enter your phone number"
+                data-maxlength="10"
+                oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+                pattern="([0-9]{1,3}).([0-9]{1,3}).([0-9]{1,4})"
+                placeholder="111-111-1111"
               />
-              <br>
-              <br>
-              <label for="name">Password</label>
-              <div class="password">
-                <input
-                type="password"
-                name="password"
-                placeholder="Enter password"
-                />
-                <i class="fa-regular fa-eye-slash"></i>
-              </div>
-
+              <br />
 
               <div class="check">
-                <input class="checkbox" type="checkbox">
-                <p>I agree the Crust Pizza Terms and Conditions - 
+                <input class="checkbox" type="checkbox" />
+                <p>
+                  I agree the Crust Pizza Terms and Conditions -
                   <a href="#">view here</a>
                 </p>
               </div>
 
               <div class="button_item">
-                <button class="sign_btn">
-                  Sign Up
-                </button>
+                <button class="sign_btn">Sign Up</button>
               </div>
               <p>Already have a Crust Pizza account? <a href="#">Sign In</a></p>
             </form>
-
           </div>
         </div>
       </div>
@@ -177,4 +163,3 @@
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>
 </html>
-

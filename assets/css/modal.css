@@ -227,9 +227,8 @@ label {
   padding: 0px !important;
 }
 .condiments .modal_title h1 {
-  margin: 0;
   border-bottom: 1px solid #cdcfd3;
-  line-height: 80px;
+  padding-bottom: 12px;
 }
 .modal_wrapper::-webkit-scrollbar {
   width: 8px;
@@ -245,7 +244,7 @@ label {
   -o-border-radius: 30px;
 }
 .cart_modal .add_item {
-  margin: -25px 0px 20px 0px;
+  margin: -35px 0px 20px 0px;
 }
 
 .cart_modal .add_item button {
@@ -271,6 +270,8 @@ label {
   font-size: 16px;
   color: rgba(0, 0, 0, 70%);
   font-family: var(--primary-font);
+  margin-bottom: 0;
+  margin-top: 10px;
 }
 
 .cart_modal .promo_code .input_item {
@@ -291,12 +292,27 @@ label {
 }
 
 .cart_modal .promo_code .input_item .apply {
-  background: rgba(209, 94, 20, 10%);
-  color: var(--primary-color);
-  font-weight: bold;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--white);
+  font-weight: 600;
   font-size: 18px;
   padding: 6px 20px;
   border-radius: 4px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.cart_modal .promo_code .input_item .apply.show {
+  background: rgba(209, 94, 20, 10%);
+  color: var(--primary-color);
+}
+
+.promo_code .input_item .apply.show:hover {
+  background: var(--primary-color);
+  color: var(--white);
 }
 
 /* Add Condiments & Promo End */
@@ -318,8 +334,6 @@ label {
 
 .modal_wrapper {
   position: relative;
-  overflow-y: scroll;
-  overflow-x: hidden;
   width: 850px;
   height: auto;
   background: var(--white);
@@ -382,7 +396,7 @@ label {
 }
 
 .cart_modal .add_condiments {
-  margin: 40px 0px 60px 0px;
+  margin: 40px 0px 40px 0px;
 }
 
 .cart_modal .summary h1 {

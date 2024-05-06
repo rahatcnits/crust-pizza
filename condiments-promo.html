@@ -167,56 +167,6 @@
     </section>
     <!-- Products Tab End -->
 
-    <!-- Add Condiments & Promo Start -->
-    <section class="cart_modal condiments active">
-      <div class="modal_wrapper">
-        <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
-
-        <div class="modal_title">
-          <h1>My Bag</h1>
-        </div>
-
-        <div class="add_condiments">
-          <div class="add_item">
-            <button><span>+</span>Add Condiments</button>
-          </div>
-
-          <div class="promo_code">
-            <h1>Promo Code</h1>
-            <div class="input_item">
-              <input type="text" placeholder="Enter Promo code" />
-              <button class="apply">Apply</button>
-            </div>
-            <p>Limited to 1 Promo Code Per Order</p>
-          </div>
-        </div>
-
-        <div class="product_cart">
-          <div class="bag_modal_total_price">
-            <div class="bag_price_item">
-              <span class="bag_price_title">Subtotal</span>
-              <span class="bag_price">$8.00</span>
-            </div>
-
-            <div class="bag_price_item">
-              <span class="bag_price_title">Tax</span>
-              <span class="bag_price">$1.02</span>
-            </div>
-
-            <div class="bag_checkout_btn">
-              <button type="button" class="add_item_btn">Add More Items</button>
-              <button type="button" class="checkout_btn">
-                $9.02 | Checkout Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Add Condiments & Promo End -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <!-- Products Start -->
     <section id="products">
       <div class="container">
@@ -311,9 +261,63 @@
     </section>
     <!-- Products End -->
 
+    <!-- Add Condiments & Promo Start -->
+    <section class="cart_modal condiments active">
+      <div class="modal_wrapper">
+        <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
+
+        <div class="modal_title">
+          <h1>My Bag</h1>
+        </div>
+
+        <div class="add_condiments">
+          <div class="add_item">
+            <button><span>+</span>Add Condiments</button>
+          </div>
+
+          <div class="promo_code">
+            <h1>Promo Code</h1>
+            <div class="input_item">
+              <input
+                class="condiments_promo_input"
+                type="text"
+                placeholder="Enter Promo code"
+              />
+              <button class="apply" disabled="true">Apply</button>
+            </div>
+            <p>Limited to 1 Promo Code Per Order</p>
+          </div>
+        </div>
+
+        <div class="product_cart">
+          <div class="bag_modal_total_price">
+            <div class="bag_price_item">
+              <span class="bag_price_title">Subtotal</span>
+              <span class="bag_price">$8.00</span>
+            </div>
+
+            <div class="bag_price_item">
+              <span class="bag_price_title">Tax</span>
+              <span class="bag_price">$1.02</span>
+            </div>
+
+            <div class="bag_checkout_btn">
+              <button type="button" class="add_item_btn">Add More Items</button>
+              <button type="button" class="checkout_btn">
+                $9.02 | Checkout Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Add Condiments & Promo End -->
+
     <!-- Scripts -->
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/condiments.js"></script>
     <script src="./assets/js/accordion.js"></script>
   </body>
 </html>

@@ -321,11 +321,12 @@
   cursor: grab;
 }
 
-.tabs-box .tab {
+.tabs-box .tab a {
   cursor: pointer;
   font-family: var(--primary-font);
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.1em;
+  font-weight: 500;
   white-space: nowrap;
   display: inline-block;
   padding: 16px 0px;
@@ -336,7 +337,7 @@
   -o-transition: color 0.5s;
 }
 
-.tabs-box .tab:hover {
+.tabs-box .tab a:hover {
   color: var(--primary-color);
 }
 
@@ -410,6 +411,7 @@
   text-transform: uppercase;
   color: var(--text-color);
   margin-bottom: 24px;
+  margin-top: 80px;
 }
 
 .product_card {

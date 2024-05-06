@@ -339,11 +339,12 @@ label {
 #sign_up .sign_up_contant form .check {
   display: flex;
   align-items: center;
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 #sign_up .sign_up_contant form p {
   margin: 0px;
+  text-align: center;
   color: var(--gray-text);
 }
 
@@ -678,9 +679,9 @@ label {
   gap: 10px;
   margin: 30px 30px 30px 30px;
 }
-#home1 .google_map .search_bar .search input{
- font-family: var(--primary-font);
- font-size: 13px !important;
+#home1 .google_map .search_bar .search input {
+  font-family: var(--primary-font);
+  font-size: 13px !important;
 }
 
 #home1 .google_map .search_bar .search i {
@@ -721,7 +722,7 @@ label {
 }
 
 #home1 .google_map .location_place {
-  height: calc(100vh - 125px);
+  height: calc(100vh - 200px);
   overflow-y: scroll;
 }
 
@@ -765,6 +766,7 @@ label {
 }
 
 #home1 .google_map .locations .button .delivery_btn {
+  display: inline-block;
   width: 100%;
   border-radius: 30px;
   background: transparent;
@@ -781,9 +783,11 @@ label {
 }
 
 #home1 .google_map span {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--gray-text);
   font-style: italic;
+  margin-top: 6px;
+  display: inline-block;
 }
 
 @media screen and (max-width: 576px) {
@@ -804,8 +808,12 @@ label {
     margin: auto;
   }
 
+  #home1 .google_map .search_bar .search {
+    margin: 20px 10px;
+  }
+
   #home1 .google_map .search_bar .search button {
-    font-size: 14px;
+    font-size: 16px;
     align-items: center;
     padding: 6px 20px;
   }
@@ -813,15 +821,16 @@ label {
   #home1 .google_map .search_bar .search input {
     width: 100%;
     border: none;
-    font-size: 10px !important;
+    font-size: 16px !important;
   }
 
   #home1 .google_map .locations .text p {
-    font-size: 10px;
+    font-size: 16px;
+    margin: 10px 0;
   }
 
   #home1 .google_map .locations .text {
-    width: calc(100% - 140px);
+    width: auto;
   }
 
   #home1 .google_map .locations .button {
@@ -832,13 +841,25 @@ label {
     width: 100px;
   }
 
+  #home1 .google_map .locations .location_item {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #home1 .google_map .locations .button {
+    width: auto;
+  }
+
   #home1 .google_map .locations .button .delivery_btn {
-    font-size: 10px;
-    padding: 4px 0;
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 4px 10px;
   }
 
   #home1 .google_map .locations .location_item {
-    gap: 4px;
+    width: 100%;
   }
 }
 
