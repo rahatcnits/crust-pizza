@@ -608,8 +608,14 @@ label {
 }
 
 #verified .verified_contant .verified_item {
+  position: relative;
   display: flex;
   justify-content: center;
+}
+
+.verify_animation {
+  position: absolute;
+  top: 32px;
 }
 
 #verified .verified_contant .button_item {
@@ -623,14 +629,14 @@ label {
   font-family: var(--primary-font);
   padding: 10px 0px 10px 0px;
   margin-top: 10px;
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--primary-color);
   color: var(--white);
   border-radius: 6px;
   transition: 0.5s;
 }
 
 #verified .verified_contant .Passcode_btn:hover {
-  background: var(--primary-color);
+  background: #ad4708;
 }
 
 /* Verified End */
@@ -1982,7 +1988,6 @@ label {
 
 #order .order_btn button span {
   border-bottom: 1px solid var(--text-color);
-
 }
 
 #order .order_btn button span:hover {

@@ -18,6 +18,12 @@
 
     <!-- Font Awesome Link -->
     <script src="./assets/js/fontawesome.js"></script>
+
+    <!-- Datepicker CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
   </head>
   <body>
     <!-- Navbar Start -->
@@ -119,7 +125,9 @@
                 <div class="profile_item">
                   <ul>
                     <li><a href="#">Account</a></li>
-                    <li><a class="active" href="#">Credit Cards / Gift Cards</a></li>
+                    <li>
+                      <a class="active" href="#">Credit Cards / Gift Cards</a>
+                    </li>
                     <li><a href="#">Nutrition & Allergen Guide</a></li>
                     <li><a href="#">Legal Info</a></li>
                     <li><a href="#">Support</a></li>
@@ -160,26 +168,26 @@
                   </div>
                   <div class="col-lg-6">
                     <label for="name">CCV<span>*</span></label
-                      ><br />
-                      <input
-                        type="email"
-                        class="email"
-                        placeholder="Enter CVV code"
-                      />
+                    ><br />
+                    <input
+                      type="email"
+                      class="email"
+                      placeholder="Enter CVV code"
+                    />
                   </div>
 
                   <div class="col-lg-6">
                     <label for="name">Expiration Date<span>*</span></label
-                      ><br />
-                      <div class="form_item">
-                        <input
-                          class="datepicker_input"
-                          type="text"
-                          id="datepicker1"
-                          placeholder="Enter expiration date"
-                        />
-                        <img src="./assets/icons/calendar-account.svg" alt="" />
-                      </div>
+                    ><br />
+                    <div class="form_item">
+                      <input
+                        class="datepicker_input"
+                        type="text"
+                        id="datepicker"
+                        placeholder="Enter expiration date"
+                      />
+                      <img src="./assets/icons/calendar-account.svg" alt="" />
+                    </div>
                   </div>
                 </form>
 
@@ -207,9 +215,7 @@
 
     <!-- Scripts -->
     <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/datePicker.js"></script>
     <script src="./assets/js/datePickerMain.js"></script>
-    <script src="./assets/js/DatePickerX.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>
 </html>
