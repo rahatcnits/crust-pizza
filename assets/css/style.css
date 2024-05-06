@@ -1951,6 +1951,22 @@ Checkout Start
   display: block !important;
 }
 
+.delivery_date_Picker {
+  position: relative;
+}
+
+.delivery_date_Picker input {
+  padding: 8px 8px 8px 40px !important;
+}
+
+.delivery_date_Picker svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
 .date_Picker {
   position: relative;
 }

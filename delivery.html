@@ -11,8 +11,6 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/DatePickerX.css" />
-    <link rel="stylesheet" href="./assets/css/datepicker.material.css" />
     <link rel="stylesheet" href="./assets/css/timePicker.css" />
     <link rel="stylesheet" href="./assets/css/modal.css" />
 
@@ -21,6 +19,12 @@
 
     <!-- Font Awesome Link -->
     <script src="./assets/js/fontawesome.js"></script>
+
+    <!-- Datepicker CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
   </head>
   <body>
     <!-- Navbar Start -->
@@ -96,8 +100,8 @@
     <!-- Navbar End -->
 
     <!-- Delivery popup Start -->
-    <section class="delivery_modal">
-      <div class="delivery_wrapper">
+    <section class="delivery_modal bag_empty_modal active">
+      <div class="delivery_wrapper empty_wrapper">
         <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
 
         <div class="modal_title">
@@ -105,7 +109,7 @@
         </div>
 
         <div class="delivery_btn">
-          <button type="button" class="delivery">
+          <button type="button" class="delivery active">
             <svg
               width="24"
               height="25"
@@ -232,16 +236,91 @@
           <br />
           <br />
           <label for="date">Date</label>
-          <div class="select_container">
-            <select id="date">
-              <option value="volvo">01-05-2024</option>
-              <option value="saab">01-05-2024</option>
-              <option value="vw">01-05-2024</option>
-              <option value="audi" selected>Today</option>
-            </select>
-            <div class="select_icon">
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
+          <div class="delivery_date_Picker">
+            <input type="text" id="datepicker" placeholder="dd/mm/yyyy" />
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 2V5"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16 2V5"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3.5 9.09009H20.5"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.6947 13.7H15.7037"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.6947 16.7H15.7037"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11.9955 13.7H12.0045"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11.9955 16.7H12.0045"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.29431 13.7H8.30329"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.29431 16.7H8.30329"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
           <br />
           <label for="time">Time</label>
@@ -872,11 +951,11 @@
 
     <!-- Scripts -->
     <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/datePicker.js"></script>
     <script src="./assets/js/datePickerMain.js"></script>
-    <script src="./assets/js/DatePickerX.js"></script>
     <script src="./assets/js/timePicker.js"></script>
     <script src="./assets/js/addTrip.js"></script>
+    <script src="./assets/js/delivery.js"></script>
+    <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
   </body>
 </html>

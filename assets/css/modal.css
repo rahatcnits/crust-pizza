@@ -957,58 +957,56 @@ label {
 }
 
 .delivery_btn button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   font-weight: 600;
   font-size: 18px;
   font-family: var(--primary-font);
+  color: var(--primary-color);
   padding: 8px;
   background: transparent;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
-.delivery {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
+.delivery_btn button h1 {
+  text-align: start;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.delivery_btn button.active h1 {
   color: var(--white);
-  border-radius: 27px;
+}
+
+.delivery_btn button.active p {
+  color: var(--white) !important;
+}
+
+.delivery_btn button.active path {
+  stroke: var(--white);
+}
+
+.delivery_btn button p {
+  font-size: 12px;
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: normal;
+}
+
+.delivery_btn button svg path {
+  stroke: var(--primary-color);
+}
+
+.delivery_btn button.active {
+  color: var(--white);
   background: var(--primary-color) !important;
-}
-
-.delivery h1 {
-  text-align: start;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-}
-.delivery p {
-  font-size: 12px;
-  margin: 0;
-  color: var(--white);
-  font-weight: normal;
-}
-
-.pickup {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  border-radius: 28px;
-  background: transparent;
-}
-
-.pickup h1 {
-  color: var(--primary-color);
-  text-align: start;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-}
-.pickup p {
-  color: var(--primary-color);
-  font-size: 12px;
-  margin: 0;
-  font-weight: normal;
 }
 
 .delivery_wrapper h4 {
