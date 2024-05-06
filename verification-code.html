@@ -109,24 +109,67 @@
               <p>
                 To continue, please enter the 6-digit verification code sent to
                 <br />
-                your phone ending in 1:20 min.
+                your phone ending in <span id="time">1:20</span> min.
               </p>
 
               <h2>Didn’t receive a code? <a href="#">Resend</a></h2>
               <span>One Time Passcode</span>
             </div>
 
-            <form action="#">
-              <input type="number" name="number" />
-              <input type="number" name="number" />
-              <input type="number" name="number" />
-              <input type="number" name="number" />
-              <input type="number" name="number" />
-              <input type="number" name="number" />
+            <form action="#" class="otp_inputfield">
+              <input
+                type="number"
+                name="number"
+                maxlength="1"
+                class="otp_input"
+                disabled
+              />
+              <input
+                type="number"
+                name="number"
+                maxlength="1"
+                class="otp_input"
+                disabled
+              />
+              <input
+                type="number"
+                name="number"
+                maxlength="1"
+                class="otp_input"
+                disabled
+              />
+              <input
+                type="number"
+                name="number"
+                maxlength="1"
+                class="otp_input"
+                disabled
+              />
+              <input
+                type="number"
+                name="number"
+                maxlength="1"
+                class="otp_input"
+                disabled
+              />
+              <input
+                type="number"
+                name="number"
+                maxlength="1"
+                class="otp_input"
+                disabled
+              />
             </form>
 
             <div class="button_item">
-              <button class="Passcode_btn">Continue</button>
+              <button
+                class="passcode_btn"
+                id="otp_submit"
+                onclick="validateOTP()"
+                disabled
+              >
+                Continue
+              </button>
             </div>
           </div>
         </div>
@@ -135,5 +178,7 @@
     <!-- Verification-Code2 End -->
 
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/otpValid.js"></script>
+    <script src="./assets/js/countdownTime.js"></script>
   </body>
 </html>

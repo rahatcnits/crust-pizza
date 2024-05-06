@@ -60,30 +60,6 @@ allTabs.forEach((menuTab, index) => {
   });
 });
 
-// all modal hide
-const cartModal = document.querySelector(".cart_modal");
-const closeModal = document.querySelector(".close_modal");
-
-closeModal.addEventListener("click", () => {
-  cartModal.classList.remove("active");
-});
-
-// pickup modal hide
-const pickupModal = document.querySelector(".pickup_modal");
-const pickupModalClose = document.querySelector(".close_modal");
-
-pickupModalClose.addEventListener("click", () => {
-  pickupModal.classList.remove("active");
-});
-
-// bag empty modal hide
-const bagEmptyModal = document.querySelector(".bag_empty_modal");
-const bagEmptyModalClose = document.querySelector(".close_modal");
-
-bagEmptyModalClose.addEventListener("click", () => {
-  bagEmptyModal.classList.remove("active");
-});
-
 /// product size
 // add fund card
 function checkChange1(clickedCheckbox) {

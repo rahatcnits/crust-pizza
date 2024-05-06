@@ -175,306 +175,310 @@
           <h1>My Bag</h1>
         </div>
 
-        <div class="modal_order_lists">
-          <h1 class="modal_order_list_title">Order Summary</h1>
+        <div class="modal_main_content">
+          <div class="modal_order_lists">
+            <h1 class="modal_order_list_title">Order Summary</h1>
 
-          <div class="modal_order_list">
-            <div class="order_list_item">
-              <div class="order_list_item_details">
-                <div class="order_details_wrapper">
-                  <div class="order_list_item_img">
-                    <img src="./assets/img/order-list-img.png" alt="" />
+            <div class="modal_order_list">
+              <div class="order_list_item">
+                <div class="order_list_item_details">
+                  <div class="order_details_wrapper">
+                    <div class="order_list_item_img">
+                      <img src="./assets/img/order-list-img.png" alt="" />
+                    </div>
+                    <div class="order_list_item_info">
+                      <h2>The Meatballer</h2>
+                      <p>Easy Marinara Sauce</p>
+                      <p>Extra Cheese Bread</p>
+                      <p>No Fresh Basil</p>
+                    </div>
                   </div>
-                  <div class="order_list_item_info">
-                    <h2>The Meatballer</h2>
-                    <p>Easy Marinara Sauce</p>
-                    <p>Extra Cheese Bread</p>
-                    <p>No Fresh Basil</p>
+
+                  <div class="order_list_btn">
+                    <button type="button" class="order_edit_btn">Edit</button>
+                    <button type="button" class="order_remove_btn">
+                      Remove
+                    </button>
                   </div>
                 </div>
 
-                <div class="order_list_btn">
-                  <button type="button" class="order_edit_btn">Edit</button>
-                  <button type="button" class="order_remove_btn">Remove</button>
+                <div class="order_list_item_price">
+                  <h1>$8.00</h1>
                 </div>
               </div>
 
-              <div class="order_list_item_price">
-                <h1>$8.00</h1>
+              <div class="modal_order_counter">
+                <div class="modal_order_decrement" onclick="productDecrement()">
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="modal_order_counter_val">1</div>
+                <div class="modal_order_increment" onclick="productIncrement()">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="modal_order_counter">
-              <div class="modal_order_decrement" onclick="productDecrement()">
-                <i class="fa-solid fa-minus"></i>
+          <div class="sauces_add">
+            <div class="accordion_wrapper">
+              <div class="accordion-content">
+                <header>
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <span class="title">Add Sauces</span>
+                </header>
+
+                <div class="description">
+                  <div class="essentials_pack_item">
+                    <div class="essentials_pack_wrapper">
+                      <div class="essentials_pack_img">
+                        <img src="./assets/img/sauces_img_1.png" alt="" />
+                      </div>
+
+                      <div class="essentials_pack_info">
+                        <h2>Silverware Packet</h2>
+                        <p>$0.50</p>
+                      </div>
+                    </div>
+
+                    <div class="essentials_pack_qty">
+                      <span class="essentials_pack_head">Qty:</span>
+                      <div class="essentials_pack_counter">
+                        <span
+                          class="essentials_pack_decrement"
+                          onclick="saucesDecrement1()"
+                          ><i class="fa-solid fa-minus"></i
+                        ></span>
+                        <span class="essentials_pack_value" id="saucesCounter1"
+                          >0</span
+                        >
+                        <span
+                          class="essentials_pack_increment"
+                          onclick="saucesIncrement1()"
+                          ><i class="fa-solid fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="essentials_pack_item">
+                    <div class="essentials_pack_wrapper">
+                      <div class="essentials_pack_img">
+                        <img src="./assets/img/sauces_img_2.png" alt="" />
+                      </div>
+
+                      <div class="essentials_pack_info">
+                        <h2>Serrano Chili</h2>
+                        <p>$0.50</p>
+                      </div>
+                    </div>
+
+                    <div class="essentials_pack_qty">
+                      <span class="essentials_pack_head">Qty:</span>
+                      <div class="essentials_pack_counter">
+                        <span
+                          class="essentials_pack_decrement"
+                          onclick="saucesDecrement2()"
+                          ><i class="fa-solid fa-minus"></i
+                        ></span>
+                        <span
+                          class="essentials_pack_value"
+                          id="saucesCounterValue2"
+                          >0</span
+                        >
+                        <span
+                          class="essentials_pack_increment"
+                          onclick="saucesIncrement2()"
+                          ><i class="fa-solid fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="essentials_pack_item">
+                    <div class="essentials_pack_wrapper">
+                      <div class="essentials_pack_img">
+                        <img src="./assets/img/sauces_img_3.png" alt="" />
+                      </div>
+
+                      <div class="essentials_pack_info">
+                        <h2>Garlic Butter</h2>
+                        <p>$0.50</p>
+                      </div>
+                    </div>
+
+                    <div class="essentials_pack_qty">
+                      <span class="essentials_pack_head">Qty:</span>
+                      <div class="essentials_pack_counter">
+                        <span
+                          class="essentials_pack_decrement"
+                          onclick="saucesDecrement3()"
+                          ><i class="fa-solid fa-minus"></i
+                        ></span>
+                        <span
+                          class="essentials_pack_value"
+                          id="saucesCounterValue3"
+                          >0</span
+                        >
+                        <span
+                          class="essentials_pack_increment"
+                          onclick="saucesIncrement3()"
+                          ><i class="fa-solid fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="essentials_pack_item">
+                    <div class="essentials_pack_wrapper">
+                      <div class="essentials_pack_img">
+                        <img src="./assets/img/sauces_img_4.png" alt="" />
+                      </div>
+
+                      <div class="essentials_pack_info">
+                        <h2>Buffalo</h2>
+                        <p>$0.50</p>
+                      </div>
+                    </div>
+
+                    <div class="essentials_pack_qty">
+                      <span class="essentials_pack_head">Qty:</span>
+                      <div class="essentials_pack_counter">
+                        <span
+                          class="essentials_pack_decrement"
+                          onclick="saucesDecrement4()"
+                          ><i class="fa-solid fa-minus"></i
+                        ></span>
+                        <span
+                          class="essentials_pack_value"
+                          id="saucesCounterValue4"
+                          >0</span
+                        >
+                        <span
+                          class="essentials_pack_increment"
+                          onclick="saucesIncrement4()"
+                          ><i class="fa-solid fa-plus"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="modal_order_counter_val">1</div>
-              <div class="modal_order_increment" onclick="productIncrement()">
-                <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+
+          <div class="modal_essentials_pack">
+            <h1 class="modal_order_list_title">To-Go Essentials</h1>
+
+            <div class="essentials_pack_list">
+              <div class="essentials_pack_item">
+                <div class="essentials_pack_wrapper">
+                  <div class="essentials_pack_img">
+                    <img src="./assets/img/essentials_pack_img_1.png" alt="" />
+                  </div>
+
+                  <div class="essentials_pack_info">
+                    <h2>Silverware Packet</h2>
+                    <p>
+                      Each comes with a knife, fork, spoon, napkin, salt &
+                      pepper packet.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="essentials_pack_qty">
+                  <span class="essentials_pack_head">Qty:</span>
+                  <div class="essentials_pack_counter">
+                    <span
+                      class="essentials_pack_decrement"
+                      onclick="essentialDecrement1()"
+                      ><i class="fa-solid fa-minus"></i
+                    ></span>
+                    <span class="essentials_pack_value" id="essentialCounter1"
+                      >0</span
+                    >
+                    <span
+                      class="essentials_pack_increment"
+                      onclick="essentialIncrement1()"
+                      ><i class="fa-solid fa-plus"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="essentials_pack_item">
+                <div class="essentials_pack_wrapper">
+                  <div class="essentials_pack_img">
+                    <img src="./assets/img/essentials_pack_img_2.png" alt="" />
+                  </div>
+
+                  <div class="essentials_pack_info">
+                    <h2>Parmesan Packet</h2>
+                    <p>
+                      Each comes with a knife, fork, spoon, napkin, salt &
+                      pepper packet.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="essentials_pack_qty">
+                  <span class="essentials_pack_head">Qty:</span>
+                  <div class="essentials_pack_counter">
+                    <span
+                      class="essentials_pack_decrement"
+                      onclick="essentialDecrement2()"
+                      ><i class="fa-solid fa-minus"></i
+                    ></span>
+                    <span class="essentials_pack_value" id="essentialCounter2"
+                      >0</span
+                    >
+                    <span
+                      class="essentials_pack_increment"
+                      onclick="essentialIncrement2()"
+                      ><i class="fa-solid fa-plus"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="essentials_pack_item">
+                <div class="essentials_pack_wrapper">
+                  <div class="essentials_pack_img">
+                    <img src="./assets/img/essentials_pack_img_3.png" alt="" />
+                  </div>
+
+                  <div class="essentials_pack_info">
+                    <h2>Red Pepper Flakes Packet</h2>
+                    <p>
+                      Each comes with a knife, fork, spoon, napkin, salt &
+                      pepper packet.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="essentials_pack_qty">
+                  <span class="essentials_pack_head">Qty:</span>
+                  <div class="essentials_pack_counter">
+                    <span
+                      class="essentials_pack_decrement"
+                      onclick="essentialDecrement3()"
+                      ><i class="fa-solid fa-minus"></i
+                    ></span>
+                    <span class="essentials_pack_value" id="essentialCounter3"
+                      >0</span
+                    >
+                    <span
+                      class="essentials_pack_increment"
+                      onclick="essentialIncrement3()"
+                      ><i class="fa-solid fa-plus"></i
+                    ></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="sauces_add">
-          <div class="accordion_wrapper">
-            <div class="accordion-content">
-              <header>
-                <i class="fa-solid fa-chevron-down"></i>
-                <span class="title">Add Sauces</span>
-              </header>
-
-              <div class="description">
-                <div class="essentials_pack_item">
-                  <div class="essentials_pack_wrapper">
-                    <div class="essentials_pack_img">
-                      <img src="./assets/img/sauces_img_1.png" alt="" />
-                    </div>
-
-                    <div class="essentials_pack_info">
-                      <h2>Silverware Packet</h2>
-                      <p>$0.50</p>
-                    </div>
-                  </div>
-
-                  <div class="essentials_pack_qty">
-                    <span class="essentials_pack_head">Qty:</span>
-                    <div class="essentials_pack_counter">
-                      <span
-                        class="essentials_pack_decrement"
-                        onclick="saucesDecrement1()"
-                        ><i class="fa-solid fa-minus"></i
-                      ></span>
-                      <span class="essentials_pack_value" id="saucesCounter1"
-                        >0</span
-                      >
-                      <span
-                        class="essentials_pack_increment"
-                        onclick="saucesIncrement1()"
-                        ><i class="fa-solid fa-plus"></i
-                      ></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="essentials_pack_item">
-                  <div class="essentials_pack_wrapper">
-                    <div class="essentials_pack_img">
-                      <img src="./assets/img/sauces_img_2.png" alt="" />
-                    </div>
-
-                    <div class="essentials_pack_info">
-                      <h2>Serrano Chili</h2>
-                      <p>$0.50</p>
-                    </div>
-                  </div>
-
-                  <div class="essentials_pack_qty">
-                    <span class="essentials_pack_head">Qty:</span>
-                    <div class="essentials_pack_counter">
-                      <span
-                        class="essentials_pack_decrement"
-                        onclick="saucesDecrement2()"
-                        ><i class="fa-solid fa-minus"></i
-                      ></span>
-                      <span
-                        class="essentials_pack_value"
-                        id="saucesCounterValue2"
-                        >0</span
-                      >
-                      <span
-                        class="essentials_pack_increment"
-                        onclick="saucesIncrement2()"
-                        ><i class="fa-solid fa-plus"></i
-                      ></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="essentials_pack_item">
-                  <div class="essentials_pack_wrapper">
-                    <div class="essentials_pack_img">
-                      <img src="./assets/img/sauces_img_3.png" alt="" />
-                    </div>
-
-                    <div class="essentials_pack_info">
-                      <h2>Garlic Butter</h2>
-                      <p>$0.50</p>
-                    </div>
-                  </div>
-
-                  <div class="essentials_pack_qty">
-                    <span class="essentials_pack_head">Qty:</span>
-                    <div class="essentials_pack_counter">
-                      <span
-                        class="essentials_pack_decrement"
-                        onclick="saucesDecrement3()"
-                        ><i class="fa-solid fa-minus"></i
-                      ></span>
-                      <span
-                        class="essentials_pack_value"
-                        id="saucesCounterValue3"
-                        >0</span
-                      >
-                      <span
-                        class="essentials_pack_increment"
-                        onclick="saucesIncrement3()"
-                        ><i class="fa-solid fa-plus"></i
-                      ></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="essentials_pack_item">
-                  <div class="essentials_pack_wrapper">
-                    <div class="essentials_pack_img">
-                      <img src="./assets/img/sauces_img_4.png" alt="" />
-                    </div>
-
-                    <div class="essentials_pack_info">
-                      <h2>Buffalo</h2>
-                      <p>$0.50</p>
-                    </div>
-                  </div>
-
-                  <div class="essentials_pack_qty">
-                    <span class="essentials_pack_head">Qty:</span>
-                    <div class="essentials_pack_counter">
-                      <span
-                        class="essentials_pack_decrement"
-                        onclick="saucesDecrement4()"
-                        ><i class="fa-solid fa-minus"></i
-                      ></span>
-                      <span
-                        class="essentials_pack_value"
-                        id="saucesCounterValue4"
-                        >0</span
-                      >
-                      <span
-                        class="essentials_pack_increment"
-                        onclick="saucesIncrement4()"
-                        ><i class="fa-solid fa-plus"></i
-                      ></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal_essentials_pack">
-          <h1 class="modal_order_list_title">To-Go Essentials</h1>
-
-          <div class="essentials_pack_list">
-            <div class="essentials_pack_item">
-              <div class="essentials_pack_wrapper">
-                <div class="essentials_pack_img">
-                  <img src="./assets/img/essentials_pack_img_1.png" alt="" />
-                </div>
-
-                <div class="essentials_pack_info">
-                  <h2>Silverware Packet</h2>
-                  <p>
-                    Each comes with a knife, fork, spoon, napkin, salt & pepper
-                    packet.
-                  </p>
-                </div>
-              </div>
-
-              <div class="essentials_pack_qty">
-                <span class="essentials_pack_head">Qty:</span>
-                <div class="essentials_pack_counter">
-                  <span
-                    class="essentials_pack_decrement"
-                    onclick="essentialDecrement1()"
-                    ><i class="fa-solid fa-minus"></i
-                  ></span>
-                  <span class="essentials_pack_value" id="essentialCounter1"
-                    >0</span
-                  >
-                  <span
-                    class="essentials_pack_increment"
-                    onclick="essentialIncrement1()"
-                    ><i class="fa-solid fa-plus"></i
-                  ></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="essentials_pack_item">
-              <div class="essentials_pack_wrapper">
-                <div class="essentials_pack_img">
-                  <img src="./assets/img/essentials_pack_img_2.png" alt="" />
-                </div>
-
-                <div class="essentials_pack_info">
-                  <h2>Parmesan Packet</h2>
-                  <p>
-                    Each comes with a knife, fork, spoon, napkin, salt & pepper
-                    packet.
-                  </p>
-                </div>
-              </div>
-
-              <div class="essentials_pack_qty">
-                <span class="essentials_pack_head">Qty:</span>
-                <div class="essentials_pack_counter">
-                  <span
-                    class="essentials_pack_decrement"
-                    onclick="essentialDecrement2()"
-                    ><i class="fa-solid fa-minus"></i
-                  ></span>
-                  <span class="essentials_pack_value" id="essentialCounter2"
-                    >0</span
-                  >
-                  <span
-                    class="essentials_pack_increment"
-                    onclick="essentialIncrement2()"
-                    ><i class="fa-solid fa-plus"></i
-                  ></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="essentials_pack_item">
-              <div class="essentials_pack_wrapper">
-                <div class="essentials_pack_img">
-                  <img src="./assets/img/essentials_pack_img_3.png" alt="" />
-                </div>
-
-                <div class="essentials_pack_info">
-                  <h2>Red Pepper Flakes Packet</h2>
-                  <p>
-                    Each comes with a knife, fork, spoon, napkin, salt & pepper
-                    packet.
-                  </p>
-                </div>
-              </div>
-
-              <div class="essentials_pack_qty">
-                <span class="essentials_pack_head">Qty:</span>
-                <div class="essentials_pack_counter">
-                  <span
-                    class="essentials_pack_decrement"
-                    onclick="essentialDecrement3()"
-                    ><i class="fa-solid fa-minus"></i
-                  ></span>
-                  <span class="essentials_pack_value" id="essentialCounter3"
-                    >0</span
-                  >
-                  <span
-                    class="essentials_pack_increment"
-                    onclick="essentialIncrement3()"
-                    ><i class="fa-solid fa-plus"></i
-                  ></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="product_cart">
+        <div class="product_cart bag_order_product_cart">
           <div class="bag_modal_total_price">
             <div class="bag_price_item">
               <span class="bag_price_title">Subtotal</span>
@@ -597,6 +601,7 @@
     <!-- Scripts -->
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/counter.js"></script>
     <script src="./assets/js/accordion.js"></script>
   </body>
