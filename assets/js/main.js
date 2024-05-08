@@ -60,6 +60,25 @@ allTabs.forEach((menuTab, index) => {
   });
 });
 
+let sections = document.querySelectorAll(".products");
+let navLinks = document.querySelectorAll(".tab");
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((links) => {
+        links.classList.remove("active");
+        document
+          .querySelector(".tab[href*=" + id + "]")
+          .classList.add("active");
+      });
+    }
+  });
+};
+
 /// product size
 // add fund card
 function checkChange1(clickedCheckbox) {
