@@ -372,6 +372,7 @@ label {
 }
 
 .cart_modal .button1 {
+  position: relative;
   text-align: start;
   width: calc(100% + 60px);
   margin-left: -30px;
@@ -379,6 +380,11 @@ label {
   color: var(--white);
   font-size: 16px;
   padding: 12px 30px;
+  display: none;
+}
+
+.cart_modal .button1.active {
+  display: block;
 }
 
 .cart_modal .button1 i {
@@ -386,6 +392,7 @@ label {
 }
 
 .cart_modal .button2 {
+  position: relative;
   text-align: start;
   width: calc(100% + 60px);
   margin-left: -30px;
@@ -393,6 +400,25 @@ label {
   color: var(--white);
   font-size: 16px;
   padding: 12px 30px;
+  display: none;
+}
+
+.cart_modal .button2.active {
+  display: block;
+}
+
+.close_cart_notification2,
+.close_cart_notification1 {
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+
+.close_cart_notification2 svg,
+.close_cart_notification1 svg {
+  width: 16px;
+  height: 16px;
 }
 
 .cart_modal .add_condiments {
@@ -403,6 +429,7 @@ label {
   font-size: 22px;
   font-family: var(--primary-font);
   font-weight: 600;
+  margin: 16px 0;
 }
 
 .cart_modal .summary button {

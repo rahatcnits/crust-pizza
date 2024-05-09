@@ -61,7 +61,7 @@ allTabs.forEach((menuTab, index) => {
 });
 
 let sections = document.querySelectorAll(".products");
-let navLinks = document.querySelectorAll(".tab");
+let navLinks = document.querySelectorAll(".tab a");
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
@@ -70,10 +70,9 @@ window.onscroll = () => {
     let id = sec.getAttribute("id");
     if (top >= offset && top < offset + height) {
       navLinks.forEach((links) => {
-        links.classList.remove("active");
-        document
-          .querySelector(".tab[href*=" + id + "]")
-          .classList.add("active");
+        links.parentElement.classList.remove("active");
+        let tabAElement = document.querySelector(".tab a[href*=" + id + "]");
+        tabAElement.parentElement.classList.add("active");
       });
     }
   });

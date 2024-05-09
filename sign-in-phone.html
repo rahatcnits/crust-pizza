@@ -10,7 +10,7 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/user.css">
+    <link rel="stylesheet" href="./assets/css/user.css" />
 
     <!-- Bootstrap CSS Link -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -114,17 +114,20 @@
               <input
                 type="number"
                 name="number"
+                class="signInPhone"
+                data-maxlength="10"
+                oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+                pattern="([0-9]{1,3}).([0-9]{1,3}).([0-9]{1,4})"
                 placeholder="Enter your phone number"
               />
 
               <div class="button_item">
-                <button class="Passcode_btn">
+                <button type="button" class="Passcode_btn" disabled>
                   Text Me My One Time Passcode
                 </button>
                 <button class="numbar_btn">Sign In With Email Address</button>
               </div>
             </form>
-
           </div>
         </div>
       </div>
@@ -132,6 +135,6 @@
     <!-- Sign In Phone End -->
 
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/signInPhone.js"></script>
   </body>
 </html>
-
