@@ -2186,6 +2186,9 @@ Checkout Start
   font-family: var(--primary-font);
   font-weight: 700;
   font-size: 16px;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  background: transparent;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -2193,16 +2196,10 @@ Checkout Start
   -o-border-radius: 30px;
 }
 
-.pay_visa_btn {
+.payment_saved_card_btns button.active {
   background: var(--primary-color);
   color: var(--white);
   border: 2px solid var(--primary-color);
-}
-
-.pay_gift_btn {
-  border: 2px solid var(--text-color);
-  color: var(--text-color);
-  background: transparent;
 }
 
 .card_add_title p {
@@ -2340,8 +2337,12 @@ Checkout Start
   margin: 0 3px 0 6px;
 }
 
-.pay_normal_btn {
+.pay_card_btn {
   background: var(--primary-color);
+}
+
+.pay_card_btn span {
+  padding-left: 6px;
 }
 
 .pay_apple_btn {
@@ -2361,7 +2362,6 @@ Checkout Start
   top: 20px;
   bottom: 20px;
   width: 100%;
-  min-height: calc(100vh - 40px);
   height: auto;
   background: var(--white);
   padding: 20px;
@@ -2447,7 +2447,7 @@ Checkout Start
 }
 
 .suggest_product {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .suggest_product_title h2 {
@@ -2475,6 +2475,25 @@ Checkout Start
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+
+.suggest_product_add_text {
+  font-family: var(--primary-font);
+  font-style: 14px;
+  display: block;
+  text-align: center;
+  color: var(--gray-text);
+  margin-top: 10px;
+  display: none;
+}
+
+.suggest_product_item.active {
+  border-color: var(--secondary-color);
+}
+
+.suggest_product_item.active .suggest_product_add_text {
+  display: block;
 }
 
 .suggest_product_item_img {
@@ -2503,13 +2522,6 @@ Checkout Start
   font-weight: 700;
   color: var(--primary-color);
   text-align: center;
-}
-
-.checkout_product_total_price {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  right: 20px;
 }
 
 .checkout_product_subtotal_price_item {

@@ -107,8 +107,8 @@
             <div class="header">
               <h1>One Time Password Verified</h1>
               <p>
-                You are now successfully logged in. You may now <br />
-                continue to your account.
+                Please wait while we log you <br />
+                in to your account...
               </p>
             </div>
 
@@ -119,7 +119,6 @@
                   background="transparent"
                   speed="1"
                   style="width: 70px; height: 70px"
-                  loop
                   autoplay
                 ></dotlottie-player>
               </div>
@@ -127,7 +126,9 @@
             </div>
 
             <div class="button_item">
-              <button class="Passcode_btn">Continue</button>
+              <button type="button" disabled class="Passcode_btn">
+                Continue
+              </button>
             </div>
           </div>
         </div>
@@ -141,5 +142,6 @@
       type="module"
     ></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/verified.js"></script>
   </body>
 </html>

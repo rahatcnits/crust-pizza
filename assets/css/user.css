@@ -652,13 +652,18 @@ label {
   font-family: var(--primary-font);
   padding: 10px 0px 10px 0px;
   margin-top: 10px;
-  background: var(--primary-color);
+  background: rgba(0, 0, 0, 0.3);
   color: var(--white);
   border-radius: 6px;
   transition: 0.5s;
 }
 
-#verified .verified_contant .Passcode_btn:hover {
+#verified .verified_contant .Passcode_btn.show {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+#verified .verified_contant .Passcode_btn.show:hover {
   background: #ad4708;
 }
 

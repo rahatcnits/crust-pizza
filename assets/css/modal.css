@@ -836,7 +836,7 @@ label {
   -o-border-radius: 4px;
 }
 
-.progress2 span {
+.progress2 .progress_total_val {
   position: absolute;
   right: 20px;
   top: 8px;
@@ -859,6 +859,19 @@ label {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+}
+
+.progress_current_val {
+  opacity: 0;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.progress_current_val.show {
+  opacity: 1;
 }
 
 .progress-moved .progress-bar2 {
