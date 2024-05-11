@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* ====================
+  Reset Default CSS Start
+  ==================== */
+
+:root {
+  --primary-color: #d15e14;
+  --secondary-color: #137ac9;
+  --text-color: #000000;
+  --gray-text: rgba(0, 0, 0, 0.6);
+  --stroke-color: #cdcfd3;
+  --red: #ff4a4a;
+  --white: #ffffff;
+  --shadow-lg: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 0 30px 0 rgba(0, 0, 0, 0.12);
+  --primary-font: "Roboto";
+  --secondary-font: "Poppins";
+}
+
+/* ====================
+  Reset Default CSS End
+  ==================== */
+
+
+  /* Mobile View Navbar Start */
+  #mobile_navbar {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background: var(--white);
+    border-top: 1px solid var(--stroke-color);
+    display: none;
+  }
+  
+  .mobile_navbar_item ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 16px 20px !important;
+  }
+
+
+  .mobile_navbar_item ul a p{
+   font-size: 12px;
+   font-weight: 600;
+   font-family: var(--primary-font);
+   color: var(--text-color);
+   margin: 0px;
+   transition: 0.4s !important;
+  }
+
+  .mobile_navbar_item ul a svg{
+   width: 20px;
+   height: 20px;
+    
+  }
+
+  .mobile_navbar_item ul a svg path{
+   transition: 0.4s !important;
+  }
+
+  .mobile_navbar_item ul li a.active p,
+  .mobile_navbar_item ul a:hover p{
+   color: var(--primary-color);
+    
+  }
+
+  .mobile_navbar_item ul li a.active svg path,
+  .mobile_navbar_item ul a:hover svg path{
+   fill: var(--primary-color) !important;
+    
+  }
+
+  .mobile_navbar_item ul li a.active .bag path,
+  .mobile_navbar_item ul a:hover .bag path{
+   stroke: var(--primary-color) !important;
+   fill: none !important;
+    
+  }
+
+
+@media screen and (max-width: 768px) {
+  #mobile_navbar {
+    display: block;
+  }
+  
+}
+
+  /* Mobile View Navbar End */
