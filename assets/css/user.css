@@ -1733,8 +1733,9 @@ label {
   height: 15px;
 }
 
-#new_card .check p {
+#new_card .check label {
   font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
   margin: 0px;
   padding-left: 10px;
 }
@@ -1754,12 +1755,18 @@ label {
 
 #new_card .button .credit_btn {
   color: var(--white);
-  background: var(--primary-color);
+  background: rgba(0, 0, 0, 0.3);
   padding: 10px 20px;
   border-radius: 30px;
   transition: 0.4s;
 }
-#new_card .button .credit_btn:hover {
+
+#new_card .button .credit_btn.show {
+  color: var(--white);
+  background: var(--primary-color);
+}
+
+#new_card .button .credit_btn.show:hover {
   background: #ad4708;
 }
 

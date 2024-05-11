@@ -1,15 +1,20 @@
+const productQtyDecrement = document.querySelector(".product_qty_decrement");
 // counter
 let counterValue = 1;
 
 function increment() {
   counterValue++;
   updateCounter();
+  productQtyDecrement.classList.add("active");
 }
 
 function decrement() {
   if (counterValue > 1) {
     counterValue--;
     updateCounter();
+  }
+  if (counterValue === 1) {
+    productQtyDecrement.classList.remove("active");
   }
 }
 

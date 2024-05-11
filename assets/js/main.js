@@ -92,63 +92,38 @@ function checkChange1(clickedCheckbox) {
   }
 }
 
-function checkChange2(clickedCheckbox) {
-  const checkboxes = document.querySelectorAll('input[name="productGet"]');
-
-  if (clickedCheckbox.checked) {
-    checkboxes.forEach((checkbox) => {
-      if (checkbox !== clickedCheckbox) {
-        checkbox.checked = false;
-      }
-    });
-  }
-}
-
-function checkChange3(clickedCheckbox) {
-  const checkboxes = document.querySelectorAll('input[name="productCrust"]');
-
-  if (clickedCheckbox.checked) {
-    checkboxes.forEach((checkbox) => {
-      if (checkbox !== clickedCheckbox) {
-        checkbox.checked = false;
-      }
-    });
-  }
-}
-
-function checkChange4(clickedCheckbox) {
-  const checkboxes = document.querySelectorAll('input[name="crust"]');
-
-  if (clickedCheckbox.checked) {
-    checkboxes.forEach((checkbox) => {
-      if (checkbox !== clickedCheckbox) {
-        checkbox.checked = false;
-      }
-    });
-  }
-}
-
 // crust select
-document.addEventListener("DOMContentLoaded", function () {
-  // Get all cards
-  // var cards = document.querySelectorAll(".card");
-  const cards = document.querySelectorAll(".product_crust_details");
 
-  // Add click event listener to each card
-  cards.forEach(function (card) {
-    card.addEventListener("click", function () {
-      // Check if the clicked card already has the active class
-      var isActive = this.classList.contains("active");
+// var cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".product_crust_details");
+const crustSelectBtns = document.querySelectorAll(".add_btn");
 
-      // Remove active class from all cards
-      cards.forEach(function (card) {
-        card.classList.remove("active");
-      });
+// Add click event listener to each card
+cards.forEach(function (card, index) {
+  card.addEventListener("click", function () {
+    let cardActive = card.classList.toggle("active");
 
-      // If the clicked card didn't have the active class, add it
-      if (!isActive) {
-        this.classList.add("active");
-      }
-    });
+    let crustSelectCardBtn = crustSelectBtns[index];
+    if (cardActive) {
+      crustSelectCardBtn.innerText = "Added"; // Change button text to "Added"
+    } else {
+      crustSelectCardBtn.innerHTML = `<svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 1.5V16.5M16.5 9H1.5"
+            stroke="black"
+            stroke-opacity="0.6"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span>Add</span>`; // Revert button content to original
+    }
   });
 });

@@ -29,3 +29,24 @@ suggestProducts.forEach((suggestProduct) => {
     suggestProduct.classList.toggle("active");
   });
 });
+
+// card number
+function formatInput(input) {
+  // Remove any non-numeric characters except the slash
+  var numericValue = input.value.replace(/[^\d/]/g, "");
+  // If the numeric value is longer than 2, insert a slash after the first two characters
+  if (numericValue.length > 2 && numericValue.indexOf("/") === -1) {
+    numericValue =
+      numericValue.substring(0, 2) + "/" + numericValue.substring(2);
+  }
+  // Update the input value
+  input.value = numericValue;
+}
+
+// Get the input element
+var dateInput = document.getElementById("expiration");
+
+// Add an event listener for input formatting
+dateInput.addEventListener("input", function () {
+  formatInput(this);
+});

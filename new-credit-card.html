@@ -18,12 +18,6 @@
 
     <!-- Font Awesome Link -->
     <script src="./assets/js/fontawesome.js"></script>
-
-    <!-- Datepicker CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-    />
   </head>
   <body>
     <!-- Navbar Start -->
@@ -156,6 +150,7 @@
                     ><br />
                     <input
                       type="text"
+                      id="name"
                       class="name"
                       placeholder="Name on Card"
                     />
@@ -166,6 +161,7 @@
                     ><br />
                     <input
                       type="number"
+                      id="cardNumber"
                       class="number"
                       placeholder="Enter card number"
                     />
@@ -174,8 +170,9 @@
                     <label for="name">CCV<span>*</span></label
                     ><br />
                     <input
-                      type="email"
-                      class="email"
+                      type="number"
+                      id="ccv"
+                      class="ccv"
                       placeholder="Enter CCV code"
                     />
                   </div>
@@ -185,9 +182,10 @@
                     ><br />
                     <div class="form_item">
                       <input
-                        class="datepicker_input"
+                        class="expiration_input"
                         type="text"
-                        id="datepicker"
+                        id="expiration"
+                        maxlength="7"
                         placeholder="Enter expiration date"
                       />
                       <img src="./assets/icons/calendar-account.svg" alt="" />
@@ -196,8 +194,10 @@
                 </form>
 
                 <div class="check">
-                  <input class="checkbox" type="checkbox" />
-                  <p>Make this my default payment option</p>
+                  <input class="checkbox" id="defaultPayment" type="checkbox" />
+                  <label for="defaultPayment"
+                    >Make this my default payment option</label
+                  >
                 </div>
 
                 <p class="information">
@@ -207,7 +207,14 @@
                 </p>
 
                 <div class="button">
-                  <button class="credit_btn">Add a Credit Card</button>
+                  <button
+                    type="button"
+                    id="creditBtn"
+                    class="credit_btn"
+                    disabled
+                  >
+                    Add a Credit Card
+                  </button>
                 </div>
               </div>
             </div>
@@ -218,8 +225,7 @@
     <!-- New Credit card End -->
 
     <!-- Scripts -->
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/datePickerMain.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/cards.js"></script>
   </body>
 </html>
