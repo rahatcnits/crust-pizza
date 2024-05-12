@@ -2571,6 +2571,10 @@ Checkout Start
   color: var(--text-color);
 }
 
+.mobile_wrapper {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   #checkout {
     overflow: auto;
@@ -2613,6 +2617,10 @@ Checkout Start
 @media screen and (max-width: 768px) {
   .wrapper {
     display: none;
+  }
+
+  .mobile_wrapper {
+    display: block;
   }
 
   .checkout_head h1 {
