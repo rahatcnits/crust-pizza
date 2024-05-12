@@ -166,10 +166,22 @@ Reset Default CSS End
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
+  #navbar {
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
   .user_btn svg {
     width: 24px;
     height: 24px;
+  }
+
+  .cart_btn {
+    display: none;
   }
 
   .user_btn span {
