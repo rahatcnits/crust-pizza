@@ -2611,6 +2611,10 @@ Checkout Start
 }
 
 @media screen and (max-width: 768px) {
+  .wrapper {
+    display: none;
+  }
+
   .checkout_head h1 {
     font-size: 2em;
     margin: 30px 0;
