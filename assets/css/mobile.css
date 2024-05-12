@@ -24,171 +24,171 @@
   Reset Default CSS End
   ==================== */
 
+/* Mobile View Navbar Start */
+#mobile_navbar {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background: var(--white);
+  border-top: 1px solid var(--stroke-color);
+}
 
-  /* Mobile View Navbar Start */
-  #mobile_navbar {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    width: 100%;
-    background: var(--white);
-    border-top: 1px solid var(--stroke-color);
+.mobile_navbar_item ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 16px 20px !important;
+}
 
-  }
-  
-  .mobile_navbar_item ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 16px 20px !important;
-  }
+.mobile_navbar_item ul a p {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  margin: 0px;
+  transition: 0.4s !important;
+}
 
+.mobile_navbar_item ul a svg {
+  width: 20px;
+  height: 20px;
+}
 
-  .mobile_navbar_item ul a p{
-   font-size: 12px;
-   font-weight: 600;
-   font-family: var(--primary-font);
-   color: var(--text-color);
-   margin: 0px;
-   transition: 0.4s !important;
-  }
+.mobile_navbar_item ul a svg path {
+  transition: 0.4s !important;
+}
 
-  .mobile_navbar_item ul a svg{
-   width: 20px;
-   height: 20px;
-    
-  }
+.mobile_navbar_item ul li a.active p,
+.mobile_navbar_item ul a:hover p {
+  color: var(--primary-color);
+}
 
-  .mobile_navbar_item ul a svg path{
-   transition: 0.4s !important;
-  }
+.mobile_navbar_item ul li a.active svg path,
+.mobile_navbar_item ul a:hover svg path {
+  fill: var(--primary-color) !important;
+}
 
-  .mobile_navbar_item ul li a.active p,
-  .mobile_navbar_item ul a:hover p{
-   color: var(--primary-color);
-    
-  }
+.mobile_navbar_item ul li a.active .bag path,
+.mobile_navbar_item ul a:hover .bag path {
+  stroke: var(--primary-color) !important;
+  fill: none !important;
+}
 
-  .mobile_navbar_item ul li a.active svg path,
-  .mobile_navbar_item ul a:hover svg path{
-   fill: var(--primary-color) !important;
-    
-  }
+/* Mobile View Navbar End */
 
-  .mobile_navbar_item ul li a.active .bag path,
-  .mobile_navbar_item ul a:hover .bag path{
-   stroke: var(--primary-color) !important;
-   fill: none !important;
-    
-  }
-
-  /* Mobile View Navbar End */
 
 /* Empty Bag (Signed Out) Start */
-  .bag_empty_modal {
-    /* position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 333;
-    opacity: 0; */
-  }
-  
-  .bag_empty_modal .empty_wrapper {
-    position: relative;
-    width: 850px;
-    background: var(--white);
-    padding: 30px 30px 0;
-    border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
-    transform: scale(0.6);
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    -o-transform: scale(0.6);
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-  }
-  
-  .bag_empty_modal.active .empty_wrapper {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-  
-  .bag_empty_modal .empty_wrapper .order_item {
-    text-align: center !important;
-    margin: 60px 0px 40px 0px;
-  }
-  
-  .bag_empty_modal .empty_wrapper .order_item h1 {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .bag_empty_modal .empty_wrapper .order_item p {
-    font-size: 18px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .bag_empty_modal .empty_wrapper .order_img {
-    text-align: center !important;
-  }
-  
-  .bag_empty_modal .empty_wrapper .order_btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px 60px 0px;
-  }
-  .bag_empty_modal .empty_wrapper .order_btn button:hover {
-    color: var(--primary-color);
-  }
-  .bag_empty_modal .empty_wrapper .order_btn button span:hover {
-    border-color: var(--primary-color);
-  }
-  
-  .bag_empty_modal .empty_wrapper .order_btn button {
-    background: transparent;
-    transition: 0.3s;
-  }
-  
-  .bag_empty_modal .empty_wrapper .order_btn button span {
-    border-bottom: 1px solid var(--text-color);
-    margin: 0 15px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .bag_empty_modal .empty_wrapper .order_btn .vertical_bar {
-    font-size: 25px;
-    color: var(--stroke-color);
-  }
-  
-  .bag_empty_modal .close_modal:hover {
-    background: rgba(204, 204, 204, 0.2);
-  }
-  
-  .bag_empty_modal .close_modal i {
-    font-size: 1.2em;
-  }
-  
-  .bag_empty_modal .order_item h1 {
-    text-align: center;
-  }
+.bag_empty {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 174px);
+  padding: 0 12px;
+}
+
+.bag_empty_item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0;
+}
+
+.bag_empty_title {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--stroke-color);
+}
+
+.bag_empty_title h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.bag_empty .empty_wrapper .order_item {
+  text-align: center !important;
+  margin: 0px 0px 10px 0px;
+}
+
+.bag_empty .empty_wrapper .order_item h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-wrap: wrap;
+}
+
+.bag_empty .empty_wrapper .order_item p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin: 0;
+}
+
+.bag_empty .empty_wrapper .order_img {
+  text-align: center !important;
+}
+
+.bag_empty .empty_wrapper .order_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.bag_empty .empty_wrapper .order_btn button:hover {
+  color: var(--primary-color);
+}
+
+.bag_empty .empty_wrapper .order_btn button span:hover {
+  border-color: var(--primary-color);
+}
+
+.bag_empty .empty_wrapper .order_btn button {
+  background: transparent;
+  transition: 0.3s;
+}
+
+.bag_empty .empty_wrapper .order_btn button span {
+  border-bottom: 1px solid var(--text-color);
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bag_empty .empty_wrapper .order_btn .vertical_bar {
+  font-size: 22px;
+  color: var(--stroke-color);
+}
+
+.bag_empty .order_item h1 {
+  text-align: center;
+}
+
+.bag_empty .start_an_order {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 95px;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.bag_empty .start_order_btn {
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--white);
+  background: var(--primary-color);
+  padding: 10px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.bag_empty .start_order_btn:hover {
+  background: #ad4708;
+}
+
+/* Empty Bag (Signed Out) Start */
