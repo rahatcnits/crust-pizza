@@ -1066,135 +1066,52 @@
       <!-- Mobile View Navbar End -->
 
       <!-- My Bag (Signed In) Start -->
-      <div class="modal_wrapper">
-        <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
+      <div class="my_bag">
+        <div class="my_bag_wrapper">
+          <div class="my_bag_title">
+            <h1>My Bag</h1>
+          </div>
 
-        <div class="modal_title">
-          <h1>My Bag</h1>
-        </div>
+          <div class="my_bag_item">
+            <div>
+              <div class="order_item">
+                <h1>Your Bag Is Empty</h1>
+                <p>Start an order to add items to your bag.</p>
+              </div>
 
-        <div class="condiments_modal_main_content">
-          <div class="add_condiments">
-            <div class="sauces_add condiments_add">
-              <div class="accordion_wrapper">
-                <div class="accordion-content">
-                  <header>
-                    <i class="fa-solid fa-plus"></i>
-                    <span class="title">Add Condiments</span>
-                  </header>
+              <div class="order_img">
+                <img src="./assets/icons/bag-is-empty.svg" alt="" />
+              </div>
 
-                  <div class="description">
-                    <div class="essentials_pack_item">
-                      <div class="essentials_pack_wrapper">
-                        <div class="essentials_pack_img">
-                          <img src="./assets/img/sauces_img_2.png" alt="" />
-                        </div>
-
-                        <div class="essentials_pack_info">
-                          <h2>Serrano Chili</h2>
-                          <p>$0.50</p>
-                        </div>
-                      </div>
-
-                      <div class="essentials_pack_qty">
-                        <span class="essentials_pack_head">Qty:</span>
-                        <div class="essentials_pack_counter">
-                          <span
-                            class="essentials_pack_decrement"
-                            onclick="saucesDecrement2()"
-                            ><i class="fa-solid fa-minus"></i
-                          ></span>
-                          <span
-                            class="essentials_pack_value"
-                            id="saucesCounterValue2"
-                            >0</span
-                          >
-                          <span
-                            class="essentials_pack_increment"
-                            onclick="saucesIncrement2()"
-                            ><i class="fa-solid fa-plus"></i
-                          ></span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="essentials_pack_item">
-                      <div class="essentials_pack_wrapper">
-                        <div class="essentials_pack_img">
-                          <img src="./assets/img/sauces_img_3.png" alt="" />
-                        </div>
-
-                        <div class="essentials_pack_info">
-                          <h2>Garlic Butter</h2>
-                          <p>$0.50</p>
-                        </div>
-                      </div>
-
-                      <div class="essentials_pack_qty">
-                        <span class="essentials_pack_head">Qty:</span>
-                        <div class="essentials_pack_counter">
-                          <span
-                            class="essentials_pack_decrement"
-                            onclick="saucesDecrement3()"
-                            ><i class="fa-solid fa-minus"></i
-                          ></span>
-                          <span
-                            class="essentials_pack_value"
-                            id="saucesCounterValue3"
-                            >0</span
-                          >
-                          <span
-                            class="essentials_pack_increment"
-                            onclick="saucesIncrement3()"
-                            ><i class="fa-solid fa-plus"></i
-                          ></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="order_btn">
+                <div>
+                  <button class="sign_up"><span>Sign Up</span></button>
+                  <span class="vertical_bar">|</span>
+                  <button class="sign_in"><span>Sign In</span></button>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="promo_code">
-              <h1>Promo Code</h1>
-              <div class="input_item">
-                <input
-                  class="condiments_promo_input"
-                  type="text"
-                  placeholder="Enter Promo code"
-                />
-                <button class="apply" disabled="true">Apply</button>
-              </div>
-              <p>Limited to 1 Promo Code Per Order</p>
+          <div class="promo_code">
+            <h1>Promo Code</h1>
+            <div class="input_item">
+              <input
+                class="condiments_promo_input"
+                type="text"
+                placeholder="Enter Promo code"
+              />
+              <button class="apply" disabled="true">Apply</button>
             </div>
+            <p>Limited to 1 Promo Code Per Order</p>
           </div>
         </div>
 
-        <div class="product_cart">
-          <div class="bag_modal_total_price">
-            <div class="bag_price_item">
-              <span class="bag_price_title">Subtotal</span>
-              <span class="bag_price">$8.00</span>
-            </div>
-
-            <div class="bag_price_item">
-              <span class="bag_price_title">Tax</span>
-              <span class="bag_price">$1.02</span>
-            </div>
-
-            <div class="bag_checkout_btn">
-              <button type="button" class="add_item_btn">Add More Items</button>
-              <button type="button" class="checkout_btn">
-                $9.02 | Checkout Now
-              </button>
-            </div>
-          </div>
+        <div class="start_an_order">
+          <button class="start_order_btn" type="submit">Start an Order</button>
         </div>
       </div>
       <!-- My Bag (Signed In) End -->
-
-      
     </div>
 
     
