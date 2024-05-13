@@ -38,6 +38,7 @@
   opacity: 0;
   user-select: none;
   pointer-events: none;
+  z-index: 9999 !important;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -150,3 +151,185 @@
 }
 
 /* Mobile Account End */
+
+/* Mobile Cards Start */
+
+#mobile_cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--white);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999 !important;
+}
+
+.mobile_cards_nav {
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.mobile_cards_nav h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.mobile_prev_btn {
+  position: absolute;
+  top: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.mobile_prev_btn img {
+  width: 16px;
+  height: 16px;
+}
+
+#mobile_cards .card_item .heading {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+#mobile_cards .card_item .heading h1 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  margin: 0px;
+  padding-left: 10px;
+}
+
+#mobile_cards .card_item .card_details {
+  width: 100%;
+  border: 1px solid var(--stroke-color);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+#mobile_cards .card_item .card_details h2 {
+  color: var(--text-color);
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+#mobile_cards .card_item .card_details .card_expire {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+#mobile_cards .card_item .card_details .card_expire h3 {
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0px;
+  font-weight: 600;
+}
+
+#mobile_cards .card_item .card_details .card_expire h4 {
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 0px;
+  padding-left: 15px;
+}
+
+#mobile_cards .card_item .card_details .card_expire span {
+  font-size: 17px;
+  color: var(--stroke-color);
+  margin: 0px 15px;
+}
+
+#mobile_cards .card_item .card_details .action_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mobile_cards .card_item .action_btn .default_btn {
+  font-size: 12px;
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: 30px;
+}
+
+#mobile_cards .card_item .action_btn .edit_btn {
+  background: transparent;
+}
+
+#mobile_cards .card_item .action_btn .edit_btn span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  line-height: 12px;
+  margin-left: 6px;
+}
+
+#mobile_cards .card_item .action_btn .remove_btn {
+  background: transparent;
+  margin-left: 10px;
+}
+
+#mobile_cards .card_item .action_btn .remove_btn span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--red);
+  border-bottom: 1px solid var(--red);
+  line-height: 12px;
+  margin-left: 6px;
+}
+
+#mobile_cards .card_item .card_details .action_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mobile_cards .divider {
+  width: 100%;
+  height: 1px;
+  background: #cdcfd3;
+  margin-bottom: 20px;
+}
+
+#mobile_cards .card_item .add_new_btn {
+  display: block;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #cdcfd3;
+  font-size: 18px;
+  padding: 20px;
+  color: var(--text-color);
+  margin: 20px 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+#mobile_cards .card_item .add_new_btn span {
+  font-size: 14px;
+  background: transparent;
+  border-bottom: 1px solid var(--text-color);
+  line-height: 14px;
+}
+
+/* Mobile Cards End */
