@@ -359,3 +359,187 @@
 }
 
 /* My Bag (Signed In) Start End */
+
+
+/* My Bag (After Item Was Removed) Start */
+
+.remove_cart_wrapper {
+  background: var(--white);
+  padding: 0px 20px;
+  margin-bottom: 75px;
+}
+
+.remove_cart .remove_cart_title {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--stroke-color);
+}
+
+.remove_cart .remove_cart_title h1{
+  margin: 0;
+  font-size: 24px;
+}
+
+.remove_cart .button1 {
+  text-align: start;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  background: var(--red);
+  color: var(--white);
+  font-size: 14px;
+  padding: 12px 30px;
+  display: none;
+}
+
+.remove_cart .button1.active {
+  display: block;
+}
+
+.remove_cart .button1 i {
+  margin-right: 10px;
+}
+
+.remove_cart .button2 {
+  text-align: center;
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  background: var(--secondary-color);
+  color: var(--white);
+  font-size: 14px;
+  padding: 12px 30px;
+  display: none;
+}
+
+.remove_cart .button2.active {
+  display: block;
+}
+
+.remove_cart .add_condiments {
+  margin: 0;
+}
+
+.remove_cart .summary h1 {
+  font-size: 18px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.remove_cart .summary button {
+  width: 100%;
+  text-align: left;
+  background: #f5f5f5;
+  padding: 14px 30px;
+}
+
+.remove_cart .summary .btn1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  border: 1px solid var(--stroke-color);
+}
+
+.remove_cart .summary .btn2 {
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--stroke-color);
+  border-top: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.remove_cart .summary .btn2 span:nth-last-child( ){
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.remove_cart .summary .btn2 span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.remove_cart .promo_code {
+  margin: 30px 0;
+ }
+ 
+ .remove_cart .promo_code h1 {
+   font-size: 18px;
+   font-weight: bold;
+   font-family: var(--primary-font);
+ }
+ 
+ .remove_cart .promo_code p {
+   font-size: 12px;
+   color: rgba(0, 0, 0, 70%);
+   font-family: var(--primary-font);
+   margin-bottom: 0;
+   margin-top: 10px;
+ }
+ 
+ .remove_cart .promo_code .input_item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid #cdcfd3;
+   border-radius: 4px;
+   padding: 2px;
+   margin-bottom: 6px;
+ }
+ 
+ .remove_cart .promo_code .input_item input {
+   width: 100%;
+   height: 30px;
+   border: none;
+   font-size: 14px;padding-left: 10px;
+ }
+ 
+ .remove_cart .promo_code .input_item .apply {
+   border: 2px solid rgba(0, 0, 0, 5%);
+   background: #FFFFFF;
+   color: var(--text-color);
+   font-weight: bold;
+   font-size: 14px;
+   padding: 4px 10px;
+   border-radius: 4px;
+   transition: 0.4s;
+ }
+
+.bag_remove_checkout_btn {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bag_remove_checkout_btn button {
+  display: block;
+  width: 50%;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: var(--primary-font);
+  padding: 8px;
+  background: transparent;
+  transition: 0.5s;
+}
+
+.remove_cart_wrapper .bag_modal_total_price {
+  padding-bottom: 20px !important;
+}
+
+.remove_cart_wrapper .bag_price_title {
+  color: var(--text-color);
+}
+
+.bag_remove_checkout_btn .add_item_button{
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 30px 0 0 30px;
+}
+
+.bag_remove_checkout_btn .checkout_button {
+  border: 2px solid var(--stroke-color);
+  border-left: none;
+  background: var(--stroke-color);
+  color: var(--white);
+  border-radius: 0 30px 30px 0;
+}
+
+/* My Bag (After Item Was Removed) End */
