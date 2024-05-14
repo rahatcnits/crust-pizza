@@ -38,7 +38,7 @@
   opacity: 0;
   user-select: none;
   pointer-events: none;
-  z-index: 9999 !important;
+  z-index: 9999999 !important;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -333,3 +333,324 @@
 }
 
 /* Mobile Cards End */
+
+/* Mobile New Card Start */
+
+#mobile_new_card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  padding: 20px;
+  width: 100%;
+  z-index: 99999999999 !important;
+}
+
+#mobile_new_card .identity .title h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+#mobile_new_card .identity .title p {
+  font-size: 16px;
+  color: var(--gray-text);
+  margin-bottom: 40px;
+}
+
+#mobile_new_card input[type="number"]::-webkit-outer-spin-button,
+#mobile_new_card input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#mobile_new_card form label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+#mobile_new_card form label span {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+#mobile_new_card form .form_item {
+  position: relative;
+}
+
+#mobile_new_card form .form_item img {
+  position: absolute;
+  top: 10px !important;
+  right: 15px;
+}
+
+#mobile_new_card .datepicker {
+  display: block !important;
+}
+
+#mobile_new_card .datepicker_input {
+  display: block;
+  font-family: var(--primary-font) !important;
+  width: 100% !important;
+  padding: 10px 0px 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--text-color);
+  border: 1px solid var(--stroke-color);
+  margin-bottom: 18px;
+}
+
+#mobile_new_card form input {
+  width: 100%;
+  padding: 10px 0px 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--text-color);
+  border: 1px solid var(--stroke-color);
+  margin-bottom: 18px;
+}
+
+#mobile_new_card form input::placeholder {
+  font-size: 16px;
+  color: var(--gray-text);
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+
+#mobile_new_card .check {
+  display: flex;
+  align-items: center;
+}
+#mobile_new_card .check .checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+#mobile_new_card .check label {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0px;
+  padding-left: 10px;
+}
+
+#mobile_new_card .information {
+  font-size: 16px;
+  color: var(--gray-text);
+  margin-top: 30px;
+}
+
+#mobile_new_card .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#mobile_new_card .button .credit_btn {
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+#mobile_new_card .button .credit_btn.show {
+  color: var(--white);
+  background: var(--primary-color);
+}
+
+#mobile_new_card .button .credit_btn.show:hover {
+  background: #ad4708;
+}
+
+/* Mobile New Card End */
+
+/* Mobile Gift Card Start */
+
+#mobile_gift_card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  padding: 20px;
+  width: 100%;
+  z-index: 99999999999 !important;
+}
+
+#mobile_gift_card form input {
+  width: 100%;
+  padding: 10px 0px 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--text-color);
+  border: 1px solid var(--stroke-color);
+  margin-bottom: 18px;
+}
+
+#mobile_gift_card form label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+#mobile_gift_card form input::placeholder {
+  font-size: 16px;
+  color: var(--gray-text);
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+
+#mobile_gift_card .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#mobile_gift_card .button .gift_btn {
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.3);
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+#mobile_gift_card .button .gift_btn.show {
+  color: var(--white);
+  background: var(--primary-color);
+}
+
+#mobile_gift_card .button .gift_btn.show:hover {
+  background: #ad4708;
+}
+
+/* Mobile Gift Card End */
+
+/* Mobile SignUp Start */
+
+#mobile_signup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  padding: 20px;
+  width: 100%;
+  z-index: 99999999999 !important;
+}
+
+#mobile_signup .sign_up_wrapper .sign_up_contant {
+  max-width: 800px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 12px;
+}
+
+#mobile_signup .sign_up_contant .header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#mobile_signup .sign_up_contant .header img {
+  width: 120px;
+  margin: 10px auto 16px;
+}
+
+#mobile_signup .sign_up_contant form {
+  max-width: 460px;
+  margin: auto;
+}
+
+#mobile_signup .sign_up_contant label {
+  font-weight: 600;
+}
+
+#mobile_signup .sign_up_contant input {
+  width: 100%;
+  font-size: 16px;
+  color: var(--gray-text);
+  border-radius: 6px;
+  border: 1px solid var(--stroke-color);
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+#mobile_signup .sign_up_contant .password {
+  border: 1px solid var(--stroke-color);
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+#mobile_signup .sign_up_contant .password i {
+  margin-right: 12px;
+  cursor: pointer;
+  color: var(--gray-text);
+}
+#mobile_signup .sign_up_contant .password input {
+  border: none !important;
+  margin: 0px;
+}
+
+#mobile_signup input[type="number"]::-webkit-outer-spin-button,
+#mobile_signup input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#mobile_signup .sign_up_contant form .sign_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  margin-bottom: 25px;
+  transition: 0.5s;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+#mobile_signup .sign_up_contant form .sign_btn:hover {
+  background: var(--primary-color);
+}
+
+#mobile_signup .sign_up_contant form .check {
+  display: flex;
+  margin-top: 20px;
+  line-height: 18px;
+}
+
+#mobile_signup .sign_up_contant form .check label {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+#mobile_signup .sign_up_contant form p {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--text-color);
+}
+
+#mobile_signup .sign_up_contant form .checkbox {
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0px 10px 0px 0px;
+}
+
+/* Mobile SignUp End */
