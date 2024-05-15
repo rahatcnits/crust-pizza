@@ -252,6 +252,8 @@ label {
 }
 
 #sign_in_phone .sign_in_contant form .numbar_btn {
+  display: inline-block;
+  text-align: center;
   width: 100% !important;
   font-size: 16px;
   font-family: var(--primary-font);
@@ -1534,6 +1536,7 @@ label {
 }
 
 #cards .card_item .add_new_btn {
+  display: inline-block;
   font-size: 18px;
   background: transparent;
   color: var(--secondary-color);

@@ -654,3 +654,210 @@
 }
 
 /* Mobile SignUp End */
+
+/* Mobile Sign In Start */
+
+#mobile_signin_phone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  padding: 20px;
+  width: 100%;
+  z-index: 99999999999 !important;
+}
+
+#mobile_signin_phone .sign_in_wrapper .sign_in_contant {
+  max-width: 800px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 12px;
+}
+
+#mobile_signin_phone .sign_in_contant .header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#mobile_signin_phone .sign_in_contant .header img {
+  width: 120px;
+  margin: 10px auto 16px;
+}
+
+#mobile_signin_phone .sign_in_contant form {
+  max-width: 450px;
+  margin: auto;
+}
+
+#mobile_signin_phone .sign_in_contant label {
+  font-weight: 600;
+}
+
+#mobile_signin_phone .sign_in_contant input {
+  width: 100%;
+  font-size: 16px;
+  color: var(--gray-text);
+  border-radius: 6px;
+  border: 1px solid var(--stroke-color);
+  padding: 10px 0px 10px 20px;
+  margin-top: 6px;
+}
+
+#mobile_signin_phone input[type="number"]::-webkit-outer-spin-button,
+#mobile_signin_phone input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#mobile_signin_phone .sign_in_contant form .Passcode_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--white);
+  border-radius: 6px;
+}
+
+#mobile_signin_phone .sign_in_contant form .Passcode_btn.show {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+#mobile_signin_phone .sign_in_contant form .Passcode_btn.show:hover {
+  background: #ad4708;
+}
+
+#mobile_signin_phone .sign_in_contant form .numbar_btn {
+  display: inline-block;
+  text-align: center;
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
+  border: 1px solid #d15e14;
+  background: transparent;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+#mobile_signin_phone .sign_in_contant form .numbar_btn:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+/* Mobile Sign In End */
+
+/* Mobile OTP Verify Start */
+
+#mobile_otp_verify {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999999 !important;
+}
+
+#mobile_otp_verify .verification_contant {
+  max-width: 800px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 12px;
+}
+
+#mobile_otp_verify .verification_contant .header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#mobile_otp_verify .verification_contant .header h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#mobile_otp_verify .verification_contant .header h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+#mobile_otp_verify .verification_contant .header span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+#mobile_otp_verify .verification_contant form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobile_otp_verify .verification_contant input {
+  max-width: 68px;
+  height: 68px;
+  font-size: 28px;
+  padding: 10px;
+  color: var(--text-color);
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid var(--stroke-color);
+  text-align: center;
+}
+
+#mobile_otp_verify input[type="number"]::-webkit-outer-spin-button,
+#mobile_otp_verify input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#mobile_otp_verify .verification_contant .button_item {
+  max-width: 450px;
+  margin: auto;
+}
+
+#mobile_otp_verify .verification_contant .passcode_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  transition: 0.5s;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+#mobile_otp_verify .verification_contant .passcode_btn.show {
+  background: var(--primary-color);
+}
+
+@media screen and (max-width: 575px) {
+  #mobile_otp_verify .verification_contant input {
+    max-width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #mobile_otp_verify .verification_contant input {
+    max-width: 45px;
+    height: 45px;
+  }
+}
+
+/* Mobile OTP Verify End */
