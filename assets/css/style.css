@@ -1250,7 +1250,7 @@
   font-size: 18px;
   font-weight: 500;
   background: var(--primary-color);
-  color: var(--white);
+  color: var(--white) !important;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -1656,7 +1656,10 @@ Bag Order Modal Start
   margin-top: 20px;
 }
 
-.bag_checkout_btn button {
+.bag_checkout_btn .add_item_btn, 
+.bag_checkout_btn .checkout_btn {
+  text-align: center;
+  color: var(--primary-color);
   display: block;
   width: 50%;
   font-weight: 600;
@@ -1684,10 +1687,17 @@ Bag Order Modal Start
   border-radius: 0 30px 30px 0;
 }
 
-.bag_checkout_btn button.active,
-.bag_checkout_btn button:hover {
+.bag_checkout_btn .add_item_btn.active,
+.bag_checkout_btn .checkout_btn.active,
+.bag_checkout_btn .add_item_btn:hover,
+.bag_checkout_btn .checkout_btn:hover {
   background: var(--primary-color);
-  color: var(--white);
+  color: var(--white) !important;
+}
+
+.bag_checkout_btn .checkout_btn:hover {
+  background: #ad4708;
+  border-color: #ad4708;
 }
 
 .sauces_add {
@@ -1869,7 +1879,7 @@ Checkout Start
 
 .user_info_edit_btn {
   background: transparent;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   font-weight: 500;
   font-family: var(--primary-font);
   padding: 6px 20px;
@@ -1908,7 +1918,7 @@ Checkout Start
   gap: 20px;
 }
 
-.handoff_btn button {
+.handoff_btn .dineout_btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1921,24 +1931,47 @@ Checkout Start
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  transition: 0.4s;
 }
 
 .handoff_btn svg {
   width: 18px;
   height: 18px;
   margin-right: 8px;
+  
+}
+
+.handoff_btn svg path{
+ transition: 0.4s;
+
 }
 
 .handoff_delivery_btn {
   background: transparent;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   border: 2px solid var(--primary-color);
+}
+
+.handoff_delivery_btn:hover {
+  background: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: var(--white) !important;
+}
+
+.handoff_delivery_btn:hover svg path{
+  stroke: var(--white);
 }
 
 .handoff_pickup_btn {
   background: var(--primary-color);
   border: 2px solid var(--primary-color);
-  color: var(--white);
+  color: var(--white) !important;
+ 
+}
+
+.handoff_pickup_btn:hover {
+  background: #ad4708;
+  border-color: #ad4708;
 }
 
 .handoff_item {

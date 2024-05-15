@@ -162,19 +162,20 @@ label {
   align-items: center;
   margin: 20px 0px 60px 0px;
 }
-.bag_empty_modal .empty_wrapper .order_btn button:hover {
+.bag_empty_modal .empty_wrapper .order_btn .order_user_btn:hover {
   color: var(--primary-color);
 }
-.bag_empty_modal .empty_wrapper .order_btn button span:hover {
+.bag_empty_modal .empty_wrapper .order_btn .order_user_btn span:hover {
   border-color: var(--primary-color);
 }
 
-.bag_empty_modal .empty_wrapper .order_btn button {
+.bag_empty_modal .empty_wrapper .order_btn .order_user_btn {
+  color: var(--text-color);
   background: transparent;
   transition: 0.3s;
 }
 
-.bag_empty_modal .empty_wrapper .order_btn button span {
+.bag_empty_modal .empty_wrapper .order_btn .order_user_btn span {
   border-bottom: 1px solid var(--text-color);
   margin: 0 15px;
   font-size: 18px;
@@ -522,7 +523,9 @@ label {
   margin: 0;
 }
 
-.pickup_check_btn button {
+.pickups_wrapper .update {
+  display: block;
+  text-align: center;
   width: 100%;
   background: var(--primary-color);
   color: var(--white);
@@ -539,7 +542,7 @@ label {
   -o-transition: 0.4s;
 }
 
-.pickup_check_btn button:hover {
+.pickups_wrapper .update:hover {
   background: #ad4708;
 }
 
@@ -1060,7 +1063,7 @@ label {
   margin-left: 12px;
 }
 
-.delivery_btn button {
+.delivery_btn .dineout_btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1078,37 +1081,37 @@ label {
   -o-border-radius: 30px;
 }
 
-.delivery_btn button h1 {
+.delivery_btn .dineout_btn h1 {
   text-align: start;
   font-size: 18px;
   font-weight: bold;
   margin: 0;
 }
 
-.delivery_btn button.active h1 {
+.delivery_btn .dineout_btn.active h1 {
   color: var(--white);
 }
 
-.delivery_btn button.active p {
+.delivery_btn .dineout_btn.active p {
   color: var(--white) !important;
 }
 
-.delivery_btn button.active path {
+.delivery_btn .dineout_btn.active path {
   stroke: var(--white);
 }
 
-.delivery_btn button p {
+.delivery_btn .dineout_btn p {
   font-size: 12px;
   margin: 0;
   color: var(--primary-color);
   font-weight: normal;
 }
 
-.delivery_btn button svg path {
+.delivery_btn .dineout_btn svg path {
   stroke: var(--primary-color);
 }
 
-.delivery_btn button.active {
+.delivery_btn .dineout_btn.active {
   color: var(--white);
   background: var(--primary-color) !important;
 }
@@ -1164,6 +1167,8 @@ label {
 }
 
 .delivery_wrapper form .update {
+  display: block;
+  text-align: center;
   width: 100%;
   border-radius: 30px;
   margin-top: 30px;
@@ -1171,6 +1176,11 @@ label {
   color: var(--white);
   padding: 10px 0;
   text-align: center;
+  transition: 0.4s;
+}
+
+.delivery_wrapper form .update:hover {
+  background: #ad4708;
 }
 
 @media screen and (max-width: 576px) {

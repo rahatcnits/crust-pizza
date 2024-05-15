@@ -119,7 +119,7 @@ Reset Default CSS End
   background: var(--primary-color);
   font-size: 1em;
   font-weight: 500 !important;
-  color: var(--white);
+  color: var(--white) !important;
   padding: 4px 12px;
   border-radius: 30px;
   -webkit-border-radius: 30px;

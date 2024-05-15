@@ -801,9 +801,10 @@ label {
   width: 90px;
 }
 
-#home1 .google_map .locations .button .delivery_btn {
+#home1 .delivery_btn {
   display: inline-block;
   width: 100%;
+  text-align: center;
   border-radius: 30px;
   background: transparent;
   border: 1px solid var(--primary-color);
@@ -999,6 +1000,8 @@ label {
 }
 
 #home2 .google_map .locations .button .delivery_btn {
+  display: inline-block;
+  text-align: center;
   width: 100%;
   border-radius: 30px;
   background: transparent;
@@ -1015,6 +1018,8 @@ label {
 }
 
 #home2 .google_map .locations .button .pickup_btn {
+  display: inline-block;
+  text-align: center;
   width: 100%;
   border-radius: 30px;
   background: var(--primary-color);
