@@ -699,3 +699,289 @@
 }
 
 /* Order History End */
+
+
+/* Search city, state or zip code Start */
+
+.search_city {
+  margin-bottom: 73px;
+}
+
+.mobile_wrapper .nav_wrapper .close_btn {
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.search_city_wrapper {
+  position: relative;
+  background: var(--white);
+  border-radius: 16px;
+  padding-bottom: 1px;
+}
+
+.search_city_check_btn {
+  margin: 0;
+}
+
+.search_city_check_btn button {
+  width: 100%;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.search_city_check_btn button:hover {
+  background: #ad4708;
+}
+
+.search_city_content::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+.search_city_content::-webkit-scrollbar-thumb {
+  background: #d2d2d2;
+  border-radius: 30px;
+}
+
+.search_city_head {
+  text-align: center;
+  background: var(--secondary-color) !important;
+  padding: 70px 20px 110px 20px;
+  font-family: var(--primary-font);
+}
+
+.search_city .search_city_head h3 {
+  font-size: 16px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.search_city .search_city_head h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.search_city .search_city_head p {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.search_city_wrapper .search_city_address {
+  width: 90% !important;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--stroke-color);
+  padding: 10px;
+  border-radius: 4px;
+  font-family: var(--primary-font);
+}
+
+.search_city_wrapper .search_city_address .address_img {
+  width: 140px;
+  margin-right: 20px;
+  aspect-ratio: 2/1 !important;
+  
+}
+
+.search_city_wrapper .search_city_address img {
+  width: 100%;
+  border-radius: 15px !important;
+  
+}
+
+.search_city_wrapper .search_city_address h1 {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.search_city_wrapper .search_city_address p {
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: var(--gray-text);
+  padding-bottom: 6px;
+}
+
+.search_city_wrapper .search_city_address .road_name {
+  font-size: 18px;
+  margin-bottom: 0px;
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 5px 0;
+  border-bottom: 1.5px solid var(--text-color);
+}
+
+.search_city_wrapper .search_city_address a {
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.search_city_wrapper .search_city_summary {
+  margin-top: 90px;
+  padding: 0 20px;
+  font-family: var(--primary-font);
+}
+
+.search_city_wrapper .search_city_summary h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.search_city_wrapper .search_city_summary p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--stroke-color);
+  margin-bottom: 12px;
+}
+
+.search_city_wrapper .search_city_summary p span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.search_city_wrapper .search_city_summary p:nth-last-child(1) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.search_city_wrapper .search_city_order_summary {
+  font-family: var(--primary-font);
+  padding: 0 20px 0px 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid var(--stroke-color);
+ 
+}
+
+.search_city_wrapper .search_city_order_summary h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px 0;
+  margin: 0px 0px 20px 0px;
+  border-bottom: 1px solid var(--stroke-color);
+
+}
+
+.search_city_wrapper .search_city_order_summary h2 {
+  display: flex;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.search_city_wrapper .search_city_order_summary h2 span:nth-child(1) {
+  margin-right: 10px;
+}
+
+.search_city_wrapper .search_city_order_summary h2 span:nth-child(2) {
+  margin-left: 30px;
+}
+
+.search_city_wrapper .search_city_order_summary p {
+  font-size: 14px;
+  margin: 0px;
+  padding-left: 30px;
+}
+
+.search_city_wrapper .total {
+  padding: 0px 20px 20px 20px;
+  border-bottom: 1px solid var(--stroke-color);
+
+}
+
+.search_city_wrapper .total h1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.search_city_wrapper .total .active{
+  color: var(--primary-color);
+}
+
+.search_city_wrapper .total h1:nth-child(5){
+  font-size: 18px;
+  margin: 0;
+}
+
+.search_city_wrapper .total h1:nth-child(1){
+  border-top: 1px solid var(--stroke-color);
+  padding-top: 20px;
+}
+
+.search_city_wrapper .search_city_paid_with {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--stroke-color);
+}
+
+.search_city_wrapper .search_city_paid_with h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+  padding-bottom: 6px;
+}
+
+.search_city_wrapper .search_city_paid_with .item .methode {
+  display: flex;
+  align-items: center;
+  margin-left: -5px;
+}
+.search_city_wrapper .search_city_paid_with .item .methode h3 {
+  font-size: 20px;
+  margin: 0px;
+  color: var(--text-color);
+}
+.search_city_wrapper .download {
+  padding: 20px 20px 80px 20px;
+  display: flex;
+  align-items: center;
+  background: none;
+}
+.search_city_wrapper .download h4 {
+  font-size: 16px;
+  margin: 0px;
+  color: var(--secondary-color);
+  padding-left: 10px;
+}
+
+.search_city_pickup_check_btn {
+  padding: 0 20px;
+  margin-bottom: 20px;
+
+}
+
+.search_city_pickup_check_btn .check_btn {
+  width: 100%;
+  font-size: 14px;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 10px 0;
+  border-radius: 30px;
+  transition: 0.4s;
+
+}
+
+.search_city_pickup_check_btn .check_btn:hover {
+  background: #E61122;
+
+}
+
+/* Search city, state or zip code End */
