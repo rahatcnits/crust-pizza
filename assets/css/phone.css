@@ -763,7 +763,7 @@
   padding: 20px;
   width: 100%;
   height: 100%;
-  z-index: 99999999999 !important;
+  z-index: 9999999;
 }
 
 #mobile_otp_verify .verification_contant {
@@ -790,7 +790,9 @@
   font-weight: 400;
 }
 
-#mobile_otp_verify .verification_contant .header span {
+#mobile_otp_verify .verification_contant .header span.otp_status {
+  display: block;
+  text-align: center;
   font-size: 16px;
   font-weight: 400;
   margin-top: 10px;
@@ -861,3 +863,253 @@
 }
 
 /* Mobile OTP Verify End */
+
+/* Mobile OTP Wrong Start */
+
+#mobile_otp_wrong {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999999 !important;
+}
+
+#mobile_otp_wrong .verification_contant {
+  max-width: 800px;
+  margin: auto;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 80px 12px;
+}
+
+#mobile_otp_wrong .verification_contant .header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#mobile_otp_wrong .verification_contant .header h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#mobile_otp_wrong .verification_contant .header h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+#mobile_otp_wrong .verification_contant .header span.otp_status {
+  color: var(--red);
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+#mobile_otp_wrong .verification_contant form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobile_otp_wrong .verification_contant input {
+  max-width: 68px;
+  height: 68px;
+  font-size: 28px;
+  padding: 10px;
+  color: var(--text-color);
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid var(--red);
+  text-align: center;
+}
+
+#mobile_otp_wrong input[type="number"]::-webkit-outer-spin-button,
+#mobile_otp_wrong input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#mobile_otp_wrong .verification_contant .button_item {
+  max-width: 450px;
+  margin: auto;
+}
+
+#mobile_otp_wrong .verification_contant .button_item h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  font-size: 16px;
+  color: var(--red);
+}
+
+#mobile_otp_wrong .verification_contant .button_item svg {
+  margin-right: 8px !important;
+}
+
+#mobile_otp_wrong .verification_contant .Passcode_btn {
+  width: 100% !important;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  padding: 10px 0px 10px 0px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+#mobile_otp_wrong .verification_contant .Passcode_btn:hover {
+  background: var(--primary-color);
+}
+
+@media screen and (max-width: 575px) {
+  #mobile_otp_wrong .verification_contant input {
+    max-width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #mobile_otp_wrong .verification_contant input {
+    max-width: 45px;
+    height: 45px;
+  }
+}
+
+/* Mobile OTP Wrong End */
+
+/* Mobile OTP Verified Start */
+
+@media screen and (max-width: 576px) {
+  .verified_wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5) !important;
+    z-index: 9999999999999 !important;
+  }
+
+  .verified_contant {
+    position: absolute;
+    width: calc(100% - 40px);
+    padding: 20px !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+
+  .verified_contant .header h1 {
+    font-size: 22px !important;
+    font-weight: 500 !important;
+  }
+
+  .verified_contant .Passcode_btn {
+    border-radius: 30px !important;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    -ms-border-radius: 30px !important;
+    -o-border-radius: 30px !important;
+  }
+}
+
+/* Mobile OTP Verified End */
+
+/* Mobile Menu Start */
+
+.mobile_menu_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 10px;
+  background: rgba(123, 123, 123, 0.1);
+}
+
+.mobile_close_nav_btn {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.mobile_close_nav_btn img {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile_nav_location p {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.mobile_nav_location_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+}
+
+.mobile_menu_tab {
+  padding: 0px 30px;
+  background: #f2f2f2;
+}
+
+.mobile_tab_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile_tab_item {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  padding: 6px 0;
+  cursor: pointer;
+  border-bottom: 4px solid #f2f2f2;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.mobile_tab_item.active {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.mobile_tab_item:hover {
+  color: var(--secondary-color);
+}
+
+/* Mobile Menu End */
