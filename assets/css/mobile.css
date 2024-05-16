@@ -700,7 +700,6 @@
 
 /* Order History End */
 
-
 /* Search city, state or zip code Start */
 
 .search_city {
@@ -789,13 +788,11 @@
   width: 140px;
   margin-right: 20px;
   aspect-ratio: 2/1 !important;
-  
 }
 
 .search_city_wrapper .search_city_address img {
   width: 100%;
   border-radius: 15px !important;
-  
 }
 
 .search_city_wrapper .search_city_address h1 {
@@ -868,7 +865,6 @@
   padding: 0 20px 0px 20px;
   padding-bottom: 20px;
   border-top: 1px solid var(--stroke-color);
- 
 }
 
 .search_city_wrapper .search_city_order_summary h1 {
@@ -877,7 +873,6 @@
   padding: 16px 0;
   margin: 0px 0px 20px 0px;
   border-bottom: 1px solid var(--stroke-color);
-
 }
 
 .search_city_wrapper .search_city_order_summary h2 {
@@ -903,26 +898,25 @@
 .search_city_wrapper .total {
   padding: 0px 20px 20px 20px;
   border-bottom: 1px solid var(--stroke-color);
-
 }
 
-.search_city_wrapper .total h1{
+.search_city_wrapper .total h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
 }
 
-.search_city_wrapper .total .active{
+.search_city_wrapper .total .active {
   color: var(--primary-color);
 }
 
-.search_city_wrapper .total h1:nth-child(5){
+.search_city_wrapper .total h1:nth-child(5) {
   font-size: 18px;
   margin: 0;
 }
 
-.search_city_wrapper .total h1:nth-child(1){
+.search_city_wrapper .total h1:nth-child(1) {
   border-top: 1px solid var(--stroke-color);
   padding-top: 20px;
 }
@@ -965,7 +959,6 @@
 .search_city_pickup_check_btn {
   padding: 0 20px;
   margin-bottom: 20px;
-
 }
 
 .search_city_pickup_check_btn .check_btn {
@@ -976,24 +969,20 @@
   padding: 10px 0;
   border-radius: 30px;
   transition: 0.4s;
-
 }
 
 .search_city_pickup_check_btn .check_btn:hover {
   background: #ad4708;
-
 }
 
 /* Search city, state or zip code End */
-
-
 
 /* Mobile Rewards Start */
 
 .mobile_rewards_nav {
   position: relative;
   padding: 20px 0px 10px 0px;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .mobile_rewards_nav h4 {
@@ -1042,7 +1031,7 @@
 .member_rewards .signature_reward {
   width: 100%;
   background-color: var(--white);
-  background-image: none ;
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   border-top-left-radius: 15px;
@@ -1082,7 +1071,7 @@
 }
 
 .member_rewards .achieve_status {
-  background: #F2F2F2;
+  background: #f2f2f2;
   text-align: center;
   padding: 30px 20px;
   margin-bottom: 120px !important;
@@ -1119,7 +1108,6 @@
   font-size: 12px;
   color: var(--text-color);
   text-align: right;
-
 }
 
 .member_rewards .progress-bar2 {
@@ -1175,7 +1163,7 @@
   margin-top: 20px;
 }
 
-.member_rewards .benefits .benefits_btn{
+.member_rewards .benefits .benefits_btn {
   display: inline-block;
   font-size: 12px;
   color: var(--primary-color);
@@ -1194,7 +1182,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .tab_content_wrapper .member {
@@ -1208,7 +1196,5 @@
   font-size: 12px;
   color: var(--text-color);
 }
-
-
 
 /* Mobile Rewards End */
