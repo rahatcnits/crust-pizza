@@ -980,8 +980,235 @@
 }
 
 .search_city_pickup_check_btn .check_btn:hover {
-  background: #E61122;
+  background: #ad4708;
 
 }
 
 /* Search city, state or zip code End */
+
+
+
+/* Mobile Rewards Start */
+
+.mobile_rewards_nav {
+  position: relative;
+  padding: 20px 0px 10px 0px;
+  background: #F2F2F2;
+}
+
+.mobile_rewards_nav h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.mobile_rewards_nav .mobile_prev_btn {
+  position: absolute;
+  top: 17px;
+  left: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.mobile_rewards_nav .mobile_prev_btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.mobile_menu_tab .tab_box_item {
+  padding: 0 20px !important;
+}
+
+.mobile_wrapper .tab_content_wrapper {
+  position: relative;
+  margin-bottom: 73px;
+  padding: 70px 20px 0px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: var(--white);
+  background-image: url(../img/mobile-rewards-bg2.png);
+}
+
+.member_rewards .rewards {
+  margin: 50px 0;
+}
+
+.member_rewards .signature_reward {
+  width: 100%;
+  background-color: var(--white);
+  background-image: none ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.member_rewards .signature_reward .reward_img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.member_rewards .signature_reward .reward_img img {
+  width: 100%;
+  height: 100%;
+  margin-top: -59px;
+}
+
+.member_rewards .signature_reward .title {
+  text-align: center;
+  margin-top: -60px;
+}
+
+.member_rewards .signature_reward .title p {
+  margin: 0px;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.member_rewards .signature_reward .title h1 {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+  padding: 6px 0;
+}
+
+.member_rewards .achieve_status {
+  background: #F2F2F2;
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 120px !important;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.member_rewards .achieve_status h1 {
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0px;
+}
+
+.member_rewards .achieve_status p {
+  font-size: 12px;
+  color: var(--gray-text);
+  margin: 0px;
+}
+
+.member_rewards .progress2 {
+  position: relative;
+  max-width: 380px;
+  margin: 20px 0px 5px 0px;
+  padding: 0px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 30px !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.member_rewards .progress_total_val {
+  font-size: 12px;
+  color: var(--text-color);
+  text-align: right;
+
+}
+
+.member_rewards .progress-bar2 {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px !important;
+  font-size: 14px;
+  color: var(--white);
+  background-image: linear-gradient(to bottom, #137ac9, #02345b);
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.member_rewards .progress_current_val {
+  opacity: 0;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.member_rewards .progress_current_val.show {
+  opacity: 1;
+}
+
+.member_rewards .progress-moved .progress-bar2 {
+  width: 25%;
+  background-color: #ef476f;
+  animation: progressAnimation 6s;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+.member_rewards .benefits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.member_rewards .benefits .benefits_btn{
+  display: inline-block;
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.member_rewards .status_btn {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.tab_content_wrapper .member_details {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F2F2F2;
+}
+
+.tab_content_wrapper .member {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+.tab_content_wrapper .lifetime_points {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+
+
+/* Mobile Rewards End */
