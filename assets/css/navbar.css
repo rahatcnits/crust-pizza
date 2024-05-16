@@ -161,6 +161,31 @@ Reset Default CSS End
   stroke: var(--text-color);
 }
 
+.mobile_nav_location {
+  display: none;
+}
+
+.mobile_nav_location p {
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.mobile_nav_location_btn {
+  display: flex;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+}
+
 @media screen and (max-width: 990px) {
   .nav_items ul li {
     display: none;
@@ -170,10 +195,10 @@ Reset Default CSS End
 @media screen and (max-width: 768px) {
   #navbar {
     box-shadow: none;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0; */
+  }
+
+  .logo img {
+    width: 80px;
   }
 
   .user_btn svg {
@@ -187,6 +212,12 @@ Reset Default CSS End
 
   .user_btn span {
     display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mobile_nav_location {
+    display: block;
   }
 }
 
