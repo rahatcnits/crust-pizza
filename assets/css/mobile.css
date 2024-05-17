@@ -1442,7 +1442,9 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -1457,7 +1459,9 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;x;
   text-align: center;
   background: var(--primary-color);
   cursor: pointer;
@@ -1650,3 +1654,245 @@
 }
 
 /* My Bag Order Sammary End */
+
+
+/* Past Order Start */
+
+.past_order {
+  padding: 0px 20px 20px 20px;
+  margin-bottom: 73px;
+}
+
+.past_order .past_heading {
+  margin-top: 10px;
+ 
+}
+
+.past_order .past_heading h1 {
+  font-size: 20px;
+  font-weight: bold;
+ 
+}
+
+.past_order .order_titel {
+  border-bottom: 1px solid var(--stroke-color);
+}
+
+.past_order .order_titel h1 {
+  font-size: 28px !important;
+  padding: 20px 0px 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.past_order .accordion_wrapper .accordion-content {
+  background: transparent;
+  border: 1px solid var(--stroke-color);
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 0px;
+}
+
+.past_order .accordion-content header {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between;
+  min-height: 90px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  
+}
+
+.past_order .accordion-content.open header {
+  border-bottom: 1px solid var(--stroke-color);
+  margin: 0 20px;
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+.past_order .accordion-content header i {
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.past_order .accordion-content.open header i {
+  transform: rotate(180deg);
+}
+
+.past_order .accordion-content.open {
+  height: auto;
+  padding-bottom: 10px;
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color);
+}
+
+.past_order header .recorder_btn {
+  background: transparent;
+  font-size: 14px;
+  padding: 4px 16px;
+  border: 1px solid var(--text-color);
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.past_order header .recorder_btn:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  border: 1px solid var(--primary-color);
+}
+
+.past_order .accordion-content.open header .recorder_btn{
+  color: var(--text-color) !important;
+  border: 1px solid var(--primary-color);
+  border: none;
+  background: none;
+}
+
+.past_order .accordion-content.open header .recorder_btn span{
+  border-bottom: 1px solid var(--text-color);
+}
+
+.past_order .accordion-content header .title {
+  font-size: 14px !important;
+  font-weight: bold;
+  color: #333;
+}
+
+.past_order .accordion-content header i {
+  font-size: 15px;
+  color: #333;
+}
+
+.past_order .accordion-content .description {
+  height: 0;
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  padding: 0 20px;
+  transition: all 0.2s linear;
+}
+
+.past_order .items {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+
+.past_order .past_item .items .product_img{
+  width: 25px;
+  height: 40px;
+}
+
+.past_order .product_img img{
+  margin-top: -45px;
+  width: 100%;
+  height: auto;
+}
+
+.past_order .description .past_item .title h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.past_order .description .past_item h2 {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.past_order .description .past_item ul {
+  list-style: disc inside;
+  font-size: 12px;
+  color: var(--gray-text);
+}
+
+.past_order .description .past_item p {
+  font-size: 12px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.past_order .description .past_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.past_order .description .past_item .price h1 {
+  font-size: 12px;
+  color: var(--gray-text);
+  margin: 25px 0px 0px 0px;
+}
+
+.past_order .accordion-content .more_items {
+  font-size: 12px;
+  color: var(--text-color);
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.past_order .accordion-content .items_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.past_order .accordion-content .items_details h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.past_order .accordion-content .show_more_details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.past_order .accordion-content .show_more_details a{
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.past_order .accordion-content .recorder_show_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px 20px 0px ;
+}
+
+.past_order .accordion-content .recorder_button{
+  background: var(--primary-color);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--white);
+  padding: 8px 40px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.past_order .accordion-content .recorder_button:hover{
+  background: #ad4708;
+}
+
+.past_order .accordion-content .description .locations {
+  padding: 0px 0px 15px 0px !important;
+}
+
+.past_order .accordion-content .description .locations span {
+  display: inline-block;
+  margin-top: 10px !important;
+}
+
+
+/* Past Order End */
