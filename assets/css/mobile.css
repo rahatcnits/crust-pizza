@@ -1016,7 +1016,7 @@
 
 .mobile_wrapper .tab_content_wrapper {
   position: relative;
-  margin-bottom: 73px;
+  height: 100vh !important;
   padding: 70px 20px 0px 20px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1175,29 +1175,111 @@
   color: var(--primary-color);
 }
 
-.tab_content_wrapper .member_details {
-  width: calc(100% + 40px);
-  margin-left: -20px;
-  padding: 20px 20px;
+.tab_content .member_details {
+  padding: 20px 20px !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #f2f2f2;
 }
 
-.tab_content_wrapper .member {
+.tab_content .member {
   display: inline-block;
   font-size: 12px;
   color: var(--text-color);
 }
 
-.tab_content_wrapper .lifetime_points {
+.tab_content .lifetime_points {
   display: inline-block;
   font-size: 12px;
   color: var(--text-color);
 }
 
 /* Mobile Rewards End */
+
+/* Mobile redeem rewards start */
+.mobile_menu_tab .all_rewards {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+}
+.mobile_menu_tab .all_rewards:nth-last-child(1) {
+  padding-bottom: 40px;
+}
+
+.mobile_menu_tab .all_rewards .heading {
+  padding-top: 30px;
+}
+
+.mobile_menu_tab .all_rewards .heading h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.mobile_menu_tab .all_rewards .heading p {
+  margin: 0px;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.mobile_menu_tab .all_rewards .reward_item {
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 12px 0;
+  opacity: 0.5;
+}
+
+.mobile_menu_tab .all_rewards .reward_item .reward_icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.mobile_menu_tab .all_rewards .reward_item .reward_icon2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.mobile_menu_tab .reward_item .reward_icon img {
+  width: 30px;
+}
+
+.mobile_menu_tab .reward_item .reward_icon2 img {
+  width: 18px;
+}
+
+.mobile_menu_tab .reward_item .product_img {
+  max-width: 100px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile_menu_tab .reward_item .reward_item img {
+  width: 100%;
+}
+
+.mobile_menu_tab .reward_item .reward_title {
+  text-align: center;
+}
+
+.mobile_menu_tab .reward_item .reward_title h1 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.mobile_menu_tab .reward_item .reward_title p {
+  font-size: 18px;
+  color: var(--gray-text);
+  margin: 0px;
+}
+/* Mobile redeem rewards End */
 
 /* My Bag Order Sammary Start */
 
@@ -1461,7 +1543,7 @@
   height: 18px;
   display: flex;
   justify-content: center;
-  align-items: center;x;
+  align-items: center;
   text-align: center;
   background: var(--primary-color);
   cursor: pointer;
@@ -1655,7 +1737,6 @@
 
 /* My Bag Order Sammary End */
 
-
 /* Past Order Start */
 
 .past_order {
@@ -1665,13 +1746,11 @@
 
 .past_order .past_heading {
   margin-top: 10px;
- 
 }
 
 .past_order .past_heading h1 {
   font-size: 20px;
   font-weight: bold;
- 
 }
 
 .past_order .order_titel {
@@ -1702,7 +1781,6 @@
   margin: 0 20px;
   cursor: pointer;
   transition: all 0.2s linear;
-  
 }
 
 .past_order .accordion-content.open header {
@@ -1743,14 +1821,14 @@
   border: 1px solid var(--primary-color);
 }
 
-.past_order .accordion-content.open header .recorder_btn{
+.past_order .accordion-content.open header .recorder_btn {
   color: var(--text-color) !important;
   border: 1px solid var(--primary-color);
   border: none;
   background: none;
 }
 
-.past_order .accordion-content.open header .recorder_btn span{
+.past_order .accordion-content.open header .recorder_btn span {
   border-bottom: 1px solid var(--text-color);
 }
 
@@ -1775,17 +1853,17 @@
 }
 
 .past_order .items {
- display: flex;
- align-items: center;
- gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.past_order .past_item .items .product_img{
+.past_order .past_item .items .product_img {
   width: 25px;
   height: 40px;
 }
 
-.past_order .product_img img{
+.past_order .product_img img {
   margin-top: -45px;
   width: 100%;
   height: auto;
@@ -1848,29 +1926,29 @@
   margin: 0;
 }
 
-.past_order .accordion-content .show_more_details{
+.past_order .accordion-content .show_more_details {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
 }
 
-.past_order .accordion-content .show_more_details a{
+.past_order .accordion-content .show_more_details a {
   color: var(--text-color);
   font-size: 12px;
   font-weight: bold;
   border-bottom: 1px solid var(--text-color);
 }
 
-.past_order .accordion-content .recorder_show_btn{
+.past_order .accordion-content .recorder_show_btn {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0px 20px 0px ;
+  padding: 30px 0px 20px 0px;
 }
 
-.past_order .accordion-content .recorder_button{
+.past_order .accordion-content .recorder_button {
   background: var(--primary-color);
   border: none;
   font-size: 16px;
@@ -1881,7 +1959,7 @@
   transition: 0.4s;
 }
 
-.past_order .accordion-content .recorder_button:hover{
+.past_order .accordion-content .recorder_button:hover {
   background: #ad4708;
 }
 
@@ -1893,6 +1971,5 @@
   display: inline-block;
   margin-top: 10px !important;
 }
-
 
 /* Past Order End */
