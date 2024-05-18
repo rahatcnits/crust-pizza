@@ -150,6 +150,31 @@
   padding: 12px 0;
 }
 
+#mobile_account .button {
+  display: block !important;
+  margin-top: 20px;
+}
+
+#mobile_new_card .button .save_btn {
+  display: block;
+  width: 100%;
+  color: var(--white);
+  background: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+#mobile_new_card .button .save_btn:hover {
+  background: #a84a0f;
+}
+
+#mobile_new_card .button a {
+  display: block;
+  color: var(--secondary-color);
+  margin-top: 20px;
+  text-align: center;
+}
+
 /* Mobile Account End */
 
 /* Mobile Cards Start */
@@ -442,10 +467,10 @@
 }
 
 #mobile_new_card .button {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 #mobile_new_card .button .credit_btn {
