@@ -1294,6 +1294,7 @@
 
   .product_modal_desc p {
     text-align: center;
+    max-width: 100%;
   }
 
   .product_modal_price {

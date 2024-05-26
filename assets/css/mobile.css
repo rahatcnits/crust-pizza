@@ -1138,19 +1138,6 @@
   -o-border-radius: 4px;
 }
 
-.member_rewards .progress_current_val {
-  opacity: 0;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-}
-
-.member_rewards .progress_current_val.show {
-  opacity: 1;
-}
-
 .member_rewards .progress-moved .progress-bar2 {
   width: 25%;
   background-color: #ef476f;
@@ -1164,6 +1151,15 @@
   100% {
     width: 25%;
   }
+}
+
+.member_rewards .progress_current_val {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.member_rewards .progress_current_val.show {
+  opacity: 1;
 }
 
 .member_rewards .benefits {
@@ -1827,6 +1823,10 @@
   margin-bottom: 73px;
 }
 
+.past_order .accordion_wrapper {
+  margin-top: 20px;
+}
+
 .past_order .past_heading {
   margin-top: 10px;
 }
@@ -1845,6 +1845,14 @@
   padding: 20px 0px 1px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.accordion_title p {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0;
 }
 
 .past_order .accordion_wrapper .accordion-content {
@@ -3131,8 +3139,8 @@
   background: transparent;
   gap: 6px;
   font-size: 14px;
-  font-weight: 700;
-  font-family: var(--primary-font);
+  font-weight: 500;
+  font-family: #000000;
   color: var(--text-color);
 }
 
@@ -3155,7 +3163,7 @@
   outline: none;
   background: transparent;
   color: var(--text-color);
-  font-weight: 500;
+  font-weight: 400;
   font-family: var(--primary-font);
   font-size: 14px;
   padding: 6px 0;
@@ -3245,7 +3253,7 @@
 .mobile_menu_item p {
   font-family: var(--primary-font);
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 0;
 }
