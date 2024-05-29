@@ -357,8 +357,13 @@ label {
   transition: 0.5s;
 }
 
-#sign_up .sign_up_contant form .sign_btn:hover {
+#sign_up .sign_up_contant form .sign_btn.show {
   background: var(--primary-color);
+  color: var(--white);
+}
+
+#sign_up .sign_up_contant form .sign_btn.show:hover {
+  background: #ad4708;
 }
 
 #sign_up .sign_up_contant form .check {

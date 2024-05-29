@@ -35,6 +35,21 @@
   font-weight: 400;
 }
 
+#mobileTimeInput {
+  width: 100%;
+  height: 45px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid var(--stroke-color);
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mobile-time-dropdown,
 .time-dropdown {
   position: absolute !important;
   top: calc(100% + 10px);
@@ -48,6 +63,7 @@
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
   border-top: none;
   height: 250px;
+  z-index: 9999 !important;
   overflow-y: auto;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -56,32 +72,38 @@
   -o-border-radius: 8px;
 }
 
+.mobile-time-dropdown::-webkit-scrollbar,
 .time-dropdown::-webkit-scrollbar {
   display: none;
 }
 
+.mobile-time-dropdown ul,
 .time-dropdown ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.mobile-time-dropdown ul li,
 .time-dropdown ul li {
   padding: 8px;
   text-align: center;
   cursor: pointer;
 }
 
+.mobile-time-dropdown ul li:hover,
 .time-dropdown ul li:hover {
   background-color: #f0f0f0;
 }
 
+.mobile-time-dropdown ul,
 .time-dropdown ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.mobile-time-dropdown #mobileConfirmBtn,
 .time-dropdown #confirmBtn {
   width: 100%;
   border: none;
@@ -94,6 +116,7 @@
   bottom: 0;
 }
 
+.mobile-time-dropdown ul .active,
 .time-dropdown ul .active {
   background-color: #f0f0f0; /* Background color for selected time */
 }
@@ -107,4 +130,12 @@
   position: sticky;
   top: 10px;
   background-color: #f0f0f0 !important;
+}
+
+.mobile_checkout_time img {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  right: 16px;
+  top: 45px;
 }
