@@ -468,7 +468,7 @@
 }
 
 .launch_special_img {
-  max-width: 300px;
+  width: 100%;
   border: 2px solid rgba(209, 94, 20, 0.3);
   padding: 30px;
   margin-bottom: 80px;
@@ -823,6 +823,37 @@
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
+}
+
+.product_selected_icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  opacity: 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.product_selected_icon img{
+  width: 100%;
+  height: 100%;
+}
+
+.product_size_details.selected_icon .product_selected_icon {
+  opacity: 1;
 }
 
 .product_unselected_icon img {
@@ -1324,6 +1355,18 @@
     height: 16px;
     top: 5px;
     right: 5px;
+  }
+
+  .product_selected_icon{
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .product_selected_icon img{
+    width: 100%;
+    height: 100%;
   }
 
   .product_unselected_icon img {
@@ -2375,16 +2418,25 @@ Checkout Start
   height: 45px;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: var(--primary-font);
-  font-size: 16px;
+  font-size: 14px;
+  text-align: center;
   color: var(--gray-text);
   width: 25%;
   border: 1px solid var(--stroke-color);
   border-right: none;
   cursor: pointer;
   user-select: none;
+}
+
+.select_trip_item span {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  line-height: 14px;
 }
 
 .select_trip_item.active {
@@ -2420,7 +2472,6 @@ Checkout Start
   color: var(--gray-text);
   width: 50%;
   border: 1px solid var(--stroke-color);
-  border-right: none;
 }
 
 .manual_trip_item:first-child {
@@ -2433,19 +2484,31 @@ Checkout Start
 
 .manual_trip_item:last-child {
   border-radius: 0 4px 4px 0;
-  border-right: 1px solid var(--stroke-color);
+  border-left: none;
   -webkit-border-radius: 0 4px 4px 0;
   -moz-border-radius: 0 4px 4px 0;
   -ms-border-radius: 0 4px 4px 0;
   -o-border-radius: 0 4px 4px 0;
 }
 
+.manual_trip_value {
+  visibility: hidden;
+}
+
+.manual_trip_value.visible {
+  visibility: visible;
+}
+
 .manual_trip_value input {
   width: 100%;
-  height: 100%;
+  height: 90%;
   border: none;
   outline: none;
   padding: 8px;
+}
+
+.manual_trip_value input::-webkit-inner-spin-button {
+  display: none;
 }
 
 .reward_head p {

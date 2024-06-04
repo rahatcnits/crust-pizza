@@ -8,8 +8,10 @@ function updateSpecificValue(select) {
 
   if (selectedOption === "None") {
     sauceCard.classList.add("selected");
+    sauceCard.classList.remove("selected_icon");
   } else {
     sauceCard.classList.remove("selected");
+    sauceCard.classList.add("selected_icon");
     radios.forEach((radio) => {
       radio.setAttribute("checked", true);
     });
@@ -31,11 +33,13 @@ sauceCards.forEach((sauceCard) => {
       // Set the value of the select box based on the clicked card's state
       if (!isSelected) {
         select.value = "None";
+        sauceCard.classList.remove("selected_icon");
         radios.forEach((radio) => {
           radio.setAttribute("checked", false);
         });
       } else {
         select.value = "Regular";
+        sauceCard.classList.add("selected_icon");
         radios.forEach((radio) => {
           radio.setAttribute("checked", true);
         });

@@ -753,17 +753,15 @@
                   </div>
                 </div>
 
-                <div class="modal_order_counter">
+                <div class="modal_order_counter product" data-product-id="1"  data-min-count="1">
                   <div
-                    class="modal_order_decrement"
-                    onclick="productDecrement()"
+                    class="modal_order_decrement decrement"
                   >
                     <i class="fa-solid fa-minus"></i>
                   </div>
-                  <div class="modal_order_counter_val">1</div>
+                  <div class="modal_order_counter_val counter">1</div>
                   <div
-                    class="modal_order_increment"
-                    onclick="productIncrement()"
+                    class="modal_order_increment increment"
                   >
                     <i class="fa-solid fa-plus"></i>
                   </div>
@@ -794,22 +792,14 @@
 
                       <div class="essentials_pack_qty">
                         <span class="essentials_pack_head">Qty:</span>
-                        <div class="essentials_pack_counter">
-                          <span
-                            class="essentials_pack_decrement"
-                            onclick="saucesDecrement1()"
-                            ><i class="fa-solid fa-minus"></i
-                          ></span>
-                          <span
-                            class="essentials_pack_value"
-                            id="saucesCounter1"
-                            >0</span
-                          >
-                          <span
-                            class="essentials_pack_increment"
-                            onclick="saucesIncrement1()"
-                            ><i class="fa-solid fa-plus"></i
-                          ></span>
+                        <div class="essentials_pack_counter product" data-product-id="2"  data-min-count="0">
+                          <span class="product_qty_decrement decrement"
+                          ><i class="fa-solid fa-minus"></i
+                        ></span>
+                        <span class="product_qty_value counter">0</span>
+                        <span class="product_qty_increment increment"
+                          ><i class="fa-solid fa-plus"></i
+                        ></span>
                         </div>
                       </div>
                     </div>
@@ -828,20 +818,17 @@
 
                       <div class="essentials_pack_qty">
                         <span class="essentials_pack_head">Qty:</span>
-                        <div class="essentials_pack_counter">
+                        <div class="essentials_pack_counter product" data-product-id="3"  data-min-count="0">
                           <span
-                            class="essentials_pack_decrement"
-                            onclick="saucesDecrement2()"
+                            class="product_qty_decrement decrement"
                             ><i class="fa-solid fa-minus"></i
                           ></span>
                           <span
-                            class="essentials_pack_value"
-                            id="saucesCounterValue2"
+                            class="product_qty_value counter"
                             >0</span
                           >
                           <span
-                            class="essentials_pack_increment"
-                            onclick="saucesIncrement2()"
+                            class="product_qty_increment increment"
                             ><i class="fa-solid fa-plus"></i
                           ></span>
                         </div>
@@ -862,20 +849,17 @@
 
                       <div class="essentials_pack_qty">
                         <span class="essentials_pack_head">Qty:</span>
-                        <div class="essentials_pack_counter">
+                        <div class="essentials_pack_counter product" data-product-id="4"  data-min-count="0">
                           <span
-                            class="essentials_pack_decrement"
-                            onclick="saucesDecrement3()"
+                            class="product_qty_decrement decrement"
                             ><i class="fa-solid fa-minus"></i
                           ></span>
                           <span
-                            class="essentials_pack_value"
-                            id="saucesCounterValue3"
+                            class="product_qty_value counter"
                             >0</span
                           >
                           <span
-                            class="essentials_pack_increment"
-                            onclick="saucesIncrement3()"
+                            class="product_qty_increment increment"
                             ><i class="fa-solid fa-plus"></i
                           ></span>
                         </div>
@@ -896,20 +880,17 @@
 
                       <div class="essentials_pack_qty">
                         <span class="essentials_pack_head">Qty:</span>
-                        <div class="essentials_pack_counter">
+                        <div class="essentials_pack_counter product" data-product-id="5"  data-min-count="0">
                           <span
-                            class="essentials_pack_decrement"
-                            onclick="saucesDecrement4()"
+                            class="product_qty_decrement decrement"
                             ><i class="fa-solid fa-minus"></i
                           ></span>
                           <span
-                            class="essentials_pack_value"
-                            id="saucesCounterValue4"
+                            class="product_qty_value counter"
                             >0</span
                           >
                           <span
-                            class="essentials_pack_increment"
-                            onclick="saucesIncrement4()"
+                            class="product_qty_increment increment"
                             ><i class="fa-solid fa-plus"></i
                           ></span>
                         </div>
@@ -944,18 +925,17 @@
 
                   <div class="essentials_pack_qty">
                     <span class="essentials_pack_head">Qty:</span>
-                    <div class="essentials_pack_counter">
+                    <div class="essentials_pack_counter product" data-product-id="6"  data-min-count="0">
                       <span
-                        class="essentials_pack_decrement"
-                        onclick="essentialDecrement1()"
+                        class="product_qty_decrement decrement"
                         ><i class="fa-solid fa-minus"></i
                       ></span>
-                      <span class="essentials_pack_value" id="essentialCounter1"
+                      <span
+                        class="product_qty_value counter"
                         >0</span
                       >
                       <span
-                        class="essentials_pack_increment"
-                        onclick="essentialIncrement1()"
+                        class="product_qty_increment increment"
                         ><i class="fa-solid fa-plus"></i
                       ></span>
                     </div>
@@ -982,18 +962,17 @@
 
                   <div class="essentials_pack_qty">
                     <span class="essentials_pack_head">Qty:</span>
-                    <div class="essentials_pack_counter">
+                    <div class="essentials_pack_counter product" data-product-id="7"  data-min-count="0">
                       <span
-                        class="essentials_pack_decrement"
-                        onclick="essentialDecrement2()"
+                        class="product_qty_decrement decrement"
                         ><i class="fa-solid fa-minus"></i
                       ></span>
-                      <span class="essentials_pack_value" id="essentialCounter2"
+                      <span
+                        class="product_qty_value counter"
                         >0</span
                       >
                       <span
-                        class="essentials_pack_increment"
-                        onclick="essentialIncrement2()"
+                        class="product_qty_increment increment"
                         ><i class="fa-solid fa-plus"></i
                       ></span>
                     </div>
@@ -1020,18 +999,17 @@
 
                   <div class="essentials_pack_qty">
                     <span class="essentials_pack_head">Qty:</span>
-                    <div class="essentials_pack_counter">
+                    <div class="essentials_pack_counter product" data-product-id="8"  data-min-count="0">
                       <span
-                        class="essentials_pack_decrement"
-                        onclick="essentialDecrement3()"
+                        class="product_qty_decrement decrement"
                         ><i class="fa-solid fa-minus"></i
                       ></span>
-                      <span class="essentials_pack_value" id="essentialCounter3"
+                      <span
+                        class="product_qty_value counter"
                         >0</span
                       >
                       <span
-                        class="essentials_pack_increment"
-                        onclick="essentialIncrement3()"
+                        class="product_qty_increment increment"
                         ><i class="fa-solid fa-plus"></i
                       ></span>
                     </div>
@@ -1211,17 +1189,15 @@
                   </div>
                 </div>
 
-                <div class="modal_order_counter">
+                <div class="modal_order_counter product" data-product-id="10"  data-min-count="1">
                   <div
-                    class="modal_order_decrement"
-                    onclick="productDecrement()"
+                    class="modal_order_decrement decrement"
                   >
                     <i class="fa-solid fa-minus"></i>
                   </div>
-                  <div class="modal_order_counter_val">1</div>
+                  <div class="modal_order_counter_val counter">1</div>
                   <div
-                    class="modal_order_increment"
-                    onclick="productIncrement()"
+                    class="modal_order_increment increment"
                   >
                     <i class="fa-solid fa-plus"></i>
                   </div>
@@ -1249,22 +1225,14 @@
                           <p>$0.50</p>
                         </div>
                         <div class="essentials_pack_qty">
-                          <div class="essentials_pack_counter">
-                            <span
-                              class="essentials_pack_decrement"
-                              onclick="saucesDecrement1()"
-                              ><i class="fa-solid fa-minus"></i
-                            ></span>
-                            <span
-                              class="essentials_pack_value"
-                              id="saucesCounter1"
-                              >0</span
-                            >
-                            <span
-                              class="essentials_pack_increment"
-                              onclick="saucesIncrement1()"
-                              ><i class="fa-solid fa-plus"></i
-                            ></span>
+                          <div class="essentials_pack_counter product" data-product-id="11"  data-min-count="0">
+                            <span class="product_qty_decrement decrement"
+                            ><i class="fa-solid fa-minus"></i
+                          ></span>
+                          <span class="product_qty_value counter">0</span>
+                          <span class="product_qty_increment increment"
+                            ><i class="fa-solid fa-plus"></i
+                          ></span>
                           </div>
                         </div>
                       </div>
@@ -1281,22 +1249,14 @@
                           <p>$0.50</p>
                         </div>
                         <div class="essentials_pack_qty">
-                          <div class="essentials_pack_counter">
-                            <span
-                              class="essentials_pack_decrement"
-                              onclick="saucesDecrement2()"
-                              ><i class="fa-solid fa-minus"></i
-                            ></span>
-                            <span
-                              class="essentials_pack_value"
-                              id="saucesCounterValue2"
-                              >0</span
-                            >
-                            <span
-                              class="essentials_pack_increment"
-                              onclick="saucesIncrement2()"
-                              ><i class="fa-solid fa-plus"></i
-                            ></span>
+                          <div class="essentials_pack_counter product" data-product-id="12"  data-min-count="0">
+                            <span class="product_qty_decrement decrement"
+                            ><i class="fa-solid fa-minus"></i
+                          ></span>
+                          <span class="product_qty_value counter">0</span>
+                          <span class="product_qty_increment increment"
+                            ><i class="fa-solid fa-plus"></i
+                          ></span>
                           </div>
                         </div>
                       </div>
@@ -1313,22 +1273,14 @@
                           <p>$0.50</p>
                         </div>
                         <div class="essentials_pack_qty">
-                          <div class="essentials_pack_counter">
-                            <span
-                              class="essentials_pack_decrement"
-                              onclick="saucesDecrement3()"
-                              ><i class="fa-solid fa-minus"></i
-                            ></span>
-                            <span
-                              class="essentials_pack_value"
-                              id="saucesCounterValue3"
-                              >0</span
-                            >
-                            <span
-                              class="essentials_pack_increment"
-                              onclick="saucesIncrement3()"
-                              ><i class="fa-solid fa-plus"></i
-                            ></span>
+                          <div class="essentials_pack_counter product" data-product-id="13"  data-min-count="0">
+                            <span class="product_qty_decrement decrement"
+                            ><i class="fa-solid fa-minus"></i
+                          ></span>
+                          <span class="product_qty_value counter">0</span>
+                          <span class="product_qty_increment increment"
+                            ><i class="fa-solid fa-plus"></i
+                          ></span>
                           </div>
                         </div>
                       </div>
@@ -1345,22 +1297,14 @@
                           <p>$0.50</p>
                         </div>
                         <div class="essentials_pack_qty">
-                          <div class="essentials_pack_counter">
-                            <span
-                              class="essentials_pack_decrement"
-                              onclick="saucesDecrement4()"
-                              ><i class="fa-solid fa-minus"></i
-                            ></span>
-                            <span
-                              class="essentials_pack_value"
-                              id="saucesCounterValue4"
-                              >0</span
-                            >
-                            <span
-                              class="essentials_pack_increment"
-                              onclick="saucesIncrement4()"
-                              ><i class="fa-solid fa-plus"></i
-                            ></span>
+                          <div class="essentials_pack_counter product" data-product-id="14"  data-min-count="0">
+                            <span class="product_qty_decrement decrement"
+                            ><i class="fa-solid fa-minus"></i
+                          ></span>
+                          <span class="product_qty_value counter">0</span>
+                          <span class="product_qty_increment increment"
+                            ><i class="fa-solid fa-plus"></i
+                          ></span>
                           </div>
                         </div>
                       </div>
@@ -1391,22 +1335,14 @@
                       </p>
                     </div>
                     <div class="essentials_pack_qty">
-                      <div class="essentials_pack_counter">
-                        <span
-                          class="essentials_pack_decrement"
-                          onclick="essentialDecrement1()"
-                          ><i class="fa-solid fa-minus"></i
-                        ></span>
-                        <span
-                          class="essentials_pack_value"
-                          id="essentialCounter1"
-                          >0</span
-                        >
-                        <span
-                          class="essentials_pack_increment"
-                          onclick="essentialIncrement1()"
-                          ><i class="fa-solid fa-plus"></i
-                        ></span>
+                      <div class="essentials_pack_counter product" data-product-id="15"  data-min-count="0">
+                        <span class="product_qty_decrement decrement"
+                        ><i class="fa-solid fa-minus"></i
+                      ></span>
+                      <span class="product_qty_value counter">0</span>
+                      <span class="product_qty_increment increment"
+                        ><i class="fa-solid fa-plus"></i
+                      ></span>
                       </div>
                     </div>
                   </div>
@@ -1429,22 +1365,14 @@
                       </p>
                     </div>
                     <div class="essentials_pack_qty">
-                      <div class="essentials_pack_counter">
-                        <span
-                          class="essentials_pack_decrement"
-                          onclick="essentialDecrement2()"
-                          ><i class="fa-solid fa-minus"></i
-                        ></span>
-                        <span
-                          class="essentials_pack_value"
-                          id="essentialCounter2"
-                          >0</span
-                        >
-                        <span
-                          class="essentials_pack_increment"
-                          onclick="essentialIncrement2()"
-                          ><i class="fa-solid fa-plus"></i
-                        ></span>
+                      <div class="essentials_pack_counter product" data-product-id="16"  data-min-count="0">
+                        <span class="product_qty_decrement decrement"
+                        ><i class="fa-solid fa-minus"></i
+                      ></span>
+                      <span class="product_qty_value counter">0</span>
+                      <span class="product_qty_increment increment"
+                        ><i class="fa-solid fa-plus"></i
+                      ></span>
                       </div>
                     </div>
                   </div>
@@ -1467,22 +1395,14 @@
                       </p>
                     </div>
                     <div class="essentials_pack_qty">
-                      <div class="essentials_pack_counter">
-                        <span
-                          class="essentials_pack_decrement"
-                          onclick="essentialDecrement3()"
-                          ><i class="fa-solid fa-minus"></i
-                        ></span>
-                        <span
-                          class="essentials_pack_value"
-                          id="essentialCounter3"
-                          >0</span
-                        >
-                        <span
-                          class="essentials_pack_increment"
-                          onclick="essentialIncrement3()"
-                          ><i class="fa-solid fa-plus"></i
-                        ></span>
+                      <div class="essentials_pack_counter product" data-product-id="17"  data-min-count="0">
+                        <span class="product_qty_decrement decrement"
+                        ><i class="fa-solid fa-minus"></i
+                      ></span>
+                      <span class="product_qty_value counter">0</span>
+                      <span class="product_qty_increment increment"
+                        ><i class="fa-solid fa-plus"></i
+                      ></span>
                       </div>
                     </div>
                   </div>
@@ -1885,10 +1805,10 @@
 
     <!-- Scripts -->
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/counter.js"></script>
     <script src="./assets/js/mobile.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/modal.js"></script>
-    <script src="./assets/js/counter.js"></script>
     <script src="./assets/js/accordion.js"></script>
   </body>
 </html>

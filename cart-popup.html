@@ -835,6 +835,9 @@
                   <div class="product_unselected_icon">
                     <img src="./assets/icons/white_xmark_Icon.svg" alt="" />
                   </div>
+                  <div class="product_selected_icon">
+                    <img src="./assets/icons/selected_icon.svg" alt="" />
+                  </div>
                   <div class="product_get_img">
                     <img src="./assets/img/product_get_img_1.png" alt="" />
                   </div>
@@ -871,6 +874,9 @@
                 <span class="product_size_details add_sauces_card" id="card2">
                   <div class="product_unselected_icon">
                     <img src="./assets/icons/white_xmark_Icon.svg" alt="" />
+                  </div>
+                  <div class="product_selected_icon">
+                    <img src="./assets/icons/selected_icon.svg" alt="" />
                   </div>
                   <div class="product_get_img">
                     <img src="./assets/img/product_get_img_2.png" alt="" />
@@ -909,6 +915,9 @@
                   <div class="product_unselected_icon">
                     <img src="./assets/icons/white_xmark_Icon.svg" alt="" />
                   </div>
+                  <div class="product_selected_icon">
+                    <img src="./assets/icons/selected_icon.svg" alt="" />
+                  </div>
                   <div class="product_get_img">
                     <img src="./assets/img/product_get_img_3.png" alt="" />
                   </div>
@@ -945,6 +954,9 @@
                 <span class="product_size_details add_sauces_card" id="card4">
                   <div class="product_unselected_icon">
                     <img src="./assets/icons/white_xmark_Icon.svg" alt="" />
+                  </div>
+                  <div class="product_selected_icon">
+                    <img src="./assets/icons/selected_icon.svg" alt="" />
                   </div>
                   <div class="product_get_img">
                     <img src="./assets/img/product_get_img_1.png" alt="" />
@@ -983,6 +995,9 @@
                   <div class="product_unselected_icon">
                     <img src="./assets/icons/white_xmark_Icon.svg" alt="" />
                   </div>
+                  <div class="product_selected_icon">
+                    <img src="./assets/icons/selected_icon.svg" alt="" />
+                  </div>
                   <div class="product_get_img">
                     <img src="./assets/img/product_get_img_2.png" alt="" />
                   </div>
@@ -1019,6 +1034,9 @@
                 <span class="product_size_details add_sauces_card" id="card6">
                   <div class="product_unselected_icon">
                     <img src="./assets/icons/white_xmark_Icon.svg" alt="" />
+                  </div>
+                  <div class="product_selected_icon">
+                    <img src="./assets/icons/selected_icon.svg" alt="" />
                   </div>
                   <div class="product_get_img">
                     <img src="./assets/img/product_get_img_3.png" alt="" />
@@ -1231,14 +1249,14 @@
         </div>
 
         <div class="product_cart">
-          <div class="product_qty">
+          <div class="product_qty product"  data-product-id="1"  data-min-count="1">
             <span class="product_qty_head">Qty:</span>
             <div class="product_qty_counter">
-              <span class="product_qty_decrement" onclick="decrement()"
+              <span class="product_qty_decrement decrement"
                 ><i class="fa-solid fa-minus"></i
               ></span>
-              <span class="product_qty_value" id="counter">1</span>
-              <span class="product_qty_increment" onclick="increment()"
+              <span class="product_qty_value counter">1</span>
+              <span class="product_qty_increment increment"
                 ><i class="fa-solid fa-plus"></i
               ></span>
             </div>
@@ -1259,9 +1277,9 @@
     <!-- Scripts -->
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/counter.js"></script>
     <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/cart-popup.js"></script>
     <script src="./assets/js/selectSauces.js"></script>
-    <script src="./assets/js/counter.js"></script>
   </body>
 </html>

@@ -30,13 +30,14 @@ let mobilePhnNumber = document.getElementById("mobilePhnNumber");
 let mobileSignupBtn = document.getElementById("mobileSignupBtn");
 
 // Function to check if all required fields are filled
-function checkFields() {
+function mobileCheckFields() {
   if (
     mobileFName.value &&
     mobileLName.value &&
     mobileEmail.value &&
     mobilePhnNumber.value
   ) {
+    console.log("hello")
     mobileSignupBtn.disabled = false; // Enable the button
     mobileSignupBtn.classList.add("show");
   } else {
@@ -46,10 +47,10 @@ function checkFields() {
 }
 
 // Add event listeners to input fields to check for changes
-mobileFName.addEventListener("input", checkFields);
-mobileLName.addEventListener("input", checkFields);
-mobileEmail.addEventListener("input", checkFields);
-mobilePhnNumber.addEventListener("input", checkFields);
+mobileFName.addEventListener("input", mobileCheckFields);
+mobileLName.addEventListener("input", mobileCheckFields);
+mobileEmail.addEventListener("input", mobileCheckFields);
+mobilePhnNumber.addEventListener("input", mobileCheckFields);
 
 // format phone number
 function formatPhoneNumber(input) {

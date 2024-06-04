@@ -11,9 +11,19 @@ const handleIcons = (scrollVal) => {
     maxScrollableWidth - scrollVal <= 1 ? "none" : "flex";
 };
 
+const checkOverflow = () => {
+  let maxScrollableWidth = tabsBox.scrollWidth - tabsBox.clientWidth;
+  arrowIcons[1].parentElement.style.display = maxScrollableWidth <= 0 ? "none" : "flex";
+};
+
+// Initial check on page load
+document.addEventListener("DOMContentLoaded", checkOverflow);
+// Check on window resize
+window.addEventListener("resize", checkOverflow);
+
 arrowIcons.forEach((icon) => {
   icon.addEventListener("click", () => {
-    // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
+    // if clicked icon is left, reduce 340 from tabsBox scrollLeft else add
     let scrollWidth = (tabsBox.scrollLeft += icon.id === "left" ? -340 : 340);
     handleIcons(scrollWidth);
   });
@@ -43,7 +53,6 @@ tabsBox.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 
 // tab content show
-
 const menuContents = document.querySelectorAll(".tab_content");
 
 allTabs.forEach((menuTab, index) => {
@@ -77,6 +86,7 @@ window.onscroll = () => {
     }
   });
 };
+
 
 /// product size
 // add fund card

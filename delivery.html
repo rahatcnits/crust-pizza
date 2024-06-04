@@ -99,248 +99,6 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Delivery popup Start -->
-    <section class="delivery_modal bag_empty_modal active">
-      <div class="delivery_wrapper empty_wrapper">
-        <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
-
-        <div class="modal_title">
-          <h1>Order Details</h1>
-        </div>
-
-        <div class="delivery_btn">
-          <a href="./delivery.html" type="button" class="delivery dineout_btn active">
-            <svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.9998 14.5H12.9998C14.0998 14.5 14.9998 13.6 14.9998 12.5V2.5H5.99976C4.49976 2.5 3.18977 3.32999 2.50977 4.54999"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M2 17.5C2 19.16 3.34 20.5 5 20.5H6C6 19.4 6.9 18.5 8 18.5C9.1 18.5 10 19.4 10 20.5H14C14 19.4 14.9 18.5 16 18.5C17.1 18.5 18 19.4 18 20.5H19C20.66 20.5 22 19.16 22 17.5V14.5H19C18.45 14.5 18 14.05 18 13.5V10.5C18 9.95 18.45 9.5 19 9.5H20.29L18.58 6.51001C18.22 5.89001 17.56 5.5 16.84 5.5H15V12.5C15 13.6 14.1 14.5 13 14.5H12"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M8 22.5C9.10457 22.5 10 21.6046 10 20.5C10 19.3954 9.10457 18.5 8 18.5C6.89543 18.5 6 19.3954 6 20.5C6 21.6046 6.89543 22.5 8 22.5Z"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16 22.5C17.1046 22.5 18 21.6046 18 20.5C18 19.3954 17.1046 18.5 16 18.5C14.8954 18.5 14 19.3954 14 20.5C14 21.6046 14.8954 22.5 16 22.5Z"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M22 12.5V14.5H19C18.45 14.5 18 14.05 18 13.5V10.5C18 9.95 18.45 9.5 19 9.5H20.29L22 12.5Z"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M2 8.5H8"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M2 11.5H6"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M2 14.5H4"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <div class="text">
-              <h1>Delivery</h1>
-              <p>10:30 PM GMT+6</p>
-            </div>
-          </a>
-
-          <a href="./pickup.html" type="button" class="pickup dineout_btn">
-            <svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2 2.5H3.74001C4.82001 2.5 5.67 3.43 5.58 4.5L4.75 14.46C4.61 16.09 5.89999 17.49 7.53999 17.49H18.19C19.63 17.49 20.89 16.31 21 14.88L21.54 7.38C21.66 5.72 20.4 4.37 18.73 4.37H5.82001"
-                stroke="#D15E14"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16.25 22.5C16.9404 22.5 17.5 21.9404 17.5 21.25C17.5 20.5596 16.9404 20 16.25 20C15.5596 20 15 20.5596 15 21.25C15 21.9404 15.5596 22.5 16.25 22.5Z"
-                stroke="#D15E14"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M8.25 22.5C8.94036 22.5 9.5 21.9404 9.5 21.25C9.5 20.5596 8.94036 20 8.25 20C7.55964 20 7 20.5596 7 21.25C7 21.9404 7.55964 22.5 8.25 22.5Z"
-                stroke="#D15E14"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M9 8.5H21"
-                stroke="#D15E14"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <div class="text">
-              <h1>Pickup</h1>
-              <p>10:30 PM GMT+6</p>
-            </div>
-          </a>
-        </div>
-        <h4>You can only place scheduled orders right now.</h4>
-
-        <form action="#">
-          <label for="name">Deliver to</label><br />
-          <input type="text" placeholder="Enter your delivery address" />
-          <br />
-          <br />
-          <label for="date">Date</label>
-          <div class="delivery_date_Picker">
-            <input type="text" id="datepicker" placeholder="dd/mm/yyyy" />
-
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8 2V5"
-                stroke="black"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16 2V5"
-                stroke="black"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M3.5 9.09009H20.5"
-                stroke="black"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
-                stroke="black"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15.6947 13.7H15.7037"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M15.6947 16.7H15.7037"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M11.9955 13.7H12.0045"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M11.9955 16.7H12.0045"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M8.29431 13.7H8.30329"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M8.29431 16.7H8.30329"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <br />
-          <label for="time">Time</label>
-          <div class="select_container">
-            <select id="time">
-              <option value="volvo">10:30am</option>
-              <option value="saab">10:30am</option>
-              <option value="vw">10:30am</option>
-              <option value="audi" selected>10:30pm</option>
-            </select>
-            <div class="select_icon">
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
-          </div>
-          <a href="./payment-popup.html" class="update">Update</a>
-        </form>
-      </div>
-    </section>
-    <!-- Delivery Popup End -->
-
     <!-- Checkout Start -->
     <section id="checkout">
       <div class="container">
@@ -948,6 +706,248 @@
       </div>
     </section>
     <!-- Checkout End -->
+
+     <!-- Delivery popup Start -->
+     <section class="delivery_modal bag_empty_modal active">
+      <div class="delivery_wrapper empty_wrapper">
+        <div class="close_modal"><i class="fa-solid fa-xmark"></i></div>
+
+        <div class="modal_title">
+          <h1>Order Details</h1>
+        </div>
+
+        <div class="delivery_btn">
+          <a href="./delivery.html" type="button" class="delivery dineout_btn active">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.9998 14.5H12.9998C14.0998 14.5 14.9998 13.6 14.9998 12.5V2.5H5.99976C4.49976 2.5 3.18977 3.32999 2.50977 4.54999"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 17.5C2 19.16 3.34 20.5 5 20.5H6C6 19.4 6.9 18.5 8 18.5C9.1 18.5 10 19.4 10 20.5H14C14 19.4 14.9 18.5 16 18.5C17.1 18.5 18 19.4 18 20.5H19C20.66 20.5 22 19.16 22 17.5V14.5H19C18.45 14.5 18 14.05 18 13.5V10.5C18 9.95 18.45 9.5 19 9.5H20.29L18.58 6.51001C18.22 5.89001 17.56 5.5 16.84 5.5H15V12.5C15 13.6 14.1 14.5 13 14.5H12"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8 22.5C9.10457 22.5 10 21.6046 10 20.5C10 19.3954 9.10457 18.5 8 18.5C6.89543 18.5 6 19.3954 6 20.5C6 21.6046 6.89543 22.5 8 22.5Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16 22.5C17.1046 22.5 18 21.6046 18 20.5C18 19.3954 17.1046 18.5 16 18.5C14.8954 18.5 14 19.3954 14 20.5C14 21.6046 14.8954 22.5 16 22.5Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 12.5V14.5H19C18.45 14.5 18 14.05 18 13.5V10.5C18 9.95 18.45 9.5 19 9.5H20.29L22 12.5Z"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 8.5H8"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 11.5H6"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2 14.5H4"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <div class="text">
+              <h1>Delivery</h1>
+              <p>10:30 PM</p>
+            </div>
+          </a>
+
+          <a href="./pickup.html" type="button" class="pickup dineout_btn">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 2.5H3.74001C4.82001 2.5 5.67 3.43 5.58 4.5L4.75 14.46C4.61 16.09 5.89999 17.49 7.53999 17.49H18.19C19.63 17.49 20.89 16.31 21 14.88L21.54 7.38C21.66 5.72 20.4 4.37 18.73 4.37H5.82001"
+                stroke="#D15E14"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16.25 22.5C16.9404 22.5 17.5 21.9404 17.5 21.25C17.5 20.5596 16.9404 20 16.25 20C15.5596 20 15 20.5596 15 21.25C15 21.9404 15.5596 22.5 16.25 22.5Z"
+                stroke="#D15E14"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.25 22.5C8.94036 22.5 9.5 21.9404 9.5 21.25C9.5 20.5596 8.94036 20 8.25 20C7.55964 20 7 20.5596 7 21.25C7 21.9404 7.55964 22.5 8.25 22.5Z"
+                stroke="#D15E14"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9 8.5H21"
+                stroke="#D15E14"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <div class="text">
+              <h1>Pickup</h1>
+              <p>10:30 PM</p>
+            </div>
+          </a>
+        </div>
+        <h4>You can only place scheduled orders right now.</h4>
+
+        <form action="#">
+          <label for="name">Deliver to</label><br />
+          <input type="text" placeholder="Enter your delivery address" />
+          <br />
+          <br />
+          <label for="date">Date</label>
+          <div class="delivery_date_Picker">
+            <input type="text" id="datepicker" placeholder="dd/mm/yyyy" />
+
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 2V5"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M16 2V5"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3.5 9.09009H20.5"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+                stroke="black"
+                stroke-width="1.5"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.6947 13.7H15.7037"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.6947 16.7H15.7037"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11.9955 13.7H12.0045"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11.9955 16.7H12.0045"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.29431 13.7H8.30329"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.29431 16.7H8.30329"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <br />
+          <label for="time">Time</label>
+          <div class="select_container">
+            <select id="time">
+              <option value="volvo">10:30am</option>
+              <option value="saab">10:30am</option>
+              <option value="vw">10:30am</option>
+              <option value="audi" selected>10:30pm</option>
+            </select>
+            <div class="select_icon">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+          <a href="./payment-popup.html" class="update">Update</a>
+        </form>
+      </div>
+    </section>
+    <!-- Delivery Popup End -->
 
     <!-- Scripts -->
     <script src="./assets/js/jquery.min.js"></script>

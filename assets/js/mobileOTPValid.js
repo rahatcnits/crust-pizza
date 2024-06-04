@@ -72,9 +72,6 @@ window.addEventListener("keyup", (e) => {
   }
 });
 
-const mobileValidateOTP = () => {
-  alert("Success");
-};
 
 // Start
 const mobileStartInput = () => {

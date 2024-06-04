@@ -9,11 +9,23 @@ closeModal.addEventListener("click", () => {
 
 // pickup modal hide
 const pickupModal = document.querySelector(".pickup_modal");
+const pickupModalWrapper = document.querySelector(".pickup_wrapper");
 const pickupModalClose = document.querySelector(".close_modal");
 
 pickupModalClose.addEventListener("click", () => {
   pickupModal.classList.remove("active");
 });
+
+document.body.addEventListener("click", function (event) {
+  // If click target is not the popup or the openPopup button, close the popup
+  if (
+    event.target !== pickupModalWrapper &&
+    !pickupModalWrapper.contains(event.target)
+  ) {
+    pickupModal.classList.remove("active");
+  }
+});
+
 
 // bag empty modal hide
 const bagEmptyModal = document.querySelector(".bag_empty_modal");

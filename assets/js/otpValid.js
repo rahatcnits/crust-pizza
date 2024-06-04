@@ -65,9 +65,6 @@ window.addEventListener("keyup", (e) => {
   }
 });
 
-const validateOTP = () => {
-  alert("Success");
-};
 
 //Start
 const startInput = () => {

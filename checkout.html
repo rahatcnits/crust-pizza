@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- Desktop -->
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
       <!-- Navbar Start -->
       <nav id="navbar">
         <div class="container">
@@ -430,25 +430,29 @@
                       <div class="add_tip">
                         <div class="add_tip_price">
                           Tip Amount:
-                          <span>$0.00</span>
+                          <span class="trip_value">$0.00</span>
                         </div>
 
                         <div class="add_trip_price_lists">
                           <div class="select_add_trip_lists">
-                            <div class="select_trip_item active">None</div>
-                            <div class="select_trip_item">10%</div>
-                            <div class="select_trip_item">15%</div>
-                            <div class="select_trip_item">20%</div>
+                            <div class="select_trip_item">None</div>
+                            <div class="select_trip_item">10%
+                              <span>$1.00</span>
+                            </div>
+                            <div class="select_trip_item">15%
+                              <span>$1.50</span>
+                            </div>
+                            <div class="select_trip_item">20%
+                              <span>$2.00</span>
+                            </div>
                           </div>
 
                           <div class="manual_add_trip">
                             <div
                               class="manual_trip_title select_trip_item manual_trip_item"
-                            >
-                              Custom
-                            </div>
+                            >Custom</div>
                             <div class="manual_trip_value manual_trip_item">
-                              <input type="text" />
+                              <input type="number" />
                             </div>
                           </div>
                         </div>
@@ -504,7 +508,7 @@
                           <p>Saved cards</p>
                         </div>
                         <div class="payment_saved_card_btns">
-                          <button type="button" class="pay_visa_btn active">
+                          <button type="button" class="pay_visa_btn">
                             Pay with <span>Visa ****2015</span>
                           </button>
                           <button type="button" class="pay_gift_btn">
@@ -608,7 +612,7 @@
 
                     <div class="checkout_pay_btn">
                       <button type="button" class="pay_card_btn">
-                        Pay $11.02 with <span>Visa ****2015</span>
+                        Pay $11.02 with <span></span>
                       </button>
                       <button type="button" class="pay_apple_btn">
                         Pay with
@@ -720,7 +724,7 @@
 
                       <div class="checkout_product_subtotal_price_item">
                         <span>Tip</span>
-                        <span>$0.00</span>
+                        <span class="trip_value">$0.00</span>
                       </div>
 
                       <div class="checkout_product_total_price_item">
@@ -736,12 +740,12 @@
         </div>
       </section>
       <!-- Checkout End -->
-    </div>
+    <!-- </div> -->
 
     <!-- Mobile -->
-    <div class="mobile_wrapper">
+    <!-- <div class="mobile_wrapper"> -->
       <!-- Mobile Checkout Start -->
-      <section id="mobile_checkout">
+      <!-- <section id="mobile_checkout">
         <div class="mobile_checkout_nav">
           <a href="#" class="mobile_close_btn">
             <img src="./assets/icons/x-mark-black.svg" alt="" />
@@ -907,9 +911,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Mobile Checkout End -->
-    </div>
+    <!-- </div> -->
 
     <!-- Scripts -->
     <script src="./assets/js/jquery.min.js"></script>

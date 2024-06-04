@@ -116,11 +116,11 @@
               <form action="#">
                 <label for="">Phone Number</label>
                 <input
-                  type="number"
+                  type="text"
                   name="number"
                   class="signInPhone"
-                  data-maxlength="10"
-                  oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+                  data-maxlength="12"
+                  oninput="formatPhoneNumber(this)"
                   pattern="([0-9]{1,3}).([0-9]{1,3}).([0-9]{1,4})"
                   placeholder="Enter your phone number"
                 />
@@ -161,11 +161,11 @@
           <form action="#">
             <label for="">Phone Number</label>
             <input
-              type="number"
+              type="text"
               name="number"
               class="signInPhone"
-              data-maxlength="10"
-              oninput="this.value=this.value.slice(0,this.dataset.maxlength)"
+              data-maxlength="12"
+              oninput="formatPhoneNumber(this)"
               pattern="([0-9]{1,3}).([0-9]{1,3}).([0-9]{1,4})"
               placeholder="Enter your phone number"
             />
